@@ -8,3 +8,15 @@ The files and folder structure are as follows:
 - **`verify_seed.py`**: Certifies all rows that have foreign keys actually point to an existing foreign key.
 
 **Note:** All python scripts must be executed from a folder that contains the `generated_data` folder with all seeded files and a file named `schema.dbml`. This file must have the database schema from the `database.io` website. Just copy the text from the schema in the website's raw format. The scripts use this schema to check integrity.
+
+
+### Sanity checks
+To run the DB sanity check navigate to sanity/DB_sanity_checks
+```
+cd sanity/DB_sanity_checks
+```
+Then run the command below:
+```
+python sanity_checks.py wiki
+```
+View the reports in the browser. 

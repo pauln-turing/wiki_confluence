@@ -1,0 +1,71 @@
+{
+    "APIs": {
+        "getcompany": {
+            "inputs": [
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "company_name",
+                    "type": "string"
+                },
+                {
+                    "name": "company_address",
+                    "type": "string"
+                },
+                {
+                    "name": "company_id",
+                    "type": "string"
+                }
+            ]
+        },
+        "getUser": {
+            "inputs": [
+                {
+                    "name": "user_id",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "name": "company_id",
+                    "type": "string",
+                    "required": true
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "user_name",
+                    "type": "string"
+                },
+                {
+                    "name": "company_id",
+                    "type": "string"
+                }
+            ]
+        }
+    },
+    "edges": [
+        {
+            "from": "getUser",
+            "to": "getcompany",
+            "connections": {
+                "output": "company_id",
+                "input": "company_id"
+            },
+            "explicit": false
+        },
+        {
+            "from": "getcompany",
+            "to": "getUser",
+            "connections": {
+                "output": "company_id",
+                "input": "company_id"
+            },
+            "explicit": true
+        }
+    ]
+}

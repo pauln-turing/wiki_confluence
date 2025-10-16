@@ -1,0 +1,841 @@
+{
+  "base_folder": "C:\\Users\\user\\Desktop\\agentic\\sanity\\API_sanity_checks\\payroll",
+  "timestamp": "2025-09-29T23:42:23.257901Z",
+  "interfaces": [
+    "interface_1"
+  ],
+  "ignored_files": [
+    "__init__.py",
+    "policy.md"
+  ],
+  "yaml_path": "C:\\Users\\user\\Desktop\\agentic\\sanity\\API_sanity_checks\\payroll\\get_set_APIs.yaml",
+  "tools_info_path": "C:\\Users\\user\\Desktop\\agentic\\sanity\\API_sanity_checks\\tools_info.json",
+  "summary": {
+    "interfaces": {
+      "interface_1": {
+        "total_apis": 36,
+        "get": {
+          "count": 15,
+          "percent": 41.67
+        },
+        "set": {
+          "count": 21,
+          "percent": 58.33
+        }
+      }
+    },
+    "overall": {
+      "total_apis": 36,
+      "get": {
+        "count": 15,
+        "percent": 41.67
+      },
+      "set": {
+        "count": 21,
+        "percent": 58.33
+      }
+    }
+  },
+  "duplicates": [],
+  "interface_file_yaml_comparison": {
+    "interface_1": {
+      "files_count": 36,
+      "yaml_count": 36,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    }
+  },
+  "extra_apis_in_tools_info": [],
+  "apis": [
+    {
+      "interface": "interface_1",
+      "api_name": "query_table",
+      "classification": "get",
+      "params": [
+        {
+          "name": "table",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "filters",
+          "type": "dict | None",
+          "optional": true
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_employee",
+      "classification": "get",
+      "params": [
+        {
+          "name": "employee_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_vendor",
+      "classification": "get",
+      "params": [
+        {
+          "name": "vendor_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_department",
+      "classification": "get",
+      "params": [
+        {
+          "name": "department_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_payroll_run",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payroll_run_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_employee_pay",
+      "classification": "get",
+      "params": [
+        {
+          "name": "pay_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_invoice",
+      "classification": "get",
+      "params": [
+        {
+          "name": "invoice_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_order",
+      "classification": "get",
+      "params": [
+        {
+          "name": "order_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_payment",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payment_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_approval_request",
+      "classification": "get",
+      "params": [
+        {
+          "name": "approval_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_dispute",
+      "classification": "get",
+      "params": [
+        {
+          "name": "dispute_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_offboarding_request",
+      "classification": "get",
+      "params": [
+        {
+          "name": "request_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_audit_entries_for_entity",
+      "classification": "get",
+      "params": [
+        {
+          "name": "entity_type",
+          "type": "str | None",
+          "optional": true
+        },
+        {
+          "name": "entity_id",
+          "type": "str | None",
+          "optional": true
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_onboarding_request",
+      "classification": "get",
+      "params": [
+        {
+          "name": "request_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_pending_approvals",
+      "classification": "get",
+      "params": [
+        {
+          "name": "approver_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "add_audit_logs_entry",
+      "classification": "set",
+      "params": [
+        {
+          "name": "entry",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_employee",
+      "classification": "set",
+      "params": [
+        {
+          "name": "employee_record",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_onboarding_request",
+      "classification": "set",
+      "params": [
+        {
+          "name": "onboarding_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "updates",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_vendor",
+      "classification": "set",
+      "params": [
+        {
+          "name": "vendor_record",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_offboarding_request",
+      "classification": "set",
+      "params": [
+        {
+          "name": "request_record",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_employee",
+      "classification": "set",
+      "params": [
+        {
+          "name": "employee_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "updates",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_offboarding_request",
+      "classification": "set",
+      "params": [
+        {
+          "name": "offboarding_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "updates",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_vendor",
+      "classification": "set",
+      "params": [
+        {
+          "name": "vendor_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "updates",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_payroll_run",
+      "classification": "set",
+      "params": [
+        {
+          "name": "run_record",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "generate_employee_pays",
+      "classification": "set",
+      "params": [
+        {
+          "name": "run_id",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_approval_request",
+      "classification": "set",
+      "params": [
+        {
+          "name": "data_record",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_invoice",
+      "classification": "set",
+      "params": [
+        {
+          "name": "invoice_record",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_payment",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payment_record",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "execute_external_payment",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payment_request",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_payment",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payment_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "updates",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_invoice",
+      "classification": "set",
+      "params": [
+        {
+          "name": "invoice_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "updates",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_employee_pay",
+      "classification": "set",
+      "params": [
+        {
+          "name": "employee_pay_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "updates",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_dispute",
+      "classification": "set",
+      "params": [
+        {
+          "name": "dispute_record",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_dispute_status",
+      "classification": "set",
+      "params": [
+        {
+          "name": "dispute_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "new_status",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "submit_approval_decision",
+      "classification": "set",
+      "params": [
+        {
+          "name": "approval_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "decision",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "comments",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "performed_by",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "resolve_dispute",
+      "classification": "set",
+      "params": [
+        {
+          "name": "dispute_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "resolution",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": false,
+      "param_mismatch": {
+        "not_in_tools_info": true,
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    }
+  ]
+}

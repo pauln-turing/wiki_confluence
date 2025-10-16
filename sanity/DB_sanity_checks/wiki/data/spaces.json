@@ -1,0 +1,202 @@
+{
+  "1": {
+    "space_id": "1",
+    "space_key": "BEXI",
+    "space_name": "Revolutionize Cross-Media Deliverables",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "24",
+    "created_at": "2025-04-30 04:26:47",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "2": {
+    "space_id": "2",
+    "space_key": "DTHJ",
+    "space_name": "Monetize Proactive Solutions",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "35",
+    "created_at": "2025-07-10 08:21:57",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "3": {
+    "space_id": "3",
+    "space_key": "IRJO",
+    "space_name": "Enhance Plug-And-Play Technologies",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "37",
+    "created_at": "2025-02-14 11:58:15",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "4": {
+    "space_id": "4",
+    "space_key": "UANH",
+    "space_name": "Grow Next-Generation E-Services",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "26",
+    "created_at": "2025-09-25 02:19:14",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "5": {
+    "space_id": "5",
+    "space_key": "NNLF",
+    "space_name": "Reinvent Mission-Critical Systems",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "36",
+    "created_at": "2025-06-13 20:53:40",
+    "is_deleted": true,
+    "deleted_at": "2025-08-04 13:46:32"
+  },
+  "6": {
+    "space_id": "6",
+    "space_key": "BVDH",
+    "space_name": "Benchmark Viral Relationships",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "17",
+    "created_at": "2024-06-08 17:22:42",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "7": {
+    "space_id": "7",
+    "space_key": "JYQH",
+    "space_name": "Target Transparent Relationships",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "49",
+    "created_at": "2025-08-03 15:54:15",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "8": {
+    "space_id": "8",
+    "space_key": "QEMW",
+    "space_name": "Brand Scalable Architectures",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "28",
+    "created_at": "2025-07-03 17:47:47",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "9": {
+    "space_id": "9",
+    "space_key": "JTXJ",
+    "space_name": "Cultivate Cross-Platform Methodologies",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "26",
+    "created_at": "2025-09-25 02:19:14",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "10": {
+    "space_id": "10",
+    "space_key": "IQCE",
+    "space_name": "Utilize Plug-And-Play Supply-Chains",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "29",
+    "created_at": "2023-10-25 23:47:08",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "11": {
+    "space_id": "11",
+    "space_key": "XSHU",
+    "space_name": "Syndicate Bricks-And-Clicks Eyeballs",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "1",
+    "created_at": "2025-09-12 09:56:43",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "12": {
+    "space_id": "12",
+    "space_key": "XPNS",
+    "space_name": "Morph Virtual Synergies",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "10",
+    "created_at": "2023-12-22 07:52:33",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "13": {
+    "space_id": "13",
+    "space_key": "HWSP",
+    "space_name": "Mesh Killer Functionalities",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "20",
+    "created_at": "2024-02-22 10:13:13",
+    "is_deleted": true,
+    "deleted_at": "2024-04-27 17:21:48"
+  },
+  "14": {
+    "space_id": "14",
+    "space_key": "UYST",
+    "space_name": "Integrate Granular Supply-Chains",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "38",
+    "created_at": "2024-11-12 15:48:19",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "15": {
+    "space_id": "15",
+    "space_key": "VSBA",
+    "space_name": "Engage Integrated E-Tailers",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "31",
+    "created_at": "2025-04-04 02:56:49",
+    "is_deleted": true,
+    "deleted_at": "2025-08-22 17:36:05"
+  },
+  "16": {
+    "space_id": "16",
+    "space_key": "DSDN",
+    "space_name": "Syndicate Proactive Convergence",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "10",
+    "created_at": "2023-12-22 07:52:33",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "17": {
+    "space_id": "17",
+    "space_key": "ZUZL",
+    "space_name": "Architect Best-Of-Breed Relationships",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "13",
+    "created_at": "2025-05-02 11:20:04",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "18": {
+    "space_id": "18",
+    "space_key": "SZIH",
+    "space_name": "Integrate Best-Of-Breed Eyeballs",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "17",
+    "created_at": "2024-06-08 17:22:42",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "19": {
+    "space_id": "19",
+    "space_key": "EZQO",
+    "space_name": "Target Interactive Methodologies",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "16",
+    "created_at": "2023-11-19 16:33:17",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "20": {
+    "space_id": "20",
+    "space_key": "OEZV",
+    "space_name": "Brand E-Business Supply-Chains",
+    "space_purpose": "free-form-text",
+    "created_by_user_id": "18",
+    "created_at": "2024-03-01 13:58:28",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+}

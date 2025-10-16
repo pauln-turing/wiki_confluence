@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Sanity Report</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f7f7f7; color:#222; }
+        .status { font-weight: bold; padding: 3px 8px; border-radius: 4px; color: white; }
+        .PASS { background-color: #28a745; }
+        .FAIL { background-color: #dc3545; }
+
+        /* Sections */
+        h1 { margin-bottom: 0.25rem; }
+        #timestamp { color:#555; margin-top: 0.25rem; }
+
+        /* Summary cards */
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 10px 0 20px; }
+        .card { background:#fff; border:1px solid #e8e8e8; border-radius: 8px; padding:14px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+        .card .label { font-size: 12px; color:#666; text-transform: uppercase; letter-spacing: .03em; }
+        .card .value { font-size: 22px; font-weight: 700; margin-top: 6px; }
+
+        table.dataTable { background: #fff; }
+        table.dataTable thead th { background:#fafafa; }
+        .section { margin-top: 28px; }
+
+        /* Inline metric pills (unchanged container) */
+        .metrics { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+        .metric {
+        display:inline-flex; gap:6px; align-items:baseline; padding:4px 12px;
+        border-radius:9999px; font-size:12px; font-weight:600;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.08);
+        border:1px solid transparent;
+        }
+        .metric .label { text-transform:uppercase; letter-spacing:.03em; }
+
+        /* Prominent solid colors */
+        .metric.avg {
+        background:#2563eb;           /* blue-600 */
+        border-color:#1d4ed8;         /* blue-700 */
+        }
+        .metric.min {
+        background:#10b981;           /* emerald-500 */
+        border-color:#059669;         /* emerald-600 */
+        }
+        .metric.max {
+        background:#7c3aed;           /* violet-600 */
+        border-color:#6d28d9;         /* violet-700 */
+        }
+
+        /* White text for contrast */
+        .metric.avg .label, .metric.avg .value,
+        .metric.min .label, .metric.min .value,
+        .metric.max .label, .metric.max .value {
+        color:#fff;
+        }
+        .metric .label { opacity:.9; }  /* subtle hierarchy */
+        .metric .value { font-weight:800; font-size:14px; }
+
+
+    </style>
+</head>
+<body>
+
+<h1>Data Sanity Report</h1>
+<p id="timestamp"></p>
+
+<div class="section">
+    <h2>Table Checks</h2>
+    <table id="table-checks" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Table</th>
+                <th>Row Count</th>
+                <th>Check</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Relationship Checks</h2>
+    <table id="relationship-checks" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Relationship</th>
+                <th>Check</th>
+                <th>Status</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Generic Relationship Checks</h2>
+
+    <!-- Summary header for quick glance -->
+    <div id="generic-summary" class="summary-grid" aria-live="polite">
+        <!-- Cards will be injected -->
+    </div>
+
+    <table id="generic-relationship-checks" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Relationship</th>
+                <th>Check</th>
+                <th>Status</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Enum Checks</h2>
+    <table id="enum-checks" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Table</th>
+                <th>Check</th>
+                <th>Status</th>
+                <th>Invalid Values</th>
+                <th>Sample Keys</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+function renderMetricsPills(text) {
+  if (typeof text !== 'string') return text;
+  // Match "avg: 12.85; min: 5; max: 20;" (numbers vary; min/max optional)
+  const re = /avg:\s*([\d.]+)\s*;?\s*(?:min:\s*([\d.]+)\s*;?)?\s*(?:max:\s*([\d.]+)\s*;?)?/i;
+  const m = text.match(re);
+  if (!m) return text;
+
+  const [, avg, min, max] = m;
+  const pills = [];
+  if (avg) pills.push(`<span class="metric avg"><span class="label">avg</span><span class="value">${avg}</span></span>`);
+  if (min) pills.push(`<span class="metric min"><span class="label">min</span><span class="value">${min}</span></span>`);
+  if (max) pills.push(`<span class="metric max"><span class="label">max</span><span class="value">${max}</span></span>`);
+
+  return `<div class="metrics">${pills.join('')}</div>`;
+}
+fetch('sanity_report.json')
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById('timestamp').textContent = "Generated at: " + data.timestamp;
+
+        // ---------- Table checks ----------
+        const tableRows = [];
+        for (const tableName in data.tables) {
+            const info = data.tables[tableName];
+            (info.checks || []).forEach(check => {
+                const isBool = typeof check.result === "boolean";
+                const status = isBool ? (check.result ? "PASS" : "FAIL") : check.result;
+                const statusHTML = isBool
+                    ? `<span class="status ${status}">${status}</span>`
+                    : String(status);
+                tableRows.push([tableName, info.row_count, check.check, statusHTML]);
+            });
+        }
+        $('#table-checks').DataTable({ data: tableRows });
+
+        // ---------- Relationship checks (exclude generic) ----------
+        const relRows = [];
+        (data.relationships || []).forEach(rel => {
+        if (rel.kind === "generic") return; // skip; shown in its own section
+        const isBool = typeof rel.result === "boolean";
+        const status = isBool ? (rel.result ? "PASS" : "FAIL") : rel.result;
+        const statusHTML = isBool
+            ? `<span class="status ${status}">${status}</span>`
+            : String(rel.result);
+
+        const detailsObj = rel.details || {};
+        const detailText = Object.entries(detailsObj)
+            .map(([key, val]) =>
+            Array.isArray(val) ? `${key}: [${val.join(', ')}]` : `${key}: ${val}`
+            )
+            .join('; ');
+
+        // 👇 Use pills for this column
+        // For the specific “distribution” check, build the metrics string directly.
+        let detailHTML;
+        if (rel.check === "Children per parent (distribution)" && detailsObj) {
+            const a = detailsObj.avg ?? '';
+            const mi = detailsObj.min ?? '';
+            const ma = detailsObj.max ?? '';
+            detailHTML = renderMetricsPills(`avg: ${a}; min: ${mi}; max: ${ma};`);
+        } else {
+            detailHTML = renderMetricsPills(detailText);
+        }
+
+        relRows.push([rel.relationship, rel.check, statusHTML, detailHTML]);
+        });
+
+        $('#relationship-checks').DataTable({
+        data: relRows,
+        columnDefs: [{ targets: 3, orderable: false }] // optional
+        });
+
+        // ---------- Generic Relationship checks ----------
+        // Prefer the pre-filtered section; fall back to filtering if not present.
+        const genericList = Array.isArray(data.generic_relationships)
+            ? data.generic_relationships
+            : (data.relationships || []).filter(r => r.kind === "generic");
+
+        // Summary header
+        const summary = data.generic_fk_summary || {};
+        const cards = [
+            {label: 'Total Checks', value: summary.total_checks ?? genericList.length},
+            {label: 'Passes', value: summary.passes ?? genericList.filter(r => r.result === true).length},
+            {label: 'Fails', value: summary.fails ?? genericList.filter(r => r.result === false).length},
+            {label: 'Info Metrics', value: summary.info_metrics_count ?? genericList.filter(r => typeof r.result !== 'boolean').length},
+        ];
+        const summaryRoot = document.getElementById('generic-summary');
+        summaryRoot.innerHTML = cards.map(c => `
+            <div class="card">
+                <div class="label">${c.label}</div>
+                <div class="value">${c.value}</div>
+            </div>
+        `).join('');
+
+        const genRows = [];
+        genericList.forEach(rel => {
+            const isBool = typeof rel.result === "boolean";
+            const status = isBool ? (rel.result ? "PASS" : "FAIL") : rel.result;
+            const statusHTML = isBool
+                ? `<span class="status ${status}">${status}</span>`
+                : String(rel.result);
+
+            const detailsObj = rel.details || {};
+            const detailText = Object.entries(detailsObj)
+                .map(([key, val]) =>
+                    Array.isArray(val) ? `${key}: [${val.join(', ')}]` : `${key}: ${val}`
+                )
+                .join('; ');
+            const detailHTML = renderMetricsPills(detailText);
+            relRows.push([rel.relationship, rel.check, statusHTML, detailHTML]);
+            genRows.push([rel.relationship, rel.check, statusHTML, detailText]);
+        });
+        $('#generic-relationship-checks').DataTable({ data: genRows });
+
+        // ---------- Enum checks ----------
+        const enumRows = [];
+        for (const tableName in data.enum_tables) {
+            (data.enum_tables[tableName] || []).forEach(check => {
+                const status = check.result ? "PASS" : "FAIL";
+                const statusHTML = `<span class="status ${status}">${status}</span>`;
+
+                const invalids = (check.details && Array.isArray(check.details.invalid_values))
+                    ? check.details.invalid_values.join(', ')
+                    : '';
+
+                const samples = (check.details && Array.isArray(check.details.sample_keys))
+                    ? check.details.sample_keys.join(', ')
+                    : '';
+
+                enumRows.push([tableName, check.check, statusHTML, invalids, samples]);
+            });
+        }
+        $('#enum-checks').DataTable({ data: enumRows });
+    })
+    .catch(err => {
+        console.error("Failed to load sanity_report.json:", err);
+        document.getElementById('timestamp').textContent = "Failed to load sanity_report.json";
+    });
+</script>
+
+</body>
+</html>
