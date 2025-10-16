@@ -1,0 +1,262 @@
+{
+  "1": {
+    "history_id": "1",
+    "space_id": "1",
+    "changed_by_user_id": "45",
+    "changed_at": "2025-03-15 15:14:39",
+    "config_version": 2,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "2": {
+    "history_id": "2",
+    "space_id": "2",
+    "changed_by_user_id": "41",
+    "changed_at": "2025-05-18 21:56:16",
+    "config_version": 4,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "3": {
+    "history_id": "3",
+    "space_id": "3",
+    "changed_by_user_id": "10",
+    "changed_at": "2025-07-27 12:57:06",
+    "config_version": 3,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "4": {
+    "history_id": "4",
+    "space_id": "4",
+    "changed_by_user_id": "49",
+    "changed_at": "2025-04-02 21:50:09",
+    "config_version": 5,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "5": {
+    "history_id": "5",
+    "space_id": "5",
+    "changed_by_user_id": "27",
+    "changed_at": "2025-05-05 20:57:58",
+    "config_version": 3,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "6": {
+    "history_id": "6",
+    "space_id": "6",
+    "changed_by_user_id": "19",
+    "changed_at": "2025-06-18 08:25:09",
+    "config_version": 4,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "7": {
+    "history_id": "7",
+    "space_id": "7",
+    "changed_by_user_id": "38",
+    "changed_at": "2025-02-15 03:21:59",
+    "config_version": 4,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "8": {
+    "history_id": "8",
+    "space_id": "8",
+    "changed_by_user_id": "46",
+    "changed_at": "2025-07-06 14:25:49",
+    "config_version": 3,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "9": {
+    "history_id": "9",
+    "space_id": "9",
+    "changed_by_user_id": "10",
+    "changed_at": "2025-02-02 02:31:07",
+    "config_version": 5,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "10": {
+    "history_id": "10",
+    "space_id": "10",
+    "changed_by_user_id": "19",
+    "changed_at": "2025-04-15 14:46:16",
+    "config_version": 2,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "11": {
+    "history_id": "11",
+    "space_id": "11",
+    "changed_by_user_id": "42",
+    "changed_at": "2024-12-18 03:55:17",
+    "config_version": 5,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "12": {
+    "history_id": "12",
+    "space_id": "12",
+    "changed_by_user_id": "44",
+    "changed_at": "2025-07-18 17:33:58",
+    "config_version": 5,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "13": {
+    "history_id": "13",
+    "space_id": "13",
+    "changed_by_user_id": "40",
+    "changed_at": "2025-04-21 05:45:40",
+    "config_version": 5,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "14": {
+    "history_id": "14",
+    "space_id": "14",
+    "changed_by_user_id": "48",
+    "changed_at": "2025-01-09 12:41:55",
+    "config_version": 5,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "15": {
+    "history_id": "15",
+    "space_id": "15",
+    "changed_by_user_id": "27",
+    "changed_at": "2025-08-23 21:50:12",
+    "config_version": 1,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "16": {
+    "history_id": "16",
+    "space_id": "16",
+    "changed_by_user_id": "22",
+    "changed_at": "2025-05-29 16:22:57",
+    "config_version": 2,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "17": {
+    "history_id": "17",
+    "space_id": "17",
+    "changed_by_user_id": "2",
+    "changed_at": "2024-12-03 17:22:43",
+    "config_version": 3,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "18": {
+    "history_id": "18",
+    "space_id": "18",
+    "changed_by_user_id": "25",
+    "changed_at": "2025-05-30 03:28:45",
+    "config_version": 5,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "19": {
+    "history_id": "19",
+    "space_id": "19",
+    "changed_by_user_id": "32",
+    "changed_at": "2025-02-27 22:19:30",
+    "config_version": 3,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  },
+  "20": {
+    "history_id": "20",
+    "space_id": "20",
+    "changed_by_user_id": "30",
+    "changed_at": "2025-01-28 01:52:27",
+    "config_version": 4,
+    "old_config": {
+      "content": "free-form-text"
+    },
+    "new_config": {
+      "content": "free-form-text"
+    }
+  }
+}

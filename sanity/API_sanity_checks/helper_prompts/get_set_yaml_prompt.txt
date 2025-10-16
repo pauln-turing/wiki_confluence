@@ -1,0 +1,93 @@
+You are given API documentation containing multiple APIs, it can contain one ore more fields like these:
+
+* **API Name** 
+* **Signature** 
+* **Returns** 
+* A category: either **Get APIs** or **Set APIs**
+
+Your task is to produce a YAML file in the following structure:
+
+```yaml
+interface_x:
+  set:
+    - <list of all Set API names from the provided documentation>
+  get:
+    - <list of all Get API names from the provided documentation>
+```
+interface_x can be interface_1 to interface_5 depending on the API documentation.
+
+**Rules:**
+
+1. If the API name given to you says "AddDevice" you have to use "add_device"
+2. Group all APIs under `set` if they are in the **Set APIs** section.
+3. Group all APIs under `get` if they are in the **Get APIs** section.
+4. Keep the YAML indentation exactly 2 spaces per level.
+5. The output should be **pure YAML only**, without explanations or extra text.
+6. Output should be enclosed in code block i,e within ```yaml ```
+
+**Example:**
+
+If given:
+
+Get APIs
+
+ get_address
+ get_commands
+
+Set APIs
+
+acknowledge_or_resolve_alert
+
+Then the output should be:
+
+```yaml
+interface_1:
+  set:
+    - acknowledge_or_resolve_alert
+  get:
+    - get_address
+    - get_commands
+```
+
+Tool Name,Description,Type
+query_table,Read-only discovery of entities using filters.,Getter
+get_employee,Retrieve a single employee record by ID.,Getter
+get_vendor,Retrieve a single vendor record by ID.,Getter
+get_department,Retrieve a single department record by ID.,Getter
+get_payroll_run,Retrieve a single payroll run record by ID.,Getter
+get_employee_pay,Retrieve a single employee pay record by ID.,Getter
+get_invoice,Retrieve a single invoice record by ID.,Getter
+get_order,Retrieve a single order record by ID.,Getter
+get_payment,Retrieve a single payment record by ID.,Getter
+get_approval_request,Retrieve a single approval request by ID.,Getter
+get_dispute,Retrieve a single dispute record by ID.,Getter
+get_offboarding_request,Retrieve a single offboarding request by ID.,Getter
+get_audit_entries_for_entity,Retrieve audit entries for a specific entity.,Getter
+get_onboarding_request,Retrieve a single onboarding request by ID.,Getter
+add_audit_log_entry,Write an audit log entry for any action in the system.,Setter
+create_employee,Create a new employee record.,Setter
+update_onboarding_request,Update an existing onboarding request record.,Setter
+create_vendor,Create a new vendor profile.,Setter
+create_offboarding_request,Create a new offboarding request record.,Setter
+update_employee,Update an existing employee record.,Setter
+update_offboarding_request,Update an existing offboarding request record.,Setter
+update_vendor,Update an existing vendor record.,Setter
+create_payroll_run,Create a new payroll run.,Setter
+query_employees,Query a list of employees based on filters.,Getter
+generate_employee_pays,Generate employee pay records in a batch.,Setter
+create_approval_request,Create a new approval request.,Setter
+create_invoice,Create a new invoice record.,Setter
+create_payment,Create a new payment record.,Setter
+execute_external_payment,Simulate or execute an external payment.,Setter
+update_payment,Update an existing payment record.,Setter
+update_invoice,Update an existing invoice record.,Setter
+update_employee_pay,Update an existing employee pay record.,Setter
+create_dispute,Create a new dispute record.,Setter
+update_dispute_status,Update the status of an existing dispute record.,Setter
+get_pending_approvals,Retrieve a list of pending approval requests.,Getter
+submit_approval_decision,Submit a decision for a pending approval request.,Setter
+
+
+
+
+

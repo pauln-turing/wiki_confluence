@@ -1,0 +1,111 @@
+enums:
+  users:
+    global_role:
+      - global_admin
+      - space_admin
+      - space_member
+      - anonymous
+      - reviewer_approver
+      - guest
+      - project_team_admin
+      - content_contributor
+  space_memberships:
+    role:
+      - global_admin
+      - space_admin
+      - space_member
+      - anonymous
+      - reviewer_approver
+      - guest
+      - project_team_admin
+      - content_contributor
+  permissions:
+    permission_type:
+      - view
+      - edit
+      - admin
+  space_features:
+    feature_type:
+      - live_docs
+      - calendars
+      - whiteboard
+      - databases
+      - smart_links
+      - folders
+      - blogs
+  pages:
+    content_format:
+      - markdown
+      - html
+      - richtext
+    state:
+      - draft
+      - published
+      - archived
+  export_jobs:
+    status:
+      - pending
+      - running
+      - completed
+      - failed
+      - cancelled
+    format:
+      - PDF
+      - HTML
+      - XML
+  audit_logs:
+    action_type:
+      - create_space
+      - update_space
+      - delete_space
+      - manage_permissions
+      - grant_admin_rights
+      - configure_settings
+      - export_space
+      - import_space
+      - create_page
+      - update_page
+      - delete_page
+      - move_page
+      - rename_page
+      - add_comment
+      - add_label
+      - restore_version
+      - clone_page
+      - unpublish_page
+      - add_restriction
+      - remove_restriction
+      - archive_content
+      - add_attachment
+      - remove_attachment
+      - watch_content
+      - unwatch_content
+  notifications:
+    channel:
+      - system
+      - email
+    delivery_status:
+      - pending
+      - sent
+      - failed
+      - read
+  approval_requests:
+    status:
+      - pending
+      - in_review
+      - approved
+      - rejected
+      - cancelled
+  approval_steps:
+    status:
+      - pending
+      - in_review
+      - approved
+      - rejected
+      - cancelled
+  approval_decisions:
+    decision:
+      - approve
+      - reject
+      - escalate
+      - cancel

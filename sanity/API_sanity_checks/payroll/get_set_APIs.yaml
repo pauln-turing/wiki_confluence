@@ -1,0 +1,39 @@
+interface_1:
+  set:
+    - add_audit_logs_entry
+    - create_employee
+    - update_onboarding_request
+    - create_vendor
+    - create_offboarding_request
+    - update_employee
+    - update_offboarding_request
+    - update_vendor
+    - create_payroll_run
+    - generate_employee_pays
+    - create_approval_request
+    - create_invoice
+    - create_payment
+    - execute_external_payment
+    - update_payment
+    - update_invoice
+    - update_employee_pay
+    - create_dispute
+    - update_dispute_status
+    - submit_approval_decision
+    - resolve_dispute
+  get:
+    - query_table
+    - get_employee
+    - get_vendor
+    - get_department
+    - get_payroll_run
+    - get_employee_pay
+    - get_invoice
+    - get_order
+    - get_payment
+    - get_approval_request
+    - get_dispute
+    - get_offboarding_request
+    - get_audit_entries_for_entity
+    - get_onboarding_request
+    - get_pending_approvals

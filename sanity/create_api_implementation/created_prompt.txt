@@ -1,0 +1,799 @@
+
+I have a set of tools that I use to interact with a DB in a json format. These tools allow me to perform various operations such as creating, reading, updating, and deleting records in the database. Those tools are functions that take parameters and return a value in json format.
+Your task is to create for me the tools. Each tool is a class that comprises of two functions: one for the implementation of the tool and another for the schema of the tool. The implementation function should return a json string that represents the result of the operation, while the schema function should return a dictionary that describes the parameters and their types. The schema function should also include a description of the tool and its parameters. I will provide you with examples of tools with their implementations and schemas, and you should use them as a reference to create your own tools. Also, I will provide the database schema for you to use as a reference for the parameters and their types.
+
+# Database schema:
+CREATE TABLE `homes` (
+  `home_id` integer PRIMARY KEY,
+  `owner_id` integer,
+  `address_id` integer,
+  `home_type` enum(Home,Apartment),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `users` (
+  `user_id` integer PRIMARY KEY,
+  `first_name` varchar(255),
+  `last_name` varchar(255),
+  `phone_number` varchar(255),
+  `role` enum(Owner,Partner,Child,Guest,Servant),
+  `parent_id` integer,
+  `email` varchar(255),
+  `primary_address_id` integer,
+  `date_of_birth` date,
+  `status` enum(active,inactive),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `rooms` (
+  `room_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `room_type` enum(Bedroom,kitchen,lounge,store,diningroom),
+  `room_owner_id` integer,
+  `status` enum(vacant,occupied),
+  `width_ft` float,
+  `length_ft` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `devices` (
+  `device_id` integer PRIMARY KEY,
+  `device_type` enum(camera,bulb,thermostat,speaker,tv,refrigerator,oven),
+  `room_id` integer,
+  `installed_on` date,
+  `insurance_expiry_date` date,
+  `home_id` integer,
+  `status` enum(on,off),
+  `width_ft` float,
+  `length_ft` float,
+  `price` float,
+  `scheduled_maintainance_date` date,
+  `last_maintainance_date` date,
+  `daily_rated_power_consumption_kWh` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `historical_energy_consumption` (
+  `consumption_id` integer PRIMARY KEY,
+  `device_id` integer,
+  `home_id` integer,
+  `room_id` integer,
+  `date` date,
+  `power_used_kWh` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `automated_routines` (
+  `routine_id` integer PRIMARY KEY,
+  `user_id` integer,
+  `home_id` integer,
+  `start_action_date` date,
+  `action_time` timestamp,
+  `action_interval` enum(daily,one_time,every_hour),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `device_commands` (
+  `device_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `status` enum(on,off),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `bulb_commands` (
+  `bulb_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `brightness_level` enum(dim,half,full),
+  `color` enum(red,white,yellow,blue),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `thermostat_commands` (
+  `thermostat_command_id` integer PRIMARY KEY,
+  `routine_id` integer,
+  `device_id` integer,
+  `current_temperature` float,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `security_cameras` (
+  `device_id` integer PRIMARY KEY,
+  `resolution` enum(720p,1080p,2k),
+  `last_activity_timestamp` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `smart_thermostats` (
+  `device_id` integer PRIMARY KEY,
+  `current_temperate` float,
+  `lowest_rated_temeprature` float,
+  `highest_rated_temeprature` float,
+  `last_adjustment_time` timestamp,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `smart_bulbs` (
+  `device_id` integer PRIMARY KEY,
+  `brightness_level` enum(dim,half,full),
+  `color` enum(red,white,yellow,blue),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `user_feedbacks` (
+  `user_feedback_id` inetger PRIMARY KEY,
+  `user_id` integer,
+  `device_id` integer,
+  `rating` integer,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `addresses` (
+  `address_id` integer PRIMARY KEY,
+  `house_number` varchar(255),
+  `building_name` varchar(255),
+  `street` varchar(255),
+  `city_name` varchar(255),
+  `state` varchar(255),
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+CREATE TABLE `emergency_alerts` (
+  `alert_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `device_id` integer,
+  `alert_type` enum(camera_motion_detected,camera_offline,bulb_malfunction,thermostat_temperature_alert,thermostat_offline,speaker_offline,tv_malfunction,refrigerator_temperature_alert,refrigerator_malfunction,oven_overheating,oven_malfunction),
+  `severity_level` enum(low,medium,high,critical),
+  `triggered_at` timestamp,
+  `acknowledged_at` timestamp,
+  `acknowledged_by_user` int,
+  `resolved_at` timestamp,
+  `resolved_by_user` int,
+  `created_at` timestamp
+);
+
+CREATE TABLE `energy_tariffs` (
+  `tariff_id` integer PRIMARY KEY,
+  `home_id` integer,
+  `tariff_name` varchar(255),
+  `rate_per_kWh` float,
+  `peak_hours_start` time,
+  `peak_hours_end` time,
+  `peak_rate_multiplier` float,
+  `effective_from` date,
+  `effective_until` date,
+  `created_at` timestamp,
+  `updated_at` timestamp
+);
+
+ALTER TABLE `homes` ADD FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`);
+
+ALTER TABLE `users` ADD FOREIGN KEY (`parent_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `users` ADD FOREIGN KEY (`primary_address_id`) REFERENCES `addresses` (`address_id`);
+
+ALTER TABLE `device_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
+
+ALTER TABLE `device_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `bulb_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
+
+ALTER TABLE `bulb_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `thermostat_commands` ADD FOREIGN KEY (`routine_id`) REFERENCES `automated_routines` (`routine_id`);
+
+ALTER TABLE `thermostat_commands` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `user_feedbacks` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `user_feedbacks` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `room_device_historical` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`room_id`);
+
+ALTER TABLE `security_cameras` ADD CONSTRAINT `security_cameras_device` FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `devices` ADD CONSTRAINT `smart_bulb_device` FOREIGN KEY (`device_id`) REFERENCES `smart_bulbs` (`device_id`);
+
+ALTER TABLE `devices` ADD CONSTRAINT `smart_thermostats_device` FOREIGN KEY (`device_id`) REFERENCES `smart_thermostats` (`device_id`);
+
+ALTER TABLE `homes` ADD CONSTRAINT `home_users` FOREIGN KEY (`owner_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `homes` ADD CONSTRAINT `home_rooms` FOREIGN KEY (`home_id`) REFERENCES `rooms` (`home_id`);
+
+ALTER TABLE `devices` ADD CONSTRAINT `device_rooms` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`room_id`);
+
+ALTER TABLE `devices` ADD CONSTRAINT `device_homes` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `historical_consumption_devices` FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `historical_energy_consumption` ADD CONSTRAINT `historical_consumption_homes` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+ALTER TABLE `automated_routines` ADD CONSTRAINT `routines_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `automated_routines` ADD CONSTRAINT `routines_home_id` FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+ALTER TABLE `rooms` ADD CONSTRAINT `room_owner_id_user` FOREIGN KEY (`room_owner_id`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`device_id`) REFERENCES `devices` (`device_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`acknowledged_by_user`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `emergency_alerts` ADD FOREIGN KEY (`resolved_by_user`) REFERENCES `users` (`user_id`);
+
+ALTER TABLE `energy_tariffs` ADD FOREIGN KEY (`home_id`) REFERENCES `homes` (`home_id`);
+
+
+# Examples of a tool implementation and schema:
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+
+class AddIncidentComment(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], incident_id: str, user_id: str, 
+               comment_text: str, is_public: bool = True) -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        incidents = data.get("incidents", {})
+        users = data.get("users", {})
+        comments = data.get("incident_comments", {})
+        
+        # Validate incident exists
+        if str(incident_id) not in incidents:
+            raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate user exists
+        if str(user_id) not in users:
+            raise ValueError(f"User {user_id} not found")
+        
+        comment_id = generate_id(comments)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_comment = {
+            "incident_comment_id": comment_id,
+            "incident_id": incident_id,
+            "user_id": user_id,
+            "comment_text": comment_text,
+            "is_public": is_public,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+        
+        comments[str(comment_id)] = new_comment
+        return json.dumps(new_comment)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "add_incident_comment",
+                "description": "Add a comment to an incident",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "incident_id": {"type": "string", "description": "ID of the incident"},
+                        "user_id": {"type": "string", "description": "ID of the user adding the comment"},
+                        "comment_text": {"type": "string", "description": "Text of the comment"},
+                        "is_public": {"type": "boolean", "description": "Whether the comment is public or private"}
+                    },
+                    "required": ["incident_id", "user_id", "comment_text"]
+                }
+            }
+        }
+
+
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class CreateIncidentTask(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], incident_id: str, description: str,
+               assigned_to: str, priority: str = "medium", 
+               due_date: Optional[str] = None, status: str = "todo") -> str:
+        
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        incidents = data.get("incidents", {})
+        users = data.get("users", {})
+        tasks = data.get("tasks", {})
+        
+        # Validate incident exists
+        if str(incident_id) not in incidents:
+            raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate assigned user exists
+        if str(assigned_to) not in users:
+            raise ValueError(f"Assigned user {assigned_to} not found")
+        
+        # Validate priority
+        valid_priorities = ["low", "medium", "high", "critical"]
+        if priority not in valid_priorities:
+            raise ValueError(f"Invalid priority. Must be one of {valid_priorities}")
+        
+        # Validate status
+        valid_statuses = ["todo", "in_progress", "blocked", "done", "cancelled"]
+        if status not in valid_statuses:
+            raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+        
+        task_id = generate_id(tasks)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_task = {
+            "task_id": task_id,
+            "incident_id": incident_id,
+            "description": description,
+            "assigned_to": assigned_to,
+            "status": status,
+            "priority": priority,
+            "due_date": due_date,
+            "created_at": timestamp,
+            "updated_at": timestamp
+        }
+        
+        tasks[str(task_id)] = new_task
+        return json.dumps({"task_id": task_id})
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "create_incident_task",
+                "description": "Create a new task for an incident",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "incident_id": {"type": "string", "description": "ID of the incident"},
+                        "description": {"type": "string", "description": "Task description"},
+                        "assigned_to": {"type": "string", "description": "ID of the user assigned to the task"},
+                        "priority": {"type": "string", "description": "Task priority (low, medium, high, critical), defaults to medium"},
+                        "due_date": {"type": "string", "description": "Due date in ISO format (optional)"},
+                        "status": {"type": "string", "description": "Task status (todo, in_progress, blocked, done, cancelled), defaults to todo"}
+                    },
+                    "required": ["incident_id", "description", "assigned_to"]
+                }
+            }
+        }
+
+
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class GetIncidentTasks(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], incident_id: int, assigned_to: Optional[int] = None,
+               status: Optional[str] = None) -> str:
+        tasks = data.get("tasks", {})
+        results = []
+        
+        for task in tasks.values():
+            if task.get("incident_id") != incident_id:
+                continue
+            if assigned_to and task.get("assigned_to") != assigned_to:
+                continue
+            if status and task.get("status") != status:
+                continue
+            results.append(task)
+        
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "get_incident_tasks",
+                "description": "Get tasks for a specific incident",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "incident_id": {"type": "integer", "description": "ID of the incident"},
+                        "assigned_to": {"type": "integer", "description": "Filter by assigned user ID"},
+                        "status": {"type": "string", "description": "Filter by task status (todo, in_progress, blocked, done, cancelled)"}
+                    },
+                    "required": ["incident_id"]
+                }
+            }
+        }
+
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class SearchUsers(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], company_id: Optional[str] = None, 
+               department_id: Optional[str] = None, role: Optional[str] = None,
+               status: Optional[str] = None, email: Optional[str] = None) -> str:
+        users = data.get("users", {})
+        results = []
+        
+        for user in users.values():
+            if company_id and user.get("company_id") != company_id:
+                continue
+            if department_id and user.get("department_id") != department_id:
+                continue
+            if role and user.get("role") != role:
+                continue
+            if status and user.get("status") != status:
+                continue
+            if email and user.get("email", "").lower() != email.lower():
+                continue
+            results.append(user)
+        
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "search_users",
+                "description": "Search users with optional filters",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "company_id": {"type": "string", "description": "Filter by company ID"},
+                        "department_id": {"type": "string", "description": "Filter by department ID"},
+                        "role": {"type": "string", "description": "Filter by role (end_user, agent, manager, admin)"},
+                        "status": {"type": "string", "description": "Filter by status (active, inactive)"},
+                        "email": {"type": "string", "description": "Filter by email address"}
+                    },
+                    "required": []
+                }
+            }
+        }
+
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class LinkIncidentToKb(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], incident_id: str, knowledge_base_id: str) -> str:
+        def generate_id(table: Dict[str, Any]) -> int:
+            if not table:
+                return 1
+            return max(int(k) for k in table.keys()) + 1
+        
+        incidents = data.get("incidents", {})
+        kb_articles = data.get("knowledge_base", {})
+        incident_knowledge = data.get("incident_knowledge", {})
+        
+        # Validate incident exists
+        if str(incident_id) not in incidents:
+            raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate KB article exists
+        if str(knowledge_base_id) not in kb_articles:
+            raise ValueError(f"Knowledge base article {knowledge_base_id} not found")
+        
+        # Check if link already exists
+        for link in incident_knowledge.values():
+            if (link.get("incident_id") == incident_id and 
+                link.get("knowledge_base_id") == knowledge_base_id):
+                return json.dumps({"status": "already_linked"})
+        
+        link_id = generate_id(incident_knowledge)
+        timestamp = "2025-10-01T00:00:00"
+        
+        new_link = {
+            "incident_id": incident_id,
+            "knowledge_base_id": knowledge_base_id,
+            "created_at": timestamp
+        }
+        
+        incident_knowledge[str(link_id)] = new_link
+        return json.dumps(new_link)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "link_incident_to_kb",
+                "description": "Link an incident to a knowledge base article",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "incident_id": {"type": "string", "description": "ID of the incident"},
+                        "knowledge_base_id": {"type": "string", "description": "ID of the knowledge base article"}
+                    },
+                    "required": ["incident_id", "knowledge_base_id"]
+                }
+            }
+        }
+
+import json
+from typing import Any, Dict
+from tau_bench.envs.tool import Tool
+
+class SearchDepartments(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], company_id: Optional[str] = None, 
+               manager_id: Optional[str] = None, name: Optional[str] = None) -> str:
+        departments = data.get("departments", {})
+        results = []
+        
+        for department in departments.values():
+            if company_id and department.get("company_id") != company_id:
+                continue
+            if manager_id and department.get("manager_id") != manager_id:
+                continue
+            if name and name.lower() not in department.get("name", "").lower():
+                continue
+            results.append(department)
+        
+        return json.dumps(results)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "search_departments",
+                "description": "Retrieves departments that match the specified filters",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "company_id": {"type": "string", "description": "Filter by company ID"},
+                        "manager_id": {"type": "string", "description": "Filter by manager ID"},
+                        "name": {"type": "string", "description": "Filter by department name (partial match)"}
+                    },
+                    "required": []
+                }
+            }
+        }
+
+import json
+from typing import Any, Dict, Optional
+from tau_bench.envs.tool import Tool
+
+class UpdateIncident(Tool):
+    @staticmethod
+    def invoke(data: Dict[str, Any], incident_id: str, title: Optional[str] = None,
+               description: Optional[str] = None, status: Optional[str] = None,
+               priority: Optional[str] = None, assigned_to: Optional[str] = None,
+               category_id: Optional[str] = None, subcategory_id: Optional[str] = None) -> str:
+        incidents = data.get("incidents", {})
+        incident = incidents.get(str(incident_id))
+        
+        if not incident:
+            raise ValueError(f"Incident {incident_id} not found")
+        
+        # Validate status if provided
+        if status:
+            valid_statuses = ["open", "in_progress", "resolved", "closed"]
+            if status not in valid_statuses:
+                raise ValueError(f"Invalid status. Must be one of {valid_statuses}")
+        
+        # Validate priority if provided
+        if priority:
+            valid_priorities = ["low", "medium", "high", "critical"]
+            if priority not in valid_priorities:
+                raise ValueError(f"Invalid priority. Must be one of {valid_priorities}")
+        
+        # Validate assigned user if provided
+        if assigned_to:
+            users = data.get("users", {})
+            if str(assigned_to) not in users:
+                raise ValueError(f"Assigned user {assigned_to} not found")
+        
+        # Validate category if provided
+        if category_id:
+            categories = data.get("categories", {})
+            if str(category_id) not in categories:
+                raise ValueError(f"Category {category_id} not found")
+        
+        # Validate subcategory if provided
+        if subcategory_id:
+            subcategories = data.get("subcategories", {})
+            if str(subcategory_id) not in subcategories:
+                raise ValueError(f"Subcategory {subcategory_id} not found")
+        
+        # Update fields
+        if title is not None:
+            incident["title"] = title
+        if description is not None:
+            incident["description"] = description
+        if status is not None:
+            incident["status"] = status
+        if priority is not None:
+            incident["priority"] = priority
+        if assigned_to is not None:
+            incident["assigned_to"] = assigned_to
+        if category_id is not None:
+            incident["category_id"] = category_id
+        if subcategory_id is not None:
+            incident["subcategory_id"] = subcategory_id
+        
+        incident["updated_at"] = "2025-10-01T00:00:00"
+        return json.dumps(incident)
+
+    @staticmethod
+    def get_info() -> Dict[str, Any]:
+        return {
+            "type": "function",
+            "function": {
+                "name": "update_incident",
+                "description": "Update an existing incident",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "incident_id": {"type": "string", "description": "ID of the incident to update"},
+                        "title": {"type": "string", "description": "New title"},
+                        "description": {"type": "string", "description": "New description"},
+                        "status": {"type": "string", "description": "New status (open, in_progress, resolved, closed)"},
+                        "priority": {"type": "string", "description": "New priority (low, medium, high, critical)"},
+                        "assigned_to": {"type": "string", "description": "New assigned user ID"},
+                        "category_id": {"type": "string", "description": "New category ID"},
+                        "subcategory_id": {"type": "string", "description": "New subcategory ID"}
+                    },
+                    "required": ["incident_id"]
+                }
+            }
+        }
+
+
+
+# Required tools:
+Interface 1
+
+
+API Name
+Signature
+Returns
+Description
+
+acknowledge_or_resolve_alert
+acknowledge_or_resolve_alert(alert_id: str, optional: acknowledged_at: str, optional: acknowledged_by_user: str, optional: resolved_at: str, optional: resolved_by_user: str)
+{"alert_id": str, "home_id": str, ...} (updated alert record as JSON)
+Acknowledges or resolves an emergency alert by updating its timestamps and users
+
+add_command
+add_command(device_type: str, routine_id: str, device_id: str, device_status: str, optional: bulb_brightness_level: str, optional: bulb_color: str)
+{"success": True}
+Adds a command to a device; if it's a bulb, adds brightness and color commands too
+
+add_feedback
+add_feedback(user_id: str, device_id: str, rating: int)
+{"user_feedback_id": str, "success": True}
+Adds user feedback (rating) for a device
+
+create_address
+create_address(house_number: str, building_name: str, street: str, city_name: str, state: str)
+{"address_id": str, "success": True}
+Creates a new address entry in the system
+
+create_emergency_alert
+create_emergency_alert(home_id: str, device_id: str, alert_type: str, severity_level: str, triggered_at: str)
+{"alert_id": str, "success": True}
+Creates a new emergency alert for a device in a home
+
+get_address
+get_address(optional: address_id: str, optional: house_number: str, optional: building_name: str, optional: street: str, optional: city_name: str, optional: state: str)
+[{"address_id": str, "house_number": str, "building_name": str, ...}]
+Retrieves address records matching the provided fields
+
+get_commands
+get_commands(optional: routine_id: str, optional: device_id: str)
+[{"command_type": str, "command_id": str, "routine_id": str, ...}]
+Retrieves commands from various tables based on routine/device filters
+
+create_routine
+create_routine(user_id: int, home_id: int, action_time: str, start_action_date: str, action_interval: str)
+{"routine_id": str, "success": True}
+Creates a new automated routine for a user at a specific home
+
+get_emergency_alerts
+get_emergency_alerts(optional: home_id: str, optional: device_id: str, optional: alert_type: str, optional: severity_level: str, optional: resolved_by_user: str, optional: acknowledged_by_user: str)
+[{"home_id": str, "device_id": str, "alert_type": str, ...}]
+Returns alerts filtered by home, device, alert type, severity, or user IDs
+
+get_historical_energy_consumption_by_device
+get_historical_energy_consumption_by_device(device_id: str, optional: date: str, optional: month: int)
+{"total_power_used_kWh": float}
+Returns device’s estimated energy usage using weighted dates or averages
+
+update_device_info
+update_device_info(device_id: str, optional: room_id: str, optional: installed_on: str, optional: insurance_expiry_date: str, optional: home_id: str, optional: status: str, optional: width_ft: float, optional: length_ft: float, optional: price: float, optional: scheduled_maintainance_date: str, optional: last_maintainance_date: str, optional: daily_rated_power_consumption_kWh: float, optional: brightness_level: str, optional: color: str)
+{"device_id": str, ..., "brightness_level": str, "color": str}
+Updates a device’s attributes; also updates smart bulb info if applicable
+
+update_room_info
+update_room_info(room_id: str, optional: room_owner_id: str, optional: status: str)
+{"room_id": str, "status": str, "room_owner_id": str}
+Updates room owner or status; assigning owner auto-occupies room
+
+update_user_info
+update_user_info(user_id: str, optional: first_name: str, optional: last_name: str, optional: phone_number: str, optional: role: str, optional: email: str, optional: primary_address_id: str)
+{"user_id": str, "first_name": str, ..., "updated_at": str}
+Updates user record fields by user_id if provided
+
+add_device
+add_device(device_type: str, room_id: str, home_id: str, width_ft: float, length_ft: float, price: float, daily_rated_power_consumption_kWh: float, optional: brightness_level: str, optional: color: str, optional: insurance_expiry_date: str)
+{"device_id": str, "success": True}
+Adds a new device; if a bulb, also creates smart bulb entry
+
+get_devices_info
+get_devices_info(optional: device_id: str, optional: room_id: str, optional: device_type: str, optional: status: str)
+[{"device_id": str, "device_type": str, ..., "brightness_level": str, "color": str}]
+Retrieves device info based on filters; adds bulb info if applicable
+
+get_energy_tariffs_info
+get_energy_tariffs_info(home_id: str)
+[{"home_id": str, "tariff_name": str, "price_per_kWh": float, ...}]
+Fetches all energy tariff records for the given home ID
+
+get_home_info
+get_home_info(optional: home_id: str, optional: owner_id: str, optional: address_id: str)
+[{"home_id": str, "owner_id": str, "num_residents": int, "num_rooms_occupied": int, ...}]
+Retrieves home info, optionally filtered, with resident and room occupancy stats
+
+get_rooms_info
+get_rooms_info(optional: room_id: str, optional: home_id: str)
+[{"room_id": str, "home_id": str, "room_type": str, "room_owner_id": str, "status": str, ...}]
+Fetches room records filtered by room_id or home_id
+
+get_routines
+get_routines(optional: routine_id: str, optional: user_id: str, optional: home_id: str, optional: action_time: str, optional: action_interval: str, optional: start_action_date: str)
+[{"routine_id": str, "user_id": str, "home_id": str, "action_time": str, ...}]
+Retrieves automated routines based on various optional filters
+
+get_user_info
+get_user_info(optional: user_id: str, optional: phone_number: str, optional: email: str)
+[{"user_id": str, "first_name": str, "email": str, "role": str, ...}]
+Retrieves user records by user_id, phone, or email with case-insensitive/suffix matching
+
+update_home_info
+update_home_info(home_id: str, optional: owner_id: str, optional: address_id: str, optional: home_type: str)
+{"home_id": str, "owner_id": str, "address_id": str, "home_type": str, "updated_at": str}
+Updates a home’s owner, address, or type if provided
+
+list_children
+list_children(parent_id: str)
+[{"user_id": str, "parent_id": str, "first_name": str, ...}]
+Lists all users whose parent_id matches the given one
+
+
+
+
+Please create the tools based on the examples and the database schema. 
+
+Notes: 
+- assign this timestamp to the created_at and updated_at fields: "2025-10-01T00:00:00".
+- All IDs are strings, not integers.
+- Use the generate_id function to generate unique IDs for the records.
+- Each tool should have its own imports and utility functions without being shared across tools.
+- The tools should be implemented in a way that they can be used independently.
+
+Your generated tools should be in a bash script that can be executed to create them in files that hold the same name as the class name. Each file should contain the class definition and its methods. The files should be named as follows: {tool_name}.py, where {tool_name} is the name of the tool class. Take care that all names should be in snake_case format.
+    
