@@ -1,0 +1,262 @@
+{
+  "1": {
+    "history_id": "1",
+    "space_id": "1",
+    "changed_by_user_id": "45",
+    "changed_at": "2025-03-15 15:14:39",
+    "config_version": 2,
+    "old_config": {
+      "content": "Configuration prior to version 2 for space 'Project Unify: Q4 Brand Campaign' [BEXI] — maintained by Ashley Hammond. Space purpose: To align all marketing and content efforts for our upcoming quarterly brand launch across digital, print, and video platforms."
+    },
+    "new_config": {
+      "content": "Version 2 applied on 2025-03-15 15:14:39 by Ashley Hammond. Active features: calendars, folders, live_docs, smart_links. Disabled features: databases."
+    }
+  },
+  "2": {
+    "history_id": "2",
+    "space_id": "2",
+    "changed_by_user_id": "41",
+    "changed_at": "2025-05-18 21:56:16",
+    "config_version": 4,
+    "old_config": {
+      "content": "Configuration prior to version 4 for space 'Pathfinder: New Subscription Models' [DTHJ] — maintained by Donald Phillips. Space purpose: To research, develop, and test new tiered subscription services for our enterprise clients."
+    },
+    "new_config": {
+      "content": "Version 4 applied on 2025-05-18 21:56:16 by Donald Phillips. Active features: blogs, databases, live_docs, smart_links. Disabled features: whiteboard."
+    }
+  },
+  "3": {
+    "history_id": "3",
+    "space_id": "3",
+    "changed_by_user_id": "10",
+    "changed_at": "2025-07-27 12:57:06",
+    "config_version": 3,
+    "old_config": {
+      "content": "Configuration prior to version 3 for space 'API Integration Hub' [IRJO] — maintained by Nicholas Knight. Space purpose: A central space for the API team to manage documentation, track partner integrations, and refine our public SDKs."
+    },
+    "new_config": {
+      "content": "Version 3 applied on 2025-07-27 12:57:06 by Nicholas Knight. Active features: blogs, calendars, folders, live_docs, smart_links, whiteboard. Disabled features: databases."
+    }
+  },
+  "4": {
+    "history_id": "4",
+    "space_id": "4",
+    "changed_by_user_id": "49",
+    "changed_at": "2025-04-02 21:50:09",
+    "config_version": 5,
+    "old_config": {
+      "content": "Configuration prior to version 5 for space 'Project Phoenix: Mobile App 2.0' [UANH] — maintained by Angela Martinez. Space purpose: To manage the complete lifecycle of our next-generation mobile application, from UX design to backend development and launch."
+    },
+    "new_config": {
+      "content": "Version 5 applied on 2025-04-02 21:50:09 by Angela Martinez. Active features: folders, live_docs, whiteboard. Disabled features: blogs."
+    }
+  },
+  "5": {
+    "history_id": "5",
+    "space_id": "5",
+    "changed_by_user_id": "27",
+    "changed_at": "2025-05-05 20:57:58",
+    "config_version": 3,
+    "old_config": {
+      "content": "Configuration prior to version 3 for space 'Core Systems Modernization' [NNLF] — maintained by Kyle Atkinson. Space purpose: To coordinate the migration of our legacy backend infrastructure to a new cloud-native architecture with zero downtime."
+    },
+    "new_config": {
+      "content": "Version 3 applied on 2025-05-05 20:57:58 by Kyle Atkinson. Active features: calendars, databases, folders, live_docs, smart_links, whiteboard. Disabled features: none."
+    }
+  },
+  "6": {
+    "history_id": "6",
+    "space_id": "6",
+    "changed_by_user_id": "19",
+    "changed_at": "2025-06-18 08:25:09",
+    "config_version": 4,
+    "old_config": {
+      "content": "Configuration prior to version 4 for space 'Community & Influencer Outreach' [BVDH] — maintained by Marissa Huber. Space purpose: To track influencer partnerships, manage social media campaigns, and analyze community engagement metrics."
+    },
+    "new_config": {
+      "content": "Version 4 applied on 2025-06-18 08:25:09 by Marissa Huber. Active features: blogs, calendars, folders, live_docs, whiteboard. Disabled features: none."
+    }
+  },
+  "7": {
+    "history_id": "7",
+    "space_id": "7",
+    "changed_by_user_id": "38",
+    "changed_at": "2025-02-15 03:21:59",
+    "config_version": 4,
+    "old_config": {
+      "content": "Configuration prior to version 4 for space 'Customer Success & CRM Initiative' [JYQH] — maintained by Amy Willis. Space purpose: To centralize customer feedback, track support tickets, and develop new strategies for improving client retention."
+    },
+    "new_config": {
+      "content": "Version 4 applied on 2025-02-15 03:21:59 by Amy Willis. Active features: blogs, whiteboard. Disabled features: none."
+    }
+  },
+  "8": {
+    "history_id": "8",
+    "space_id": "8",
+    "changed_by_user_id": "46",
+    "changed_at": "2025-07-06 14:25:49",
+    "config_version": 3,
+    "old_config": {
+      "content": "Configuration prior to version 3 for space 'Platform Engineering & DevOps' [QEMW] — maintained by Randy Medina. Space purpose: To document our cloud infrastructure, manage CI/CD pipelines, and ensure system scalability and reliability."
+    },
+    "new_config": {
+      "content": "Version 3 applied on 2025-07-06 14:25:49 by Randy Medina. Active features: calendars, databases, folders, live_docs, smart_links, whiteboard. Disabled features: none."
+    }
+  },
+  "9": {
+    "history_id": "9",
+    "space_id": "9",
+    "changed_by_user_id": "10",
+    "changed_at": "2025-02-02 02:31:07",
+    "config_version": 5,
+    "old_config": {
+      "content": "Configuration prior to version 5 for space 'Agile Center of Excellence' [JTXJ] — maintained by Nicholas Knight. Space purpose: A dedicated space for agile coaches and scrum masters to share best practices and standardize processes across all engineering teams."
+    },
+    "new_config": {
+      "content": "Version 5 applied on 2025-02-02 02:31:07 by Nicholas Knight. Active features: calendars, databases, live_docs, smart_links, whiteboard. Disabled features: blogs."
+    }
+  },
+  "10": {
+    "history_id": "10",
+    "space_id": "10",
+    "changed_by_user_id": "19",
+    "changed_at": "2025-04-15 14:46:16",
+    "config_version": 2,
+    "old_config": {
+      "content": "Configuration prior to version 2 for space 'Vendor & Logistics Onboarding' [IQCE] — maintained by Marissa Huber. Space purpose: To streamline the integration process for new supply chain partners and manage logistics documentation."
+    },
+    "new_config": {
+      "content": "Version 2 applied on 2025-04-15 14:46:16 by Marissa Huber. Active features: calendars, live_docs. Disabled features: none."
+    }
+  },
+  "11": {
+    "history_id": "11",
+    "space_id": "11",
+    "changed_by_user_id": "42",
+    "changed_at": "2024-12-18 03:55:17",
+    "config_version": 5,
+    "old_config": {
+      "content": "Configuration prior to version 5 for space 'Omnichannel Retail Strategy' [XSHU] — maintained by Jason Williams. Space purpose: To coordinate marketing and sales efforts between our online e-commerce platform and physical retail stores."
+    },
+    "new_config": {
+      "content": "Version 5 applied on 2024-12-18 03:55:17 by Jason Williams. Active features: blogs, databases. Disabled features: whiteboard."
+    }
+  },
+  "12": {
+    "history_id": "12",
+    "space_id": "12",
+    "changed_by_user_id": "44",
+    "changed_at": "2025-07-18 17:33:58",
+    "config_version": 5,
+    "old_config": {
+      "content": "Configuration prior to version 5 for space 'Digital Events & Webinars 2026' [XPNS] — maintained by Melissa Williams. Space purpose: To plan, promote, and execute our annual calendar of virtual conferences and customer-facing webinars."
+    },
+    "new_config": {
+      "content": "Version 5 applied on 2025-07-18 17:33:58 by Melissa Williams. Active features: calendars, smart_links. Disabled features: none."
+    }
+  },
+  "13": {
+    "history_id": "13",
+    "space_id": "13",
+    "changed_by_user_id": "40",
+    "changed_at": "2025-04-21 05:45:40",
+    "config_version": 5,
+    "old_config": {
+      "content": "Configuration prior to version 5 for space 'Project Atlas: Interactive Dashboard' [HWSP] — maintained by Emily Washington. Space purpose: To manage the development of our new flagship interactive data visualization dashboard."
+    },
+    "new_config": {
+      "content": "Version 5 applied on 2025-04-21 05:45:40 by Emily Washington. Active features: calendars, whiteboard. Disabled features: none."
+    }
+  },
+  "14": {
+    "history_id": "14",
+    "space_id": "14",
+    "changed_by_user_id": "48",
+    "changed_at": "2025-01-09 12:41:55",
+    "config_version": 5,
+    "old_config": {
+      "content": "Configuration prior to version 5 for space 'Supply Chain Analytics & Optimization' [UYST] — maintained by Jeffery Alvarado. Space purpose: To analyze supplier performance data and optimize inventory management across our global supply chain."
+    },
+    "new_config": {
+      "content": "Version 5 applied on 2025-01-09 12:41:55 by Jeffery Alvarado. Active features: smart_links. Disabled features: databases."
+    }
+  },
+  "15": {
+    "history_id": "15",
+    "space_id": "15",
+    "changed_by_user_id": "27",
+    "changed_at": "2025-08-23 21:50:12",
+    "config_version": 1,
+    "old_config": {
+      "content": "Configuration prior to version 1 for space 'E-tailer Partner Program' [VSBA] — maintained by Kyle Atkinson. Space purpose: A dedicated hub for managing relationships, co-marketing campaigns, and technical integrations with our key e-commerce partners."
+    },
+    "new_config": {
+      "content": "Version 1 applied on 2025-08-23 21:50:12 by Kyle Atkinson. Active features: blogs, databases, folders, whiteboard. Disabled features: none."
+    }
+  },
+  "16": {
+    "history_id": "16",
+    "space_id": "16",
+    "changed_by_user_id": "22",
+    "changed_at": "2025-05-29 16:22:57",
+    "config_version": 2,
+    "old_config": {
+      "content": "Configuration prior to version 2 for space 'Innovation Lab: Cross-Product R&D' [DSDN] — maintained by Victor Hammond. Space purpose: A space for cross-functional teams to brainstorm and prototype new features that integrate our core product lines."
+    },
+    "new_config": {
+      "content": "Version 2 applied on 2025-05-29 16:22:57 by Victor Hammond. Active features: calendars, folders. Disabled features: databases."
+    }
+  },
+  "17": {
+    "history_id": "17",
+    "space_id": "17",
+    "changed_by_user_id": "2",
+    "changed_at": "2024-12-03 17:22:43",
+    "config_version": 3,
+    "old_config": {
+      "content": "Configuration prior to version 3 for space 'Strategic Alliances & Partnerships' [ZUZL] — maintained by Julie Davis. Space purpose: To identify, negotiate, and manage high-value strategic partnerships that expand our market reach."
+    },
+    "new_config": {
+      "content": "Version 3 applied on 2024-12-03 17:22:43 by Julie Davis. Active features: blogs, databases, folders, live_docs, smart_links, whiteboard. Disabled features: none."
+    }
+  },
+  "18": {
+    "history_id": "18",
+    "space_id": "18",
+    "changed_by_user_id": "25",
+    "changed_at": "2025-05-30 03:28:45",
+    "config_version": 5,
+    "old_config": {
+      "content": "Configuration prior to version 5 for space 'Digital User Acquisition' [SZIH] — maintained by Melissa Clark. Space purpose: To coordinate paid media campaigns, SEO initiatives, and content marketing efforts to drive traffic and user sign-ups."
+    },
+    "new_config": {
+      "content": "Version 5 applied on 2025-05-30 03:28:45 by Melissa Clark. Active features: blogs, databases, folders, live_docs, whiteboard. Disabled features: none."
+    }
+  },
+  "19": {
+    "history_id": "19",
+    "space_id": "19",
+    "changed_by_user_id": "32",
+    "changed_at": "2025-02-27 22:19:30",
+    "config_version": 3,
+    "old_config": {
+      "content": "Configuration prior to version 3 for space 'UX Research & Design Systems' [EZQO] — maintained by Susan Dixon. Space purpose: To conduct user research, manage our design system component library, and standardize UI/UX patterns across all products."
+    },
+    "new_config": {
+      "content": "Version 3 applied on 2025-02-27 22:19:30 by Susan Dixon. Active features: blogs, calendars, databases, folders, live_docs, whiteboard. Disabled features: smart_links."
+    }
+  },
+  "20": {
+    "history_id": "20",
+    "space_id": "20",
+    "changed_by_user_id": "30",
+    "changed_at": "2025-01-28 01:52:27",
+    "config_version": 4,
+    "old_config": {
+      "content": "Configuration prior to version 4 for space 'E-commerce Operations & Fulfillment' [OEZV] — maintained by Madeline Ford. Space purpose: To manage our end-to-end e-commerce logistics, from inventory and warehousing to customer fulfillment and returns."
+    },
+    "new_config": {
+      "content": "Version 4 applied on 2025-01-28 01:52:27 by Madeline Ford. Active features: blogs, databases, folders, smart_links, whiteboard. Disabled features: none."
+    }
+  }
+}

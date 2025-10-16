@@ -1,0 +1,145 @@
+{
+  "1": {
+    "job_id": "1",
+    "space_id": "2",
+    "requested_by_user_id": "36",
+    "requested_at": "2025-10-01 06:38:51",
+    "status": "pending",
+    "format": "HTML",
+    "destination": "/exports/job_1.zip",
+    "estimated_size_kb": 9470,
+    "priority": 3
+  },
+  "2": {
+    "job_id": "2",
+    "space_id": "3",
+    "requested_by_user_id": "26",
+    "requested_at": "2025-10-10 23:22:01",
+    "status": "running",
+    "format": "XML",
+    "destination": "/exports/job_2.zip",
+    "estimated_size_kb": 9542,
+    "priority": 0
+  },
+  "3": {
+    "job_id": "3",
+    "space_id": "4",
+    "requested_by_user_id": "1",
+    "requested_at": "2025-09-18 13:11:29",
+    "status": "running",
+    "format": "HTML",
+    "destination": "/exports/job_3.zip",
+    "estimated_size_kb": 2225,
+    "priority": 0
+  },
+  "4": {
+    "job_id": "4",
+    "space_id": "7",
+    "requested_by_user_id": "20",
+    "requested_at": "2025-09-16 18:42:39",
+    "status": "failed",
+    "format": "PDF",
+    "destination": "/exports/job_4.zip",
+    "estimated_size_kb": 4261,
+    "priority": 0
+  },
+  "5": {
+    "job_id": "5",
+    "space_id": "8",
+    "requested_by_user_id": "30",
+    "requested_at": "2025-09-24 12:07:11",
+    "status": "running",
+    "format": "HTML",
+    "destination": "/exports/job_5.zip",
+    "estimated_size_kb": 6295,
+    "priority": 3
+  },
+  "6": {
+    "job_id": "6",
+    "space_id": "9",
+    "requested_by_user_id": "18",
+    "requested_at": "2025-10-14 13:19:17",
+    "status": "pending",
+    "format": "HTML",
+    "destination": "/exports/job_6.zip",
+    "estimated_size_kb": 5271,
+    "priority": 2
+  },
+  "7": {
+    "job_id": "7",
+    "space_id": "11",
+    "requested_by_user_id": "49",
+    "requested_at": "2025-09-15 19:32:35",
+    "status": "pending",
+    "format": "XML",
+    "destination": "/exports/job_7.zip",
+    "estimated_size_kb": 498,
+    "priority": 5
+  },
+  "8": {
+    "job_id": "8",
+    "space_id": "12",
+    "requested_by_user_id": "35",
+    "requested_at": "2025-10-12 13:21:34",
+    "status": "failed",
+    "format": "XML",
+    "destination": "/exports/job_8.zip",
+    "estimated_size_kb": 2332,
+    "priority": 1
+  },
+  "9": {
+    "job_id": "9",
+    "space_id": "13",
+    "requested_by_user_id": "9",
+    "requested_at": "2025-09-29 21:59:53",
+    "status": "pending",
+    "format": "HTML",
+    "destination": "/exports/job_9.zip",
+    "estimated_size_kb": 9950,
+    "priority": 4
+  },
+  "10": {
+    "job_id": "10",
+    "space_id": "14",
+    "requested_by_user_id": "46",
+    "requested_at": "2025-10-15 04:38:14",
+    "status": "cancelled",
+    "format": "XML",
+    "destination": "/exports/job_10.zip",
+    "estimated_size_kb": 4741,
+    "priority": 3
+  },
+  "11": {
+    "job_id": "11",
+    "space_id": "16",
+    "requested_by_user_id": "39",
+    "requested_at": "2025-09-25 18:23:18",
+    "status": "pending",
+    "format": "XML",
+    "destination": "/exports/job_11.zip",
+    "estimated_size_kb": 853,
+    "priority": 5
+  },
+  "12": {
+    "job_id": "12",
+    "space_id": "18",
+    "requested_by_user_id": "36",
+    "requested_at": "2025-10-09 07:44:46",
+    "status": "cancelled",
+    "format": "XML",
+    "destination": "/exports/job_12.zip",
+    "estimated_size_kb": 5038,
+    "priority": 0
+  },
+  "13": {
+    "job_id": "13",
+    "space_id": "19",
+    "requested_by_user_id": "33",
+    "requested_at": "2025-09-20 16:20:03",
+    "status": "running",
+    "format": "HTML",
+    "destination": "/exports/job_13.zip",
+    "estimated_size_kb": 4287,
+    "priority": 4
+  }
+}

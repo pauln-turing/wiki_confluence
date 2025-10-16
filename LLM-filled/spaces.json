@@ -1,0 +1,202 @@
+{
+  "1": {
+    "space_id": "1",
+    "space_key": "BEXI",
+    "space_name": "Project Unify: Q4 Brand Campaign",
+    "space_purpose": "To align all marketing and content efforts for our upcoming quarterly brand launch across digital, print, and video platforms.",
+    "created_by_user_id": "24",
+    "created_at": "2025-04-30 04:26:47",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "2": {
+    "space_id": "2",
+    "space_key": "DTHJ",
+    "space_name": "Pathfinder: New Subscription Models",
+    "space_purpose": "To research, develop, and test new tiered subscription services for our enterprise clients.",
+    "created_by_user_id": "35",
+    "created_at": "2025-07-10 08:21:57",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "3": {
+    "space_id": "3",
+    "space_key": "IRJO",
+    "space_name": "API Integration Hub",
+    "space_purpose": "A central space for the API team to manage documentation, track partner integrations, and refine our public SDKs.",
+    "created_by_user_id": "37",
+    "created_at": "2025-02-14 11:58:15",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "4": {
+    "space_id": "4",
+    "space_key": "UANH",
+    "space_name": "Project Phoenix: Mobile App 2.0",
+    "space_purpose": "To manage the complete lifecycle of our next-generation mobile application, from UX design to backend development and launch.",
+    "created_by_user_id": "26",
+    "created_at": "2025-09-25 02:19:14",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "5": {
+    "space_id": "5",
+    "space_key": "NNLF",
+    "space_name": "Core Systems Modernization",
+    "space_purpose": "To coordinate the migration of our legacy backend infrastructure to a new cloud-native architecture with zero downtime.",
+    "created_by_user_id": "36",
+    "created_at": "2025-06-13 20:53:40",
+    "is_deleted": true,
+    "deleted_at": "2025-08-04 13:46:32"
+  },
+  "6": {
+    "space_id": "6",
+    "space_key": "BVDH",
+    "space_name": "Community & Influencer Outreach",
+    "space_purpose": "To track influencer partnerships, manage social media campaigns, and analyze community engagement metrics.",
+    "created_by_user_id": "17",
+    "created_at": "2024-06-08 17:22:42",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "7": {
+    "space_id": "7",
+    "space_key": "JYQH",
+    "space_name": "Customer Success & CRM Initiative",
+    "space_purpose": "To centralize customer feedback, track support tickets, and develop new strategies for improving client retention.",
+    "created_by_user_id": "49",
+    "created_at": "2025-08-03 15:54:15",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "8": {
+    "space_id": "8",
+    "space_key": "QEMW",
+    "space_name": "Platform Engineering & DevOps",
+    "space_purpose": "To document our cloud infrastructure, manage CI/CD pipelines, and ensure system scalability and reliability.",
+    "created_by_user_id": "28",
+    "created_at": "2025-07-03 17:47:47",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "9": {
+    "space_id": "9",
+    "space_key": "JTXJ",
+    "space_name": "Agile Center of Excellence",
+    "space_purpose": "A dedicated space for agile coaches and scrum masters to share best practices and standardize processes across all engineering teams.",
+    "created_by_user_id": "26",
+    "created_at": "2025-09-25 02:19:14",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "10": {
+    "space_id": "10",
+    "space_key": "IQCE",
+    "space_name": "Vendor & Logistics Onboarding",
+    "space_purpose": "To streamline the integration process for new supply chain partners and manage logistics documentation.",
+    "created_by_user_id": "29",
+    "created_at": "2023-10-25 23:47:08",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "11": {
+    "space_id": "11",
+    "space_key": "XSHU",
+    "space_name": "Omnichannel Retail Strategy",
+    "space_purpose": "To coordinate marketing and sales efforts between our online e-commerce platform and physical retail stores.",
+    "created_by_user_id": "1",
+    "created_at": "2025-09-12 09:56:43",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "12": {
+    "space_id": "12",
+    "space_key": "XPNS",
+    "space_name": "Digital Events & Webinars 2026",
+    "space_purpose": "To plan, promote, and execute our annual calendar of virtual conferences and customer-facing webinars.",
+    "created_by_user_id": "10",
+    "created_at": "2023-12-22 07:52:33",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "13": {
+    "space_id": "13",
+    "space_key": "HWSP",
+    "space_name": "Project Atlas: Interactive Dashboard",
+    "space_purpose": "To manage the development of our new flagship interactive data visualization dashboard.",
+    "created_by_user_id": "20",
+    "created_at": "2024-02-22 10:13:13",
+    "is_deleted": true,
+    "deleted_at": "2024-04-27 17:21:48"
+  },
+  "14": {
+    "space_id": "14",
+    "space_key": "UYST",
+    "space_name": "Supply Chain Analytics & Optimization",
+    "space_purpose": "To analyze supplier performance data and optimize inventory management across our global supply chain.",
+    "created_by_user_id": "38",
+    "created_at": "2024-11-12 15:48:19",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "15": {
+    "space_id": "15",
+    "space_key": "VSBA",
+    "space_name": "E-tailer Partner Program",
+    "space_purpose": "A dedicated hub for managing relationships, co-marketing campaigns, and technical integrations with our key e-commerce partners.",
+    "created_by_user_id": "31",
+    "created_at": "2025-04-04 02:56:49",
+    "is_deleted": true,
+    "deleted_at": "2025-08-22 17:36:05"
+  },
+  "16": {
+    "space_id": "16",
+    "space_key": "DSDN",
+    "space_name": "Innovation Lab: Cross-Product R&D",
+    "space_purpose": "A space for cross-functional teams to brainstorm and prototype new features that integrate our core product lines.",
+    "created_by_user_id": "10",
+    "created_at": "2023-12-22 07:52:33",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "17": {
+    "space_id": "17",
+    "space_key": "ZUZL",
+    "space_name": "Strategic Alliances & Partnerships",
+    "space_purpose": "To identify, negotiate, and manage high-value strategic partnerships that expand our market reach.",
+    "created_by_user_id": "13",
+    "created_at": "2025-05-02 11:20:04",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "18": {
+    "space_id": "18",
+    "space_key": "SZIH",
+    "space_name": "Digital User Acquisition",
+    "space_purpose": "To coordinate paid media campaigns, SEO initiatives, and content marketing efforts to drive traffic and user sign-ups.",
+    "created_by_user_id": "17",
+    "created_at": "2024-06-08 17:22:42",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "19": {
+    "space_id": "19",
+    "space_key": "EZQO",
+    "space_name": "UX Research & Design Systems",
+    "space_purpose": "To conduct user research, manage our design system component library, and standardize UI/UX patterns across all products.",
+    "created_by_user_id": "16",
+    "created_at": "2023-11-19 16:33:17",
+    "is_deleted": false,
+    "deleted_at": null
+  },
+  "20": {
+    "space_id": "20",
+    "space_key": "OEZV",
+    "space_name": "E-commerce Operations & Fulfillment",
+    "space_purpose": "To manage our end-to-end e-commerce logistics, from inventory and warehousing to customer fulfillment and returns.",
+    "created_by_user_id": "18",
+    "created_at": "2024-03-01 13:58:28",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+}

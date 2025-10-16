@@ -1,0 +1,137 @@
+{
+  "1": {
+    "template_id": "1",
+    "template_name": "enhance-robust-metrics-template",
+    "template_content": "free-form-text",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "9",
+    "created_at": "2024-12-18 03:52:17"
+  },
+  "2": {
+    "template_id": "2",
+    "template_name": "redefine-cross-platform-solutions-template",
+    "template_content": "free-form-text",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "13",
+    "created_at": "2025-01-02 18:55:32"
+  },
+  "3": {
+    "template_id": "3",
+    "template_name": "cultivate-virtual-portals-template",
+    "template_content": "free-form-text",
+    "is_blueprint": true,
+    "space_id": null,
+    "created_by_user_id": "13",
+    "created_at": "2025-04-07 15:19:55"
+  },
+  "4": {
+    "template_id": "4",
+    "template_name": "syndicate-interactive-markets-template",
+    "template_content": "free-form-text",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "44",
+    "created_at": "2025-05-15 21:17:43"
+  },
+  "5": {
+    "template_id": "5",
+    "template_name": "iterate-cutting-edge-networks-template",
+    "template_content": "free-form-text",
+    "is_blueprint": true,
+    "space_id": "1",
+    "created_by_user_id": "20",
+    "created_at": "2025-02-14 19:35:06"
+  },
+  "6": {
+    "template_id": "6",
+    "template_name": "enhance-strategic-niches-template",
+    "template_content": "free-form-text",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "33",
+    "created_at": "2024-12-24 05:47:35"
+  },
+  "7": {
+    "template_id": "7",
+    "template_name": "syndicate-mission-critical-mindshare-template",
+    "template_content": "free-form-text",
+    "is_blueprint": false,
+    "space_id": "13",
+    "created_by_user_id": "22",
+    "created_at": "2024-10-19 07:21:21"
+  },
+  "8": {
+    "template_id": "8",
+    "template_name": "extend-robust-platforms-template",
+    "template_content": "free-form-text",
+    "is_blueprint": true,
+    "space_id": null,
+    "created_by_user_id": "28",
+    "created_at": "2024-12-03 22:57:23"
+  },
+  "9": {
+    "template_id": "9",
+    "template_name": "deliver-vertical-content-template",
+    "template_content": "free-form-text",
+    "is_blueprint": true,
+    "space_id": "4",
+    "created_by_user_id": "4",
+    "created_at": "2025-06-09 17:45:50"
+  },
+  "10": {
+    "template_id": "10",
+    "template_name": "whiteboard-wireless-action-items-template",
+    "template_content": "free-form-text",
+    "is_blueprint": false,
+    "space_id": "2",
+    "created_by_user_id": "44",
+    "created_at": "2025-06-04 16:53:01"
+  },
+  "11": {
+    "template_id": "11",
+    "template_name": "generate-compelling-convergence-template",
+    "template_content": "free-form-text",
+    "is_blueprint": true,
+    "space_id": "2",
+    "created_by_user_id": "27",
+    "created_at": "2024-11-07 16:04:40"
+  },
+  "12": {
+    "template_id": "12",
+    "template_name": "expedite-open-source-web-services-template",
+    "template_content": "free-form-text",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "7",
+    "created_at": "2024-10-24 06:52:22"
+  },
+  "13": {
+    "template_id": "13",
+    "template_name": "seize-enterprise-relationships-template",
+    "template_content": "free-form-text",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "5",
+    "created_at": "2025-01-10 19:01:17"
+  },
+  "14": {
+    "template_id": "14",
+    "template_name": "visualize-wireless-convergence-template",
+    "template_content": "free-form-text",
+    "is_blueprint": true,
+    "space_id": "15",
+    "created_by_user_id": "28",
+    "created_at": "2025-09-27 10:54:08"
+  },
+  "15": {
+    "template_id": "15",
+    "template_name": "target-innovative-interfaces-template",
+    "template_content": "free-form-text",
+    "is_blueprint": false,
+    "space_id": "4",
+    "created_by_user_id": "16",
+    "created_at": "2024-11-25 08:49:18"
+  }
+}

@@ -1,0 +1,2042 @@
+{
+  "1": {
+    "request_id": "1",
+    "target_entity_type": "page",
+    "target_entity_id": "158",
+    "requested_by_user_id": "31",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Competitive Landscape & Gap Analysis.",
+    "created_at": "2025-04-04 02:56:49",
+    "updated_at": "2025-06-18 06:40:23",
+    "due_at": "2025-04-14 02:56:49",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Competitive Landscape & Gap Analysis'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "31",
+          "full_name": "Elizabeth Santiago",
+          "email": "elizabeth.santiago@example.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "158",
+            "title": "Competitive Landscape & Gap Analysis",
+            "space_id": "16",
+            "space": {
+              "space_id": "16",
+              "space_name": "Innovation Lab: Cross-Product R&D",
+              "space_key": "DSDN"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-04-04 02:56:49",
+          "updated_at": "2025-06-18 06:40:23",
+          "due_at": "2025-04-14 02:56:49"
+        }
+      }
+    }
+  },
+  "2": {
+    "request_id": "2",
+    "target_entity_type": "page",
+    "target_entity_id": "163",
+    "requested_by_user_id": "26",
+    "status": "pending",
+    "reason": "Automated contextual reason for request on Archived Experiments & Learnings.",
+    "created_at": "2025-09-25 02:19:14",
+    "updated_at": "2025-09-29 00:02:56",
+    "due_at": "2025-10-05 02:19:14",
+    "metadata": {
+      "content": {
+        "summary": "Approval pending for page 'Archived Experiments & Learnings'",
+        "status": "pending",
+        "requester": {
+          "user_id": "26",
+          "full_name": "Laura Payne",
+          "email": "laura.payne@example.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "163",
+            "title": "Archived Experiments & Learnings",
+            "space_id": "16",
+            "space": {
+              "space_id": "16",
+              "space_name": "Innovation Lab: Cross-Product R&D",
+              "space_key": "DSDN"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-09-25 02:19:14",
+          "updated_at": "2025-09-29 00:02:56",
+          "due_at": "2025-10-05 02:19:14"
+        }
+      }
+    }
+  },
+  "3": {
+    "request_id": "3",
+    "target_entity_type": "page",
+    "target_entity_id": "5",
+    "requested_by_user_id": "21",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on Campaign Budget & Spend Tracker.",
+    "created_at": "2025-09-09 12:17:21",
+    "updated_at": "2025-09-27 05:58:42",
+    "due_at": "2025-09-19 12:17:21",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'Campaign Budget & Spend Tracker'",
+        "status": "approved",
+        "requester": {
+          "user_id": "21",
+          "full_name": "Annette Smith",
+          "email": "annette.smith@yahoo.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "5",
+            "title": "Campaign Budget & Spend Tracker",
+            "space_id": "1",
+            "space": {
+              "space_id": "1",
+              "space_name": "Project Unify: Q4 Brand Campaign",
+              "space_key": "BEXI"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-09-09 12:17:21",
+          "updated_at": "2025-09-27 05:58:42",
+          "due_at": "2025-09-19 12:17:21"
+        }
+      }
+    }
+  },
+  "4": {
+    "request_id": "4",
+    "target_entity_type": "page",
+    "target_entity_id": "32",
+    "requested_by_user_id": "17",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on Post-Launch Performance Metrics.",
+    "created_at": "2024-06-08 17:22:42",
+    "updated_at": "2024-07-27 05:53:40",
+    "due_at": "2024-06-18 17:22:42",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'Post-Launch Performance Metrics'",
+        "status": "approved",
+        "requester": {
+          "user_id": "17",
+          "full_name": "Cassandra Quinn",
+          "email": "cassandra.quinn@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "32",
+            "title": "Post-Launch Performance Metrics",
+            "space_id": "4",
+            "space": {
+              "space_id": "4",
+              "space_name": "Project Phoenix: Mobile App 2.0",
+              "space_key": "UANH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-06-08 17:22:42",
+          "updated_at": "2024-07-27 05:53:40",
+          "due_at": "2024-06-18 17:22:42"
+        }
+      }
+    }
+  },
+  "5": {
+    "request_id": "5",
+    "target_entity_type": "page",
+    "target_entity_id": "126",
+    "requested_by_user_id": "45",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on Backlog & Sprint Planning.",
+    "created_at": "2024-07-07 03:38:08",
+    "updated_at": "2025-06-12 23:12:04",
+    "due_at": "2024-07-17 03:38:08",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'Backlog & Sprint Planning'",
+        "status": "approved",
+        "requester": {
+          "user_id": "45",
+          "full_name": "Ashley Hammond",
+          "email": "ashley.hammond@yahoo.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "126",
+            "title": "Backlog & Sprint Planning",
+            "space_id": "13",
+            "space": {
+              "space_id": "13",
+              "space_name": "Project Atlas: Interactive Dashboard",
+              "space_key": "HWSP"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-07-07 03:38:08",
+          "updated_at": "2025-06-12 23:12:04",
+          "due_at": "2024-07-17 03:38:08"
+        }
+      }
+    }
+  },
+  "6": {
+    "request_id": "6",
+    "target_entity_type": "page",
+    "target_entity_id": "120",
+    "requested_by_user_id": "15",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Data Source Definitions & API Endpoints.",
+    "created_at": "2024-05-29 19:09:29",
+    "updated_at": "2024-08-30 19:19:02",
+    "due_at": "2024-06-08 19:09:29",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Data Source Definitions & API Endpoints'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "15",
+          "full_name": "Allen Garcia",
+          "email": "allen.garcia@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "120",
+            "title": "Data Source Definitions & API Endpoints",
+            "space_id": "13",
+            "space": {
+              "space_id": "13",
+              "space_name": "Project Atlas: Interactive Dashboard",
+              "space_key": "HWSP"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-05-29 19:09:29",
+          "updated_at": "2024-08-30 19:19:02",
+          "due_at": "2024-06-08 19:09:29"
+        }
+      }
+    }
+  },
+  "7": {
+    "request_id": "7",
+    "target_entity_type": "page",
+    "target_entity_id": "150",
+    "requested_by_user_id": "2",
+    "status": "pending",
+    "reason": "Automated contextual reason for request on Active Experiments & Prototypes.",
+    "created_at": "2024-08-31 22:11:29",
+    "updated_at": "2025-07-17 09:02:43",
+    "due_at": "2024-09-10 22:11:29",
+    "metadata": {
+      "content": {
+        "summary": "Approval pending for page 'Active Experiments & Prototypes'",
+        "status": "pending",
+        "requester": {
+          "user_id": "2",
+          "full_name": "Julie Davis",
+          "email": "julie.davis@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "150",
+            "title": "Active Experiments & Prototypes",
+            "space_id": "16",
+            "space": {
+              "space_id": "16",
+              "space_name": "Innovation Lab: Cross-Product R&D",
+              "space_key": "DSDN"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-08-31 22:11:29",
+          "updated_at": "2025-07-17 09:02:43",
+          "due_at": "2024-09-10 22:11:29"
+        }
+      }
+    }
+  },
+  "8": {
+    "request_id": "8",
+    "target_entity_type": "page",
+    "target_entity_id": "126",
+    "requested_by_user_id": "36",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on Backlog & Sprint Planning.",
+    "created_at": "2025-06-13 20:53:40",
+    "updated_at": "2025-10-11 13:42:48",
+    "due_at": "2025-06-23 20:53:40",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'Backlog & Sprint Planning'",
+        "status": "approved",
+        "requester": {
+          "user_id": "36",
+          "full_name": "Nicole Medina",
+          "email": "nicole.medina@yahoo.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "126",
+            "title": "Backlog & Sprint Planning",
+            "space_id": "13",
+            "space": {
+              "space_id": "13",
+              "space_name": "Project Atlas: Interactive Dashboard",
+              "space_key": "HWSP"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-06-13 20:53:40",
+          "updated_at": "2025-10-11 13:42:48",
+          "due_at": "2025-06-23 20:53:40"
+        }
+      }
+    }
+  },
+  "9": {
+    "request_id": "9",
+    "target_entity_type": "page",
+    "target_entity_id": "60",
+    "requested_by_user_id": "21",
+    "status": "rejected",
+    "reason": "Automated contextual reason for request on Client Health Scoring Methodology.",
+    "created_at": "2025-09-09 12:17:21",
+    "updated_at": "2025-10-02 03:58:43",
+    "due_at": "2025-09-19 12:17:21",
+    "metadata": {
+      "content": {
+        "summary": "Approval rejected for page 'Client Health Scoring Methodology'",
+        "status": "rejected",
+        "requester": {
+          "user_id": "21",
+          "full_name": "Annette Smith",
+          "email": "annette.smith@yahoo.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "60",
+            "title": "Client Health Scoring Methodology",
+            "space_id": "7",
+            "space": {
+              "space_id": "7",
+              "space_name": "Customer Success & CRM Initiative",
+              "space_key": "JYQH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-09-09 12:17:21",
+          "updated_at": "2025-10-02 03:58:43",
+          "due_at": "2025-09-19 12:17:21"
+        }
+      }
+    }
+  },
+  "10": {
+    "request_id": "10",
+    "target_entity_type": "page",
+    "target_entity_id": "108",
+    "requested_by_user_id": "13",
+    "status": "rejected",
+    "reason": "Automated contextual reason for request on 2026 Virtual Events Calendar.",
+    "created_at": "2025-05-02 11:20:04",
+    "updated_at": "2025-08-02 10:47:31",
+    "due_at": "2025-05-12 11:20:04",
+    "metadata": {
+      "content": {
+        "summary": "Approval rejected for page '2026 Virtual Events Calendar'",
+        "status": "rejected",
+        "requester": {
+          "user_id": "13",
+          "full_name": "John Mccann",
+          "email": "john.mccann@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "108",
+            "title": "2026 Virtual Events Calendar",
+            "space_id": "12",
+            "space": {
+              "space_id": "12",
+              "space_name": "Digital Events & Webinars 2026",
+              "space_key": "XPNS"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-05-02 11:20:04",
+          "updated_at": "2025-08-02 10:47:31",
+          "due_at": "2025-05-12 11:20:04"
+        }
+      }
+    }
+  },
+  "11": {
+    "request_id": "11",
+    "target_entity_type": "page",
+    "target_entity_id": "32",
+    "requested_by_user_id": "31",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Post-Launch Performance Metrics.",
+    "created_at": "2025-04-04 02:56:49",
+    "updated_at": "2025-08-01 02:13:13",
+    "due_at": "2025-04-14 02:56:49",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Post-Launch Performance Metrics'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "31",
+          "full_name": "Elizabeth Santiago",
+          "email": "elizabeth.santiago@example.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "32",
+            "title": "Post-Launch Performance Metrics",
+            "space_id": "4",
+            "space": {
+              "space_id": "4",
+              "space_name": "Project Phoenix: Mobile App 2.0",
+              "space_key": "UANH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-04-04 02:56:49",
+          "updated_at": "2025-08-01 02:13:13",
+          "due_at": "2025-04-14 02:56:49"
+        }
+      }
+    }
+  },
+  "12": {
+    "request_id": "12",
+    "target_entity_type": "page",
+    "target_entity_id": "202",
+    "requested_by_user_id": "35",
+    "status": "pending",
+    "reason": "Automated contextual reason for request on Shipping Carrier Rates & Service Levels.",
+    "created_at": "2025-07-10 08:21:57",
+    "updated_at": "2025-08-31 20:55:14",
+    "due_at": "2025-07-20 08:21:57",
+    "metadata": {
+      "content": {
+        "summary": "Approval pending for page 'Shipping Carrier Rates & Service Levels'",
+        "status": "pending",
+        "requester": {
+          "user_id": "35",
+          "full_name": "Christine Sanchez",
+          "email": "christine.sanchez@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "202",
+            "title": "Shipping Carrier Rates & Service Levels",
+            "space_id": "20",
+            "space": {
+              "space_id": "20",
+              "space_name": "E-commerce Operations & Fulfillment",
+              "space_key": "OEZV"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-07-10 08:21:57",
+          "updated_at": "2025-08-31 20:55:14",
+          "due_at": "2025-07-20 08:21:57"
+        }
+      }
+    }
+  },
+  "13": {
+    "request_id": "13",
+    "target_entity_type": "page",
+    "target_entity_id": "94",
+    "requested_by_user_id": "2",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Weekly Status Meeting Notes.",
+    "created_at": "2024-08-31 22:11:29",
+    "updated_at": "2025-01-16 13:45:54",
+    "due_at": "2024-09-10 22:11:29",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Weekly Status Meeting Notes'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "2",
+          "full_name": "Julie Davis",
+          "email": "julie.davis@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "94",
+            "title": "Weekly Status Meeting Notes",
+            "space_id": "10",
+            "space": {
+              "space_id": "10",
+              "space_name": "Vendor & Logistics Onboarding",
+              "space_key": "IQCE"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-08-31 22:11:29",
+          "updated_at": "2025-01-16 13:45:54",
+          "due_at": "2024-09-10 22:11:29"
+        }
+      }
+    }
+  },
+  "14": {
+    "request_id": "14",
+    "target_entity_type": "page",
+    "target_entity_id": "185",
+    "requested_by_user_id": "48",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Affiliate Marketing Program Overview.",
+    "created_at": "2025-08-29 02:37:25",
+    "updated_at": "2025-08-30 07:46:11",
+    "due_at": "2025-09-08 02:37:25",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Affiliate Marketing Program Overview'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "48",
+          "full_name": "Jeffery Alvarado",
+          "email": "jeffery.alvarado@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "185",
+            "title": "Affiliate Marketing Program Overview",
+            "space_id": "18",
+            "space": {
+              "space_id": "18",
+              "space_name": "Digital User Acquisition",
+              "space_key": "SZIH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-08-29 02:37:25",
+          "updated_at": "2025-08-30 07:46:11",
+          "due_at": "2025-09-08 02:37:25"
+        }
+      }
+    }
+  },
+  "15": {
+    "request_id": "15",
+    "target_entity_type": "page",
+    "target_entity_id": "154",
+    "requested_by_user_id": "2",
+    "status": "rejected",
+    "reason": "Automated contextual reason for request on User Feedback on 'Unified Login' Prototype.",
+    "created_at": "2024-08-31 22:11:29",
+    "updated_at": "2025-07-17 14:27:17",
+    "due_at": "2024-09-10 22:11:29",
+    "metadata": {
+      "content": {
+        "summary": "Approval rejected for page 'User Feedback on 'Unified Login' Prototype'",
+        "status": "rejected",
+        "requester": {
+          "user_id": "2",
+          "full_name": "Julie Davis",
+          "email": "julie.davis@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "154",
+            "title": "User Feedback on 'Unified Login' Prototype",
+            "space_id": "16",
+            "space": {
+              "space_id": "16",
+              "space_name": "Innovation Lab: Cross-Product R&D",
+              "space_key": "DSDN"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-08-31 22:11:29",
+          "updated_at": "2025-07-17 14:27:17",
+          "due_at": "2024-09-10 22:11:29"
+        }
+      }
+    }
+  },
+  "16": {
+    "request_id": "16",
+    "target_entity_type": "page",
+    "target_entity_id": "49",
+    "requested_by_user_id": "33",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Outreach Email & DM Templates.",
+    "created_at": "2023-11-24 13:50:20",
+    "updated_at": "2024-10-06 03:40:54",
+    "due_at": "2023-12-04 13:50:20",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Outreach Email & DM Templates'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "33",
+          "full_name": "Kelly Russell",
+          "email": "kelly.russell@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "49",
+            "title": "Outreach Email & DM Templates",
+            "space_id": "6",
+            "space": {
+              "space_id": "6",
+              "space_name": "Community & Influencer Outreach",
+              "space_key": "BVDH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2023-11-24 13:50:20",
+          "updated_at": "2024-10-06 03:40:54",
+          "due_at": "2023-12-04 13:50:20"
+        }
+      }
+    }
+  },
+  "17": {
+    "request_id": "17",
+    "target_entity_type": "page",
+    "target_entity_id": "94",
+    "requested_by_user_id": "20",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Weekly Status Meeting Notes.",
+    "created_at": "2024-02-22 10:13:13",
+    "updated_at": "2024-11-08 17:37:27",
+    "due_at": "2024-03-03 10:13:13",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Weekly Status Meeting Notes'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "20",
+          "full_name": "Rodney Huff",
+          "email": "rodney.huff@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "94",
+            "title": "Weekly Status Meeting Notes",
+            "space_id": "10",
+            "space": {
+              "space_id": "10",
+              "space_name": "Vendor & Logistics Onboarding",
+              "space_key": "IQCE"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-02-22 10:13:13",
+          "updated_at": "2024-11-08 17:37:27",
+          "due_at": "2024-03-03 10:13:13"
+        }
+      }
+    }
+  },
+  "18": {
+    "request_id": "18",
+    "target_entity_type": "page",
+    "target_entity_id": "104",
+    "requested_by_user_id": "22",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Shared Sales & Customer Data Analysis.",
+    "created_at": "2024-11-19 13:26:32",
+    "updated_at": "2025-10-01 19:52:19",
+    "due_at": "2024-11-29 13:26:32",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Shared Sales & Customer Data Analysis'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "22",
+          "full_name": "Victor Hammond",
+          "email": "victor.hammond@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "104",
+            "title": "Shared Sales & Customer Data Analysis",
+            "space_id": "11",
+            "space": {
+              "space_id": "11",
+              "space_name": "Omnichannel Retail Strategy",
+              "space_key": "XSHU"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-11-19 13:26:32",
+          "updated_at": "2025-10-01 19:52:19",
+          "due_at": "2024-11-29 13:26:32"
+        }
+      }
+    }
+  },
+  "19": {
+    "request_id": "19",
+    "target_entity_type": "page",
+    "target_entity_id": "79",
+    "requested_by_user_id": "11",
+    "status": "pending",
+    "reason": "Automated contextual reason for request on Standardized 'Definition of Done' (DoD).",
+    "created_at": "2024-08-30 22:27:19",
+    "updated_at": "2024-12-09 21:48:05",
+    "due_at": "2024-09-09 22:27:19",
+    "metadata": {
+      "content": {
+        "summary": "Approval pending for page 'Standardized 'Definition of Done' (DoD)'",
+        "status": "pending",
+        "requester": {
+          "user_id": "11",
+          "full_name": "Stephanie Mcconnell",
+          "email": "stephanie.mcconnell@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "79",
+            "title": "Standardized 'Definition of Done' (DoD)",
+            "space_id": "9",
+            "space": {
+              "space_id": "9",
+              "space_name": "Agile Center of Excellence",
+              "space_key": "JTXJ"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-08-30 22:27:19",
+          "updated_at": "2024-12-09 21:48:05",
+          "due_at": "2024-09-09 22:27:19"
+        }
+      }
+    }
+  },
+  "20": {
+    "request_id": "20",
+    "target_entity_type": "page",
+    "target_entity_id": "24",
+    "requested_by_user_id": "1",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on Technical Architecture & Stack Decision.",
+    "created_at": "2025-09-12 09:56:43",
+    "updated_at": "2025-09-21 00:49:13",
+    "due_at": "2025-09-22 09:56:43",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'Technical Architecture & Stack Decision'",
+        "status": "approved",
+        "requester": {
+          "user_id": "1",
+          "full_name": "Leslie Smith",
+          "email": "leslie.smith@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "24",
+            "title": "Technical Architecture & Stack Decision",
+            "space_id": "4",
+            "space": {
+              "space_id": "4",
+              "space_name": "Project Phoenix: Mobile App 2.0",
+              "space_key": "UANH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-09-12 09:56:43",
+          "updated_at": "2025-09-21 00:49:13",
+          "due_at": "2025-09-22 09:56:43"
+        }
+      }
+    }
+  },
+  "21": {
+    "request_id": "21",
+    "target_entity_type": "page",
+    "target_entity_id": "56",
+    "requested_by_user_id": "5",
+    "status": "pending",
+    "reason": "Automated contextual reason for request on Team Meeting Notes.",
+    "created_at": "2024-08-17 07:02:13",
+    "updated_at": "2025-09-19 23:58:35",
+    "due_at": "2024-08-27 07:02:13",
+    "metadata": {
+      "content": {
+        "summary": "Approval pending for page 'Team Meeting Notes'",
+        "status": "pending",
+        "requester": {
+          "user_id": "5",
+          "full_name": "Jessica Foster",
+          "email": "jessica.foster@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "56",
+            "title": "Team Meeting Notes",
+            "space_id": "6",
+            "space": {
+              "space_id": "6",
+              "space_name": "Community & Influencer Outreach",
+              "space_key": "BVDH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-08-17 07:02:13",
+          "updated_at": "2025-09-19 23:58:35",
+          "due_at": "2024-08-27 07:02:13"
+        }
+      }
+    }
+  },
+  "22": {
+    "request_id": "22",
+    "target_entity_type": "page",
+    "target_entity_id": "118",
+    "requested_by_user_id": "15",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on User Personas & Key Scenarios.",
+    "created_at": "2024-05-29 19:09:29",
+    "updated_at": "2025-07-17 12:58:34",
+    "due_at": "2024-06-08 19:09:29",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'User Personas & Key Scenarios'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "15",
+          "full_name": "Allen Garcia",
+          "email": "allen.garcia@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "118",
+            "title": "User Personas & Key Scenarios",
+            "space_id": "13",
+            "space": {
+              "space_id": "13",
+              "space_name": "Project Atlas: Interactive Dashboard",
+              "space_key": "HWSP"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-05-29 19:09:29",
+          "updated_at": "2025-07-17 12:58:34",
+          "due_at": "2024-06-08 19:09:29"
+        }
+      }
+    }
+  },
+  "23": {
+    "request_id": "23",
+    "target_entity_type": "page",
+    "target_entity_id": "98",
+    "requested_by_user_id": "41",
+    "status": "rejected",
+    "reason": "Automated contextual reason for request on Cross-Channel Promotions Calendar.",
+    "created_at": "2023-11-05 17:12:23",
+    "updated_at": "2024-06-29 11:22:11",
+    "due_at": "2023-11-15 17:12:23",
+    "metadata": {
+      "content": {
+        "summary": "Approval rejected for page 'Cross-Channel Promotions Calendar'",
+        "status": "rejected",
+        "requester": {
+          "user_id": "41",
+          "full_name": "Donald Phillips",
+          "email": "donald.phillips@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "98",
+            "title": "Cross-Channel Promotions Calendar",
+            "space_id": "11",
+            "space": {
+              "space_id": "11",
+              "space_name": "Omnichannel Retail Strategy",
+              "space_key": "XSHU"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2023-11-05 17:12:23",
+          "updated_at": "2024-06-29 11:22:11",
+          "due_at": "2023-11-15 17:12:23"
+        }
+      }
+    }
+  },
+  "24": {
+    "request_id": "24",
+    "target_entity_type": "page",
+    "target_entity_id": "104",
+    "requested_by_user_id": "27",
+    "status": "rejected",
+    "reason": "Automated contextual reason for request on Shared Sales & Customer Data Analysis.",
+    "created_at": "2024-06-02 21:27:18",
+    "updated_at": "2025-04-28 04:16:16",
+    "due_at": "2024-06-12 21:27:18",
+    "metadata": {
+      "content": {
+        "summary": "Approval rejected for page 'Shared Sales & Customer Data Analysis'",
+        "status": "rejected",
+        "requester": {
+          "user_id": "27",
+          "full_name": "Kyle Atkinson",
+          "email": "kyle.atkinson@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "104",
+            "title": "Shared Sales & Customer Data Analysis",
+            "space_id": "11",
+            "space": {
+              "space_id": "11",
+              "space_name": "Omnichannel Retail Strategy",
+              "space_key": "XSHU"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-06-02 21:27:18",
+          "updated_at": "2025-04-28 04:16:16",
+          "due_at": "2024-06-12 21:27:18"
+        }
+      }
+    }
+  },
+  "25": {
+    "request_id": "25",
+    "target_entity_type": "page",
+    "target_entity_id": "181",
+    "requested_by_user_id": "17",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Google Ads Campaign Performance.",
+    "created_at": "2024-06-08 17:22:42",
+    "updated_at": "2025-10-12 17:44:11",
+    "due_at": "2024-06-18 17:22:42",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Google Ads Campaign Performance'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "17",
+          "full_name": "Cassandra Quinn",
+          "email": "cassandra.quinn@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "181",
+            "title": "Google Ads Campaign Performance",
+            "space_id": "18",
+            "space": {
+              "space_id": "18",
+              "space_name": "Digital User Acquisition",
+              "space_key": "SZIH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-06-08 17:22:42",
+          "updated_at": "2025-10-12 17:44:11",
+          "due_at": "2024-06-18 17:22:42"
+        }
+      }
+    }
+  },
+  "26": {
+    "request_id": "26",
+    "target_entity_type": "page",
+    "target_entity_id": "4",
+    "requested_by_user_id": "8",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on Cross-Channel Content Calendar.",
+    "created_at": "2025-07-06 18:23:35",
+    "updated_at": "2025-08-09 22:22:26",
+    "due_at": "2025-07-16 18:23:35",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'Cross-Channel Content Calendar'",
+        "status": "approved",
+        "requester": {
+          "user_id": "8",
+          "full_name": "Amber Daniel",
+          "email": "amber.daniel@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "4",
+            "title": "Cross-Channel Content Calendar",
+            "space_id": "1",
+            "space": {
+              "space_id": "1",
+              "space_name": "Project Unify: Q4 Brand Campaign",
+              "space_key": "BEXI"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-07-06 18:23:35",
+          "updated_at": "2025-08-09 22:22:26",
+          "due_at": "2025-07-16 18:23:35"
+        }
+      }
+    }
+  },
+  "27": {
+    "request_id": "27",
+    "target_entity_type": "page",
+    "target_entity_id": "156",
+    "requested_by_user_id": "31",
+    "status": "pending",
+    "reason": "Automated contextual reason for request on Tech Spike: Integrating Data Models.",
+    "created_at": "2025-04-04 02:56:49",
+    "updated_at": "2025-04-24 00:01:45",
+    "due_at": "2025-04-14 02:56:49",
+    "metadata": {
+      "content": {
+        "summary": "Approval pending for page 'Tech Spike: Integrating Data Models'",
+        "status": "pending",
+        "requester": {
+          "user_id": "31",
+          "full_name": "Elizabeth Santiago",
+          "email": "elizabeth.santiago@example.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "156",
+            "title": "Tech Spike: Integrating Data Models",
+            "space_id": "16",
+            "space": {
+              "space_id": "16",
+              "space_name": "Innovation Lab: Cross-Product R&D",
+              "space_key": "DSDN"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-04-04 02:56:49",
+          "updated_at": "2025-04-24 00:01:45",
+          "due_at": "2025-04-14 02:56:49"
+        }
+      }
+    }
+  },
+  "28": {
+    "request_id": "28",
+    "target_entity_type": "page",
+    "target_entity_id": "147",
+    "requested_by_user_id": "34",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on MAP Policy & Brand Guidelines for Partners.",
+    "created_at": "2024-07-04 01:50:15",
+    "updated_at": "2025-02-09 11:47:41",
+    "due_at": "2024-07-14 01:50:15",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'MAP Policy & Brand Guidelines for Partners'",
+        "status": "approved",
+        "requester": {
+          "user_id": "34",
+          "full_name": "Diana Fletcher",
+          "email": "diana.fletcher@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "147",
+            "title": "MAP Policy & Brand Guidelines for Partners",
+            "space_id": "15",
+            "space": {
+              "space_id": "15",
+              "space_name": "E-tailer Partner Program",
+              "space_key": "VSBA"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-07-04 01:50:15",
+          "updated_at": "2025-02-09 11:47:41",
+          "due_at": "2024-07-14 01:50:15"
+        }
+      }
+    }
+  },
+  "29": {
+    "request_id": "29",
+    "target_entity_type": "page",
+    "target_entity_id": "155",
+    "requested_by_user_id": "48",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Prototype: Cross-Product Search.",
+    "created_at": "2025-08-29 02:37:25",
+    "updated_at": "2025-10-10 16:16:33",
+    "due_at": "2025-09-08 02:37:25",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Prototype: Cross-Product Search'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "48",
+          "full_name": "Jeffery Alvarado",
+          "email": "jeffery.alvarado@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "155",
+            "title": "Prototype: Cross-Product Search",
+            "space_id": "16",
+            "space": {
+              "space_id": "16",
+              "space_name": "Innovation Lab: Cross-Product R&D",
+              "space_key": "DSDN"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-08-29 02:37:25",
+          "updated_at": "2025-10-10 16:16:33",
+          "due_at": "2025-09-08 02:37:25"
+        }
+      }
+    }
+  },
+  "30": {
+    "request_id": "30",
+    "target_entity_type": "page",
+    "target_entity_id": "117",
+    "requested_by_user_id": "50",
+    "status": "pending",
+    "reason": "Automated contextual reason for request on Project Atlas: Product Requirements (PRD).",
+    "created_at": "2024-02-29 21:15:57",
+    "updated_at": "2025-01-25 00:52:49",
+    "due_at": "2024-03-10 21:15:57",
+    "metadata": {
+      "content": {
+        "summary": "Approval pending for page 'Project Atlas: Product Requirements (PRD)'",
+        "status": "pending",
+        "requester": {
+          "user_id": "50",
+          "full_name": "Andrew Brooks",
+          "email": "andrew.brooks@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "117",
+            "title": "Project Atlas: Product Requirements (PRD)",
+            "space_id": "13",
+            "space": {
+              "space_id": "13",
+              "space_name": "Project Atlas: Interactive Dashboard",
+              "space_key": "HWSP"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-02-29 21:15:57",
+          "updated_at": "2025-01-25 00:52:49",
+          "due_at": "2024-03-10 21:15:57"
+        }
+      }
+    }
+  },
+  "31": {
+    "request_id": "31",
+    "target_entity_type": "page",
+    "target_entity_id": "201",
+    "requested_by_user_id": "5",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Inventory Management & Cycle Count Process.",
+    "created_at": "2024-08-17 07:02:13",
+    "updated_at": "2024-10-02 22:48:21",
+    "due_at": "2024-08-27 07:02:13",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Inventory Management & Cycle Count Process'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "5",
+          "full_name": "Jessica Foster",
+          "email": "jessica.foster@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "201",
+            "title": "Inventory Management & Cycle Count Process",
+            "space_id": "20",
+            "space": {
+              "space_id": "20",
+              "space_name": "E-commerce Operations & Fulfillment",
+              "space_key": "OEZV"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-08-17 07:02:13",
+          "updated_at": "2024-10-02 22:48:21",
+          "due_at": "2024-08-27 07:02:13"
+        }
+      }
+    }
+  },
+  "32": {
+    "request_id": "32",
+    "target_entity_type": "page",
+    "target_entity_id": "57",
+    "requested_by_user_id": "7",
+    "status": "pending",
+    "reason": "Automated contextual reason for request on New CRM Implementation Project Plan.",
+    "created_at": "2024-03-02 09:44:05",
+    "updated_at": "2024-06-03 12:32:33",
+    "due_at": "2024-03-12 09:44:05",
+    "metadata": {
+      "content": {
+        "summary": "Approval pending for page 'New CRM Implementation Project Plan'",
+        "status": "pending",
+        "requester": {
+          "user_id": "7",
+          "full_name": "Kimberly Freeman",
+          "email": "kimberly.freeman@example.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "57",
+            "title": "New CRM Implementation Project Plan",
+            "space_id": "7",
+            "space": {
+              "space_id": "7",
+              "space_name": "Customer Success & CRM Initiative",
+              "space_key": "JYQH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-03-02 09:44:05",
+          "updated_at": "2024-06-03 12:32:33",
+          "due_at": "2024-03-12 09:44:05"
+        }
+      }
+    }
+  },
+  "33": {
+    "request_id": "33",
+    "target_entity_type": "page",
+    "target_entity_id": "92",
+    "requested_by_user_id": "24",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Frequently Asked Questions (FAQ) for New Vendors.",
+    "created_at": "2025-04-30 04:26:47",
+    "updated_at": "2025-06-28 11:09:13",
+    "due_at": "2025-05-10 04:26:47",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Frequently Asked Questions (FAQ) for New Vendors'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "24",
+          "full_name": "Bobby Johnson",
+          "email": "bobby.johnson@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "92",
+            "title": "Frequently Asked Questions (FAQ) for New Vendors",
+            "space_id": "10",
+            "space": {
+              "space_id": "10",
+              "space_name": "Vendor & Logistics Onboarding",
+              "space_key": "IQCE"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-04-30 04:26:47",
+          "updated_at": "2025-06-28 11:09:13",
+          "due_at": "2025-05-10 04:26:47"
+        }
+      }
+    }
+  },
+  "34": {
+    "request_id": "34",
+    "target_entity_type": "page",
+    "target_entity_id": "49",
+    "requested_by_user_id": "31",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Outreach Email & DM Templates.",
+    "created_at": "2025-04-04 02:56:49",
+    "updated_at": "2025-07-10 05:04:49",
+    "due_at": "2025-04-14 02:56:49",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Outreach Email & DM Templates'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "31",
+          "full_name": "Elizabeth Santiago",
+          "email": "elizabeth.santiago@example.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "49",
+            "title": "Outreach Email & DM Templates",
+            "space_id": "6",
+            "space": {
+              "space_id": "6",
+              "space_name": "Community & Influencer Outreach",
+              "space_key": "BVDH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-04-04 02:56:49",
+          "updated_at": "2025-07-10 05:04:49",
+          "due_at": "2025-04-14 02:56:49"
+        }
+      }
+    }
+  },
+  "35": {
+    "request_id": "35",
+    "target_entity_type": "page",
+    "target_entity_id": "23",
+    "requested_by_user_id": "35",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on UX/UI Wireframes & Prototypes (Figma).",
+    "created_at": "2025-07-10 08:21:57",
+    "updated_at": "2025-07-28 21:47:10",
+    "due_at": "2025-07-20 08:21:57",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'UX/UI Wireframes & Prototypes (Figma)'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "35",
+          "full_name": "Christine Sanchez",
+          "email": "christine.sanchez@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "23",
+            "title": "UX/UI Wireframes & Prototypes (Figma)",
+            "space_id": "4",
+            "space": {
+              "space_id": "4",
+              "space_name": "Project Phoenix: Mobile App 2.0",
+              "space_key": "UANH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-07-10 08:21:57",
+          "updated_at": "2025-07-28 21:47:10",
+          "due_at": "2025-07-20 08:21:57"
+        }
+      }
+    }
+  },
+  "36": {
+    "request_id": "36",
+    "target_entity_type": "page",
+    "target_entity_id": "83",
+    "requested_by_user_id": "46",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on Agile Coach Office Hours & Resources.",
+    "created_at": "2024-08-07 19:20:38",
+    "updated_at": "2025-04-14 08:35:54",
+    "due_at": "2024-08-17 19:20:38",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'Agile Coach Office Hours & Resources'",
+        "status": "approved",
+        "requester": {
+          "user_id": "46",
+          "full_name": "Randy Medina",
+          "email": "randy.medina@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "83",
+            "title": "Agile Coach Office Hours & Resources",
+            "space_id": "9",
+            "space": {
+              "space_id": "9",
+              "space_name": "Agile Center of Excellence",
+              "space_key": "JTXJ"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-08-07 19:20:38",
+          "updated_at": "2025-04-14 08:35:54",
+          "due_at": "2024-08-17 19:20:38"
+        }
+      }
+    }
+  },
+  "37": {
+    "request_id": "37",
+    "target_entity_type": "page",
+    "target_entity_id": "141",
+    "requested_by_user_id": "35",
+    "status": "rejected",
+    "reason": "Automated contextual reason for request on New Partner Onboarding Guide.",
+    "created_at": "2025-07-10 08:21:57",
+    "updated_at": "2025-08-19 10:53:06",
+    "due_at": "2025-07-20 08:21:57",
+    "metadata": {
+      "content": {
+        "summary": "Approval rejected for page 'New Partner Onboarding Guide'",
+        "status": "rejected",
+        "requester": {
+          "user_id": "35",
+          "full_name": "Christine Sanchez",
+          "email": "christine.sanchez@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "141",
+            "title": "New Partner Onboarding Guide",
+            "space_id": "15",
+            "space": {
+              "space_id": "15",
+              "space_name": "E-tailer Partner Program",
+              "space_key": "VSBA"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-07-10 08:21:57",
+          "updated_at": "2025-08-19 10:53:06",
+          "due_at": "2025-07-20 08:21:57"
+        }
+      }
+    }
+  },
+  "38": {
+    "request_id": "38",
+    "target_entity_type": "page",
+    "target_entity_id": "68",
+    "requested_by_user_id": "17",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on Incident Post-Mortem Template.",
+    "created_at": "2024-06-08 17:22:42",
+    "updated_at": "2024-12-04 01:52:50",
+    "due_at": "2024-06-18 17:22:42",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'Incident Post-Mortem Template'",
+        "status": "approved",
+        "requester": {
+          "user_id": "17",
+          "full_name": "Cassandra Quinn",
+          "email": "cassandra.quinn@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "68",
+            "title": "Incident Post-Mortem Template",
+            "space_id": "8",
+            "space": {
+              "space_id": "8",
+              "space_name": "Platform Engineering & DevOps",
+              "space_key": "QEMW"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-06-08 17:22:42",
+          "updated_at": "2024-12-04 01:52:50",
+          "due_at": "2024-06-18 17:22:42"
+        }
+      }
+    }
+  },
+  "39": {
+    "request_id": "39",
+    "target_entity_type": "page",
+    "target_entity_id": "103",
+    "requested_by_user_id": "47",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Returns & Exchange Policy (Online & In-Store).",
+    "created_at": "2025-05-14 19:47:03",
+    "updated_at": "2025-06-22 19:22:25",
+    "due_at": "2025-05-24 19:47:03",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Returns & Exchange Policy (Online & In-Store)'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "47",
+          "full_name": "Michele Johnson",
+          "email": "michele.johnson@yahoo.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "103",
+            "title": "Returns & Exchange Policy (Online & In-Store)",
+            "space_id": "11",
+            "space": {
+              "space_id": "11",
+              "space_name": "Omnichannel Retail Strategy",
+              "space_key": "XSHU"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-05-14 19:47:03",
+          "updated_at": "2025-06-22 19:22:25",
+          "due_at": "2025-05-24 19:47:03"
+        }
+      }
+    }
+  },
+  "40": {
+    "request_id": "40",
+    "target_entity_type": "page",
+    "target_entity_id": "24",
+    "requested_by_user_id": "20",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Technical Architecture & Stack Decision.",
+    "created_at": "2024-02-22 10:13:13",
+    "updated_at": "2024-05-07 13:30:52",
+    "due_at": "2024-03-03 10:13:13",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Technical Architecture & Stack Decision'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "20",
+          "full_name": "Rodney Huff",
+          "email": "rodney.huff@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "24",
+            "title": "Technical Architecture & Stack Decision",
+            "space_id": "4",
+            "space": {
+              "space_id": "4",
+              "space_name": "Project Phoenix: Mobile App 2.0",
+              "space_key": "UANH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-02-22 10:13:13",
+          "updated_at": "2024-05-07 13:30:52",
+          "due_at": "2024-03-03 10:13:13"
+        }
+      }
+    }
+  },
+  "41": {
+    "request_id": "41",
+    "target_entity_type": "page",
+    "target_entity_id": "56",
+    "requested_by_user_id": "2",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Team Meeting Notes.",
+    "created_at": "2024-08-31 22:11:29",
+    "updated_at": "2025-03-11 19:45:36",
+    "due_at": "2024-09-10 22:11:29",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Team Meeting Notes'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "2",
+          "full_name": "Julie Davis",
+          "email": "julie.davis@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "56",
+            "title": "Team Meeting Notes",
+            "space_id": "6",
+            "space": {
+              "space_id": "6",
+              "space_name": "Community & Influencer Outreach",
+              "space_key": "BVDH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-08-31 22:11:29",
+          "updated_at": "2025-03-11 19:45:36",
+          "due_at": "2024-09-10 22:11:29"
+        }
+      }
+    }
+  },
+  "42": {
+    "request_id": "42",
+    "target_entity_type": "page",
+    "target_entity_id": "145",
+    "requested_by_user_id": "10",
+    "status": "approved",
+    "reason": "Automated contextual reason for request on Quarterly Business Review (QBR) Deck Template.",
+    "created_at": "2023-12-22 07:52:33",
+    "updated_at": "2024-05-25 04:43:58",
+    "due_at": "2024-01-01 07:52:33",
+    "metadata": {
+      "content": {
+        "summary": "Approval approved for page 'Quarterly Business Review (QBR) Deck Template'",
+        "status": "approved",
+        "requester": {
+          "user_id": "10",
+          "full_name": "Nicholas Knight",
+          "email": "nicholas.knight@yahoo.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "145",
+            "title": "Quarterly Business Review (QBR) Deck Template",
+            "space_id": "15",
+            "space": {
+              "space_id": "15",
+              "space_name": "E-tailer Partner Program",
+              "space_key": "VSBA"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2023-12-22 07:52:33",
+          "updated_at": "2024-05-25 04:43:58",
+          "due_at": "2024-01-01 07:52:33"
+        }
+      }
+    }
+  },
+  "43": {
+    "request_id": "43",
+    "target_entity_type": "page",
+    "target_entity_id": "27",
+    "requested_by_user_id": "17",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on QA Test Cases & Bug Reports.",
+    "created_at": "2024-06-08 17:22:42",
+    "updated_at": "2025-09-07 13:23:26",
+    "due_at": "2024-06-18 17:22:42",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'QA Test Cases & Bug Reports'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "17",
+          "full_name": "Cassandra Quinn",
+          "email": "cassandra.quinn@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "27",
+            "title": "QA Test Cases & Bug Reports",
+            "space_id": "4",
+            "space": {
+              "space_id": "4",
+              "space_name": "Project Phoenix: Mobile App 2.0",
+              "space_key": "UANH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-06-08 17:22:42",
+          "updated_at": "2025-09-07 13:23:26",
+          "due_at": "2024-06-18 17:22:42"
+        }
+      }
+    }
+  },
+  "44": {
+    "request_id": "44",
+    "target_entity_type": "page",
+    "target_entity_id": "49",
+    "requested_by_user_id": "48",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Outreach Email & DM Templates.",
+    "created_at": "2025-08-29 02:37:25",
+    "updated_at": "2025-09-09 06:20:27",
+    "due_at": "2025-09-08 02:37:25",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Outreach Email & DM Templates'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "48",
+          "full_name": "Jeffery Alvarado",
+          "email": "jeffery.alvarado@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "49",
+            "title": "Outreach Email & DM Templates",
+            "space_id": "6",
+            "space": {
+              "space_id": "6",
+              "space_name": "Community & Influencer Outreach",
+              "space_key": "BVDH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-08-29 02:37:25",
+          "updated_at": "2025-09-09 06:20:27",
+          "due_at": "2025-09-08 02:37:25"
+        }
+      }
+    }
+  },
+  "45": {
+    "request_id": "45",
+    "target_entity_type": "page",
+    "target_entity_id": "190",
+    "requested_by_user_id": "17",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Customer Journey Maps.",
+    "created_at": "2024-06-08 17:22:42",
+    "updated_at": "2024-09-07 02:00:11",
+    "due_at": "2024-06-18 17:22:42",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Customer Journey Maps'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "17",
+          "full_name": "Cassandra Quinn",
+          "email": "cassandra.quinn@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "190",
+            "title": "Customer Journey Maps",
+            "space_id": "19",
+            "space": {
+              "space_id": "19",
+              "space_name": "UX Research & Design Systems",
+              "space_key": "EZQO"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-06-08 17:22:42",
+          "updated_at": "2024-09-07 02:00:11",
+          "due_at": "2024-06-18 17:22:42"
+        }
+      }
+    }
+  },
+  "46": {
+    "request_id": "46",
+    "target_entity_type": "page",
+    "target_entity_id": "85",
+    "requested_by_user_id": "2",
+    "status": "rejected",
+    "reason": "Automated contextual reason for request on Master Vendor Contact List.",
+    "created_at": "2024-08-31 22:11:29",
+    "updated_at": "2025-02-08 06:31:52",
+    "due_at": "2024-09-10 22:11:29",
+    "metadata": {
+      "content": {
+        "summary": "Approval rejected for page 'Master Vendor Contact List'",
+        "status": "rejected",
+        "requester": {
+          "user_id": "2",
+          "full_name": "Julie Davis",
+          "email": "julie.davis@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "85",
+            "title": "Master Vendor Contact List",
+            "space_id": "10",
+            "space": {
+              "space_id": "10",
+              "space_name": "Vendor & Logistics Onboarding",
+              "space_key": "IQCE"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-08-31 22:11:29",
+          "updated_at": "2025-02-08 06:31:52",
+          "due_at": "2024-09-10 22:11:29"
+        }
+      }
+    }
+  },
+  "47": {
+    "request_id": "47",
+    "target_entity_type": "page",
+    "target_entity_id": "4",
+    "requested_by_user_id": "38",
+    "status": "pending",
+    "reason": "Automated contextual reason for request on Cross-Channel Content Calendar.",
+    "created_at": "2024-11-12 15:48:19",
+    "updated_at": "2025-07-04 07:28:08",
+    "due_at": "2024-11-22 15:48:19",
+    "metadata": {
+      "content": {
+        "summary": "Approval pending for page 'Cross-Channel Content Calendar'",
+        "status": "pending",
+        "requester": {
+          "user_id": "38",
+          "full_name": "Amy Willis",
+          "email": "amy.willis@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "4",
+            "title": "Cross-Channel Content Calendar",
+            "space_id": "1",
+            "space": {
+              "space_id": "1",
+              "space_name": "Project Unify: Q4 Brand Campaign",
+              "space_key": "BEXI"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-11-12 15:48:19",
+          "updated_at": "2025-07-04 07:28:08",
+          "due_at": "2024-11-22 15:48:19"
+        }
+      }
+    }
+  },
+  "48": {
+    "request_id": "48",
+    "target_entity_type": "page",
+    "target_entity_id": "125",
+    "requested_by_user_id": "3",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Phased Rollout & Release Plan.",
+    "created_at": "2023-12-23 07:24:52",
+    "updated_at": "2025-04-27 11:49:02",
+    "due_at": "2024-01-02 07:24:52",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Phased Rollout & Release Plan'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "3",
+          "full_name": "James Williams",
+          "email": "james.williams@yahoo.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "125",
+            "title": "Phased Rollout & Release Plan",
+            "space_id": "13",
+            "space": {
+              "space_id": "13",
+              "space_name": "Project Atlas: Interactive Dashboard",
+              "space_key": "HWSP"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2023-12-23 07:24:52",
+          "updated_at": "2025-04-27 11:49:02",
+          "due_at": "2024-01-02 07:24:52"
+        }
+      }
+    }
+  },
+  "49": {
+    "request_id": "49",
+    "target_entity_type": "page",
+    "target_entity_id": "26",
+    "requested_by_user_id": "17",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Backend API Specifications.",
+    "created_at": "2024-06-08 17:22:42",
+    "updated_at": "2025-04-25 15:43:44",
+    "due_at": "2024-06-18 17:22:42",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Backend API Specifications'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "17",
+          "full_name": "Cassandra Quinn",
+          "email": "cassandra.quinn@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "26",
+            "title": "Backend API Specifications",
+            "space_id": "4",
+            "space": {
+              "space_id": "4",
+              "space_name": "Project Phoenix: Mobile App 2.0",
+              "space_key": "UANH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2024-06-08 17:22:42",
+          "updated_at": "2025-04-25 15:43:44",
+          "due_at": "2024-06-18 17:22:42"
+        }
+      }
+    }
+  },
+  "50": {
+    "request_id": "50",
+    "target_entity_type": "page",
+    "target_entity_id": "49",
+    "requested_by_user_id": "8",
+    "status": "cancelled",
+    "reason": "Automated contextual reason for request on Outreach Email & DM Templates.",
+    "created_at": "2025-07-06 18:23:35",
+    "updated_at": "2025-07-16 12:43:58",
+    "due_at": "2025-07-16 18:23:35",
+    "metadata": {
+      "content": {
+        "summary": "Approval cancelled for page 'Outreach Email & DM Templates'",
+        "status": "cancelled",
+        "requester": {
+          "user_id": "8",
+          "full_name": "Amber Daniel",
+          "email": "amber.daniel@gmail.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "49",
+            "title": "Outreach Email & DM Templates",
+            "space_id": "6",
+            "space": {
+              "space_id": "6",
+              "space_name": "Community & Influencer Outreach",
+              "space_key": "BVDH"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-07-06 18:23:35",
+          "updated_at": "2025-07-16 12:43:58",
+          "due_at": "2025-07-16 18:23:35"
+        }
+      }
+    }
+  },
+  "51": {
+    "request_id": "51",
+    "target_entity_type": "page",
+    "target_entity_id": "88",
+    "requested_by_user_id": "48",
+    "status": "in_review",
+    "reason": "Automated contextual reason for request on Shipping & Labeling Requirements.",
+    "created_at": "2025-08-29 02:37:25",
+    "updated_at": "2025-09-10 11:52:01",
+    "due_at": "2025-09-08 02:37:25",
+    "metadata": {
+      "content": {
+        "summary": "Approval in_review for page 'Shipping & Labeling Requirements'",
+        "status": "in_review",
+        "requester": {
+          "user_id": "48",
+          "full_name": "Jeffery Alvarado",
+          "email": "jeffery.alvarado@outlook.com"
+        },
+        "entity": {
+          "type": "page",
+          "details": {
+            "page_id": "88",
+            "title": "Shipping & Labeling Requirements",
+            "space_id": "10",
+            "space": {
+              "space_id": "10",
+              "space_name": "Vendor & Logistics Onboarding",
+              "space_key": "IQCE"
+            }
+          }
+        },
+        "timeline": {
+          "created_at": "2025-08-29 02:37:25",
+          "updated_at": "2025-09-10 11:52:01",
+          "due_at": "2025-09-08 02:37:25"
+        }
+      }
+    }
+  }
+}

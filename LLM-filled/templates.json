@@ -1,0 +1,137 @@
+{
+  "1": {
+    "template_id": "1",
+    "template_name": "enhance-robust-metrics-template",
+    "template_content": "# enhance-robust-metrics-template\n**Template** — Global Scope\n\nCreated by **Seth Baldwin** on 2024-12-18 03:52:17. Creator groups: 1.\n\n---\n\n## Purpose\nStarter content for **enhance-robust-metrics-template**.\n\n## Key Sections\n- Objectives\n- Content\n- Review & Approvals\n\n## Next Steps\n- [ ] Draft\n- [ ] Review\n- [ ] Publish\n",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "9",
+    "created_at": "2024-12-18 03:52:17"
+  },
+  "2": {
+    "template_id": "2",
+    "template_name": "redefine-cross-platform-solutions-template",
+    "template_content": "# redefine-cross-platform-solutions-template\n**Template** — Global Scope\n\nCreated by **John Mccann** on 2025-01-02 18:55:32. Creator groups: —.\n\n---\n\n## Purpose\nStarter content for **redefine-cross-platform-solutions-template**.\n\n## Key Sections\n- Objectives\n- Content\n- Review & Approvals\n\n## Next Steps\n- [ ] Draft\n- [ ] Review\n- [ ] Publish\n",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "13",
+    "created_at": "2025-01-02 18:55:32"
+  },
+  "3": {
+    "template_id": "3",
+    "template_name": "cultivate-virtual-portals-template",
+    "template_content": "# cultivate-virtual-portals-template\n**Blueprint** — Global Scope\n\nCreated by **John Mccann** on 2025-04-07 15:19:55. Creator groups: —.\n\n---\n\n## Purpose\nStarter content for **cultivate-virtual-portals-template**.\n\n## Key Sections\n- Objectives\n- Content\n- Review & Approvals\n\n## Next Steps\n- [ ] Draft\n- [ ] Review\n- [ ] Publish\n",
+    "is_blueprint": true,
+    "space_id": null,
+    "created_by_user_id": "13",
+    "created_at": "2025-04-07 15:19:55"
+  },
+  "4": {
+    "template_id": "4",
+    "template_name": "syndicate-interactive-markets-template",
+    "template_content": "# syndicate-interactive-markets-template\n**Template** — Global Scope\n\nCreated by **Melissa Williams** on 2025-05-15 21:17:43. Creator groups: 4, 5.\n\n---\n\n## Purpose\nStarter content for **syndicate-interactive-markets-template**.\n\n## Key Sections\n- Objectives\n- Content\n- Review & Approvals\n\n## Next Steps\n- [ ] Draft\n- [ ] Review\n- [ ] Publish\n",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "44",
+    "created_at": "2025-05-15 21:17:43"
+  },
+  "5": {
+    "template_id": "5",
+    "template_name": "Meeting Notes",
+    "template_content": "# Meeting Notes\n**Blueprint** — Space: Project Unify: Q4 Brand Campaign [BEXI]\n\nCreated by **Rodney Huff** on 2025-02-14 19:35:06. Creator groups: 3, 7. — Adoption: 6 members (2 admins, 3 contributors, 0 members, 1 guests)\n> Latest space configuration (v2): Version 2 applied on 2025-03-15 15:14:39 by Ashley Hammond. Active features: calendars, folders, live_docs, smart_links. Disabled features: databases.\n\n---\n\n## Purpose\nCapture discussion, decisions, and next steps.\n\n## Meeting Details\n- Date: \n- Time: \n- Facilitator: \n- Note-taker: \n\n## Agenda\n1. \n2. \n3. \n\n## Attendees\n- \n\n## Discussion Notes\n- \n\n## Decisions\n- \n\n## Action Items\n- [ ] Owner — Task (Due: )\n",
+    "is_blueprint": true,
+    "space_id": "1",
+    "created_by_user_id": "20",
+    "created_at": "2025-02-14 19:35:06"
+  },
+  "6": {
+    "template_id": "6",
+    "template_name": "enhance-strategic-niches-template",
+    "template_content": "# enhance-strategic-niches-template\n**Template** — Global Scope\n\nCreated by **Kelly Russell** on 2024-12-24 05:47:35. Creator groups: 3.\n\n---\n\n## Purpose\nStarter content for **enhance-strategic-niches-template**.\n\n## Key Sections\n- Objectives\n- Content\n- Review & Approvals\n\n## Next Steps\n- [ ] Draft\n- [ ] Review\n- [ ] Publish\n",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "33",
+    "created_at": "2024-12-24 05:47:35"
+  },
+  "7": {
+    "template_id": "7",
+    "template_name": "Product Requirements Document",
+    "template_content": "# Product Requirements Document\n**Template** — Space: Project Atlas: Interactive Dashboard [HWSP]\n\nCreated by **Victor Hammond** on 2024-10-19 07:21:21. Creator groups: —. — Adoption: 16 members (4 admins, 3 contributors, 5 members, 4 guests)\n> Latest space configuration (v5): Version 5 applied on 2025-04-21 05:45:40 by Emily Washington. Active features: calendars, whiteboard. Disabled features: none.\n\n---\n\n## Overview\nDescribe the product/feature at a glance.\n\n## Problem Statement\nWhat user/customer problem are we solving?\n\n## Goals & Non-Goals\n- Goals: \n- Non-Goals: \n\n## Requirements\n- Functional: \n- Non-Functional: \n\n## User Experience\nLink to mocks/wireframes. Key flows.\n\n## Analytics & Success Metrics\nKPIs, guardrails, and tracking plan.\n\n## Dependencies & Risks\n- \n",
+    "is_blueprint": false,
+    "space_id": "13",
+    "created_by_user_id": "22",
+    "created_at": "2024-10-19 07:21:21"
+  },
+  "8": {
+    "template_id": "8",
+    "template_name": "extend-robust-platforms-template",
+    "template_content": "# extend-robust-platforms-template\n**Blueprint** — Global Scope\n\nCreated by **Renee David** on 2024-12-03 22:57:23. Creator groups: 4.\n\n---\n\n## Purpose\nStarter content for **extend-robust-platforms-template**.\n\n## Key Sections\n- Objectives\n- Content\n- Review & Approvals\n\n## Next Steps\n- [ ] Draft\n- [ ] Review\n- [ ] Publish\n",
+    "is_blueprint": true,
+    "space_id": null,
+    "created_by_user_id": "28",
+    "created_at": "2024-12-03 22:57:23"
+  },
+  "9": {
+    "template_id": "9",
+    "template_name": "Sprint Retrospective",
+    "template_content": "# Sprint Retrospective\n**Blueprint** — Space: Project Phoenix: Mobile App 2.0 [UANH]\n\nCreated by **Brett Morrow** on 2025-06-09 17:45:50. Creator groups: 1, 7. — Adoption: 9 members (4 admins, 2 contributors, 0 members, 3 guests)\n> Latest space configuration (v5): Version 5 applied on 2025-04-02 21:50:09 by Angela Martinez. Active features: folders, live_docs, whiteboard. Disabled features: blogs.\n\n---\n\n## Sprint/Period\n- Start: \n- End: \n\n## What Went Well\n- \n\n## What Didn't Go Well\n- \n\n## Ideas/Experiments\n- \n\n## Action Items\n- [ ] Owner — Action (Due: )\n",
+    "is_blueprint": true,
+    "space_id": "4",
+    "created_by_user_id": "4",
+    "created_at": "2025-06-09 17:45:50"
+  },
+  "10": {
+    "template_id": "10",
+    "template_name": "Competitive Analysis",
+    "template_content": "# Competitive Analysis\n**Template** — Space: Pathfinder: New Subscription Models [DTHJ]\n\nCreated by **Melissa Williams** on 2025-06-04 16:53:01. Creator groups: 4, 5. — Adoption: 5 members (2 admins, 1 contributors, 1 members, 1 guests)\n> Latest space configuration (v4): Version 4 applied on 2025-05-18 21:56:16 by Donald Phillips. Active features: blogs, databases, live_docs, smart_links. Disabled features: whiteboard.\n\n---\n\n## Objective\nWhat decision will this analysis inform?\n\n## Competitor List\n- \n\n## Feature Comparison\n| Capability | Us | Competitor A | Competitor B |\n|---|---|---|---|\n\n## Pricing & Packaging\n- \n\n## SWOT Summary\n- Strengths: \n- Weaknesses: \n- Opportunities: \n- Threats: \n",
+    "is_blueprint": false,
+    "space_id": "2",
+    "created_by_user_id": "44",
+    "created_at": "2025-06-04 16:53:01"
+  },
+  "11": {
+    "template_id": "11",
+    "template_name": "Go-to-Market Plan",
+    "template_content": "# Go-to-Market Plan\n**Blueprint** — Space: Pathfinder: New Subscription Models [DTHJ]\n\nCreated by **Kyle Atkinson** on 2024-11-07 16:04:40. Creator groups: 2, 4, 9. — Adoption: 5 members (2 admins, 1 contributors, 1 members, 1 guests)\n> Latest space configuration (v4): Version 4 applied on 2025-05-18 21:56:16 by Donald Phillips. Active features: blogs, databases, live_docs, smart_links. Disabled features: whiteboard.\n\n---\n\n## Executive Summary\n\n## ICP & Segmentation\n- Ideal Customer Profile: \n- Segments: \n\n## Positioning & Messaging\n- Value prop: \n- Key messages: \n\n## Channels & Tactics\n- \n\n## Launch Plan & Timeline\n- \n\n## KPIs & Measurement\n- \n",
+    "is_blueprint": true,
+    "space_id": "2",
+    "created_by_user_id": "27",
+    "created_at": "2024-11-07 16:04:40"
+  },
+  "12": {
+    "template_id": "12",
+    "template_name": "expedite-open-source-web-services-template",
+    "template_content": "# expedite-open-source-web-services-template\n**Template** — Global Scope\n\nCreated by **Kimberly Freeman** on 2024-10-24 06:52:22. Creator groups: —.\n\n---\n\n## Purpose\nStarter content for **expedite-open-source-web-services-template**.\n\n## Key Sections\n- Objectives\n- Content\n- Review & Approvals\n\n## Next Steps\n- [ ] Draft\n- [ ] Review\n- [ ] Publish\n",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "7",
+    "created_at": "2024-10-24 06:52:22"
+  },
+  "13": {
+    "template_id": "13",
+    "template_name": "seize-enterprise-relationships-template",
+    "template_content": "# seize-enterprise-relationships-template\n**Template** — Global Scope\n\nCreated by **Jessica Foster** on 2025-01-10 19:01:17. Creator groups: 8.\n\n---\n\n## Purpose\nStarter content for **seize-enterprise-relationships-template**.\n\n## Key Sections\n- Objectives\n- Content\n- Review & Approvals\n\n## Next Steps\n- [ ] Draft\n- [ ] Review\n- [ ] Publish\n",
+    "is_blueprint": false,
+    "space_id": null,
+    "created_by_user_id": "5",
+    "created_at": "2025-01-10 19:01:17"
+  },
+  "14": {
+    "template_id": "14",
+    "template_name": "Quarterly Business Review (QBR)",
+    "template_content": "# Quarterly Business Review (QBR)\n**Blueprint** — Space: E-tailer Partner Program [VSBA]\n\nCreated by **Renee David** on 2025-09-27 10:54:08. Creator groups: 4. — Adoption: 8 members (1 admins, 2 contributors, 2 members, 3 guests)\n> Latest space configuration (v1): Version 1 applied on 2025-08-23 21:50:12 by Kyle Atkinson. Active features: blogs, databases, folders, whiteboard. Disabled features: none.\n\n---\n\n## Executive Summary\n\n## Business Outcomes Since Last QBR\n- \n\n## Adoption & Usage\n- \n\n## Roadmap & Delivery\n- \n\n## Risks & Asks\n- \n",
+    "is_blueprint": true,
+    "space_id": "15",
+    "created_by_user_id": "28",
+    "created_at": "2025-09-27 10:54:08"
+  },
+  "15": {
+    "template_id": "15",
+    "template_name": "QA Test Plan",
+    "template_content": "# QA Test Plan\n**Template** — Space: Project Phoenix: Mobile App 2.0 [UANH]\n\nCreated by **Claudia Moreno** on 2024-11-25 08:49:18. Creator groups: —. — Adoption: 9 members (4 admins, 2 contributors, 0 members, 3 guests)\n> Latest space configuration (v5): Version 5 applied on 2025-04-02 21:50:09 by Angela Martinez. Active features: folders, live_docs, whiteboard. Disabled features: blogs.\n\n---\n\n## Scope\n\n## Test Items & Features\n- \n\n## Environments & Data\n- \n\n## Test Cases\n- ID | Title | Steps | Expected | Owner\n\n## Entry/Exit Criteria\n- \n\n## Defect Tracking\n- Tool: \n- Process: \n",
+    "is_blueprint": false,
+    "space_id": "4",
+    "created_by_user_id": "16",
+    "created_at": "2024-11-25 08:49:18"
+  }
+}

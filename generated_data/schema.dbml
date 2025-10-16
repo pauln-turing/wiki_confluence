@@ -1,0 +1,397 @@
+Enum user_role {
+  global_admin
+  space_admin
+  space_member
+  anonymous
+  reviewer_approver
+  guest
+  project_team_admin
+  content_contributor
+}
+
+Enum permission_type {
+  view
+  edit
+  admin
+}
+
+Enum space_feature_type {
+  live_docs
+  calendars
+  whiteboard
+  databases
+  smart_links
+  folders
+  blogs
+}
+
+Enum page_restriction_type {
+  view
+  edit
+}
+
+Enum content_state {
+  draft
+  published
+  archived
+}
+
+Enum deletion_mode {
+  soft_delete
+  hard_delete
+}
+
+Enum audit_action_type {
+  create_space
+  update_space
+  delete_space
+  manage_permissions
+  grant_admin_rights
+  configure_settings
+  export_space
+  import_space
+  create_page
+  update_page
+  delete_page
+  move_page
+  rename_page
+  add_comment
+  add_label
+  restore_version
+  clone_page
+  unpublish_page
+  add_restriction
+  remove_restriction
+  archive_content
+  add_attachment
+  remove_attachment
+  watch_content
+  unwatch_content
+}
+
+Enum export_format {
+  PDF
+  HTML
+  XML
+}
+
+Enum export_job_status {
+  pending
+  running
+  completed
+  failed
+  cancelled
+}
+
+Enum content_format {
+  markdown
+  html
+  richtext
+}
+Enum notification_channel {
+  system
+  email
+}
+
+Enum notification_status {
+  pending
+  sent
+  failed
+  read
+}
+Enum approval_status {
+  pending
+  in_review
+  approved
+  rejected
+  cancelled
+}
+
+Enum decision_type {
+  approve
+  reject
+  escalate
+  cancel
+}
+
+Table users {
+  user_id varchar [primary key]
+  email varchar [unique, not null]
+  account_id varchar
+  full_name varchar
+  global_role user_role [default: 'anonymous', not null]
+  created_at datetime [not null]
+}
+
+Table groups {
+  group_id varchar [primary key]
+  group_name varchar [unique, not null]
+  created_at datetime [not null]
+}
+
+Table user_groups {
+  user_id varchar [not null]
+  group_id varchar [not null]
+  joined_at datetime [not null]
+
+  indexes {
+    (user_id, group_id) [unique]
+  }
+}
+
+Table spaces {
+  space_id varchar [primary key]
+  space_key varchar [unique, not null]
+  space_name varchar [not null]
+  space_purpose text
+  created_by_user_id varchar [not null]
+  created_at datetime [not null]
+  is_deleted boolean [not null, default: false]
+  deleted_at datetime
+}
+
+Table space_memberships {
+  user_id varchar [not null]
+  space_id varchar [not null]
+  role user_role [not null, default: 'space_member']
+  joined_at datetime [not null]
+
+  indexes {
+    (user_id, space_id) [unique]
+  }
+}
+
+Table pages {
+  page_id varchar [primary key]
+  space_id varchar [not null]
+  parent_page_id varchar
+  title varchar [not null]
+  content_format content_format [not null, default: 'markdown']
+  current_version int [default: 1, not null]
+  state content_state [not null, default: 'draft']
+  created_by_user_id varchar [not null]
+  updated_by_user_id varchar
+  created_at datetime [not null]
+  updated_at datetime
+  is_trashed boolean [not null, default: false]
+  is_published boolean [not null, default: false]
+}
+
+Table page_versions {
+  version_id varchar [primary key]
+  page_id varchar [not null]
+  version_number int [not null]
+  editor_user_id varchar [not null]
+  edited_at datetime [not null]
+  content_snapshot text
+
+  indexes {
+    (page_id, version_number) [unique]
+  }
+}
+
+Table permissions {
+  permission_id varchar [primary key]
+  space_id varchar
+  page_id varchar
+  user_id varchar
+  group_id varchar
+  permission_type permission_type [not null]
+  granted_by_user_id varchar [not null]
+  granted_at datetime [not null]
+  is_active boolean [not null, default: true]
+  revoked_by_user_id varchar
+  revoked_at datetime
+  expires_at datetime
+
+
+  note: "Either user_id or group_id must be non-null; both cannot be set simultaneously."
+}
+
+Table space_features {
+  feature_id varchar [primary key]
+  space_id varchar [not null]
+  feature_type space_feature_type [not null]
+  is_enabled boolean [not null, default: true]
+}
+
+Table labels {
+  label_id varchar [primary key]
+  label_name varchar [not null]
+  space_id varchar [not null]
+
+  indexes {
+    (space_id, label_name) [unique]
+  }
+}
+
+Table page_labels {
+  page_id varchar [not null]
+  label_id varchar [not null]
+
+  indexes {
+    (page_id, label_id) [unique]
+  }
+}
+
+Table comments {
+  comment_id varchar [primary key]
+  page_id varchar [not null]
+  author_user_id varchar [not null]
+  comment_text text [not null]     
+  created_at datetime [not null]
+  updated_at datetime
+}
+
+Table audit_logs {
+  log_id varchar [primary key]
+  actor_user_id varchar [not null]
+  action_type audit_action_type [not null]
+  target_entity_type varchar [not null]
+  target_entity_id varchar [not null]
+  occurred_at datetime [not null]
+  details json
+}
+
+Table templates {
+  template_id varchar [primary key]
+  template_name varchar [not null]
+  template_content text [not null]
+  is_blueprint boolean [not null, default: false]
+  space_id varchar
+  created_by_user_id varchar [not null]
+  created_at datetime [not null]
+}
+
+Table export_jobs {
+  job_id varchar [primary key]
+  space_id varchar [not null]
+  requested_by_user_id varchar [not null]
+  requested_at datetime [not null]
+  status export_job_status [not null, default: 'pending']
+  format export_format [not null]
+  destination varchar
+  estimated_size_kb int
+  priority int [default: 0]
+}
+
+Table attachments {
+  attachment_id varchar [primary key]
+  page_id varchar [not null]
+  file_name varchar [not null]
+  file_path varchar [not null]
+  file_size_bytes bigint [not null]
+  uploaded_by_user_id varchar [not null]
+  uploaded_at datetime [not null]
+}
+
+Table watchers {
+  watcher_id varchar [primary key]
+  user_id varchar
+  group_id varchar
+  space_id varchar
+  page_id varchar
+  watched_at datetime [not null]
+}
+
+Table space_config_history {
+  history_id varchar [primary key]
+  space_id varchar [not null]
+  changed_by_user_id varchar [not null]
+  changed_at datetime [not null]
+  config_version int [not null]
+  old_config json
+  new_config json
+}
+Table notifications {
+  notification_id varchar [primary key]
+  recipient_user_id varchar [not null]
+  event_type varchar [not null] 
+  message text [not null]
+  related_entity_type varchar 
+  related_entity_id varchar
+  sender_user_id varchar
+  channel varchar [not null, default: 'system'] 
+  delivery_status varchar [not null, default: 'pending'] 
+  created_at datetime [not null]
+  sent_at datetime
+  read_at datetime
+  metadata json
+}
+Table approval_requests {
+  request_id varchar [primary key]
+  target_entity_type varchar [not null] 
+  target_entity_id varchar [not null]
+  requested_by_user_id varchar [not null]
+  status approval_status [not null, default: 'pending']
+  reason text
+  created_at datetime [not null]
+  updated_at datetime
+  due_at datetime
+  metadata json
+}
+
+Table approval_steps {
+  step_id varchar [primary key]
+  request_id varchar [not null]
+  step_order int [not null, default: 1] 
+  parallel_group int [not null, default: 1] 
+  assigned_group_id varchar
+  assigned_user_id varchar
+  status approval_status [not null, default: 'pending']
+  created_at datetime [not null]
+  updated_at datetime
+  due_at datetime
+}
+
+Table approval_decisions {
+  decision_id varchar [primary key]
+  step_id varchar [not null]
+  approver_user_id varchar [not null]
+  decision decision_type [not null]
+  comment text
+  decided_at datetime [not null]
+}
+
+
+Ref space_user_creator: spaces.created_by_user_id > users.user_id
+Ref page_space: pages.space_id > spaces.space_id
+Ref page_parent: pages.parent_page_id > pages.page_id
+Ref page_user_creator: pages.created_by_user_id > users.user_id
+Ref page_user_updater: pages.updated_by_user_id > users.user_id
+Ref page_versions_page: page_versions.page_id > pages.page_id
+Ref page_versions_editor: page_versions.editor_user_id > users.user_id
+Ref permissions_space: permissions.space_id > spaces.space_id
+Ref permissions_page: permissions.page_id > pages.page_id
+Ref permissions_user: permissions.user_id > users.user_id
+Ref permissions_group: permissions.group_id > groups.group_id
+Ref permissions_revoked_by: permissions.revoked_by_user_id > users.user_id
+Ref space_features_space: space_features.space_id > spaces.space_id
+Ref page_labels_page: page_labels.page_id > pages.page_id
+Ref page_labels_label: page_labels.label_id > labels.label_id
+Ref labels_space: labels.space_id > spaces.space_id
+Ref comments_page: comments.page_id > pages.page_id
+Ref comments_author: comments.author_user_id > users.user_id
+Ref audit_logs_actor: audit_logs.actor_user_id > users.user_id
+Ref templates_space: templates.space_id > spaces.space_id
+Ref export_jobs_space: export_jobs.space_id > spaces.space_id
+Ref export_jobs_user: export_jobs.requested_by_user_id > users.user_id
+Ref space_memberships_user: space_memberships.user_id > users.user_id
+Ref space_memberships_space: space_memberships.space_id > spaces.space_id
+Ref user_groups_user: user_groups.user_id > users.user_id
+Ref user_groups_group: user_groups.group_id > groups.group_id
+Ref attachment_page: attachments.page_id > pages.page_id
+Ref attachment_user: attachments.uploaded_by_user_id > users.user_id
+Ref watchers_user: watchers.user_id > users.user_id
+Ref watchers_group: watchers.group_id > groups.group_id
+Ref watchers_space: watchers.space_id > spaces.space_id
+Ref watchers_page: watchers.page_id > pages.page_id
+Ref space_config_history_space: space_config_history.space_id > spaces.space_id
+Ref notifications_recipient: notifications.recipient_user_id > users.user_id
+Ref notifications_sender: notifications.sender_user_id > users.user_id
+Ref ar_requester: approval_requests.requested_by_user_id > users.user_id
+Ref as_request: approval_steps.request_id > approval_requests.request_id
+Ref as_group: approval_steps.assigned_group_id > groups.group_id
+Ref as_user: approval_steps.assigned_user_id > users.user_id
+Ref ad_step: approval_decisions.step_id > approval_steps.step_id
+Ref ad_user: approval_decisions.approver_user_id > users.user_id

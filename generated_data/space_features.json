@@ -1,0 +1,524 @@
+{
+  "1": {
+    "feature_id": "1",
+    "space_id": "1",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "2": {
+    "feature_id": "2",
+    "space_id": "1",
+    "feature_type": "databases",
+    "is_enabled": false
+  },
+  "3": {
+    "feature_id": "3",
+    "space_id": "1",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "4": {
+    "feature_id": "4",
+    "space_id": "1",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "5": {
+    "feature_id": "5",
+    "space_id": "1",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "6": {
+    "feature_id": "6",
+    "space_id": "2",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "7": {
+    "feature_id": "7",
+    "space_id": "2",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "8": {
+    "feature_id": "8",
+    "space_id": "2",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "9": {
+    "feature_id": "9",
+    "space_id": "2",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "10": {
+    "feature_id": "10",
+    "space_id": "2",
+    "feature_type": "whiteboard",
+    "is_enabled": false
+  },
+  "11": {
+    "feature_id": "11",
+    "space_id": "3",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "12": {
+    "feature_id": "12",
+    "space_id": "3",
+    "feature_type": "databases",
+    "is_enabled": false
+  },
+  "13": {
+    "feature_id": "13",
+    "space_id": "3",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "14": {
+    "feature_id": "14",
+    "space_id": "3",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "15": {
+    "feature_id": "15",
+    "space_id": "3",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "16": {
+    "feature_id": "16",
+    "space_id": "3",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "17": {
+    "feature_id": "17",
+    "space_id": "3",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "18": {
+    "feature_id": "18",
+    "space_id": "4",
+    "feature_type": "blogs",
+    "is_enabled": false
+  },
+  "19": {
+    "feature_id": "19",
+    "space_id": "4",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "20": {
+    "feature_id": "20",
+    "space_id": "4",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "21": {
+    "feature_id": "21",
+    "space_id": "4",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "22": {
+    "feature_id": "22",
+    "space_id": "5",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "23": {
+    "feature_id": "23",
+    "space_id": "5",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "24": {
+    "feature_id": "24",
+    "space_id": "5",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "25": {
+    "feature_id": "25",
+    "space_id": "5",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "26": {
+    "feature_id": "26",
+    "space_id": "5",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "27": {
+    "feature_id": "27",
+    "space_id": "5",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "28": {
+    "feature_id": "28",
+    "space_id": "6",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "29": {
+    "feature_id": "29",
+    "space_id": "6",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "30": {
+    "feature_id": "30",
+    "space_id": "6",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "31": {
+    "feature_id": "31",
+    "space_id": "6",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "32": {
+    "feature_id": "32",
+    "space_id": "6",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "33": {
+    "feature_id": "33",
+    "space_id": "7",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "34": {
+    "feature_id": "34",
+    "space_id": "7",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "35": {
+    "feature_id": "35",
+    "space_id": "8",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "36": {
+    "feature_id": "36",
+    "space_id": "8",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "37": {
+    "feature_id": "37",
+    "space_id": "8",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "38": {
+    "feature_id": "38",
+    "space_id": "8",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "39": {
+    "feature_id": "39",
+    "space_id": "8",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "40": {
+    "feature_id": "40",
+    "space_id": "8",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "41": {
+    "feature_id": "41",
+    "space_id": "9",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "42": {
+    "feature_id": "42",
+    "space_id": "9",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "43": {
+    "feature_id": "43",
+    "space_id": "9",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "44": {
+    "feature_id": "44",
+    "space_id": "9",
+    "feature_type": "blogs",
+    "is_enabled": false
+  },
+  "45": {
+    "feature_id": "45",
+    "space_id": "9",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "46": {
+    "feature_id": "46",
+    "space_id": "9",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "47": {
+    "feature_id": "47",
+    "space_id": "10",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "48": {
+    "feature_id": "48",
+    "space_id": "10",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "49": {
+    "feature_id": "49",
+    "space_id": "11",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "50": {
+    "feature_id": "50",
+    "space_id": "11",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "51": {
+    "feature_id": "51",
+    "space_id": "11",
+    "feature_type": "whiteboard",
+    "is_enabled": false
+  },
+  "52": {
+    "feature_id": "52",
+    "space_id": "12",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "53": {
+    "feature_id": "53",
+    "space_id": "12",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "54": {
+    "feature_id": "54",
+    "space_id": "13",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "55": {
+    "feature_id": "55",
+    "space_id": "13",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "56": {
+    "feature_id": "56",
+    "space_id": "14",
+    "feature_type": "databases",
+    "is_enabled": false
+  },
+  "57": {
+    "feature_id": "57",
+    "space_id": "14",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "58": {
+    "feature_id": "58",
+    "space_id": "15",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "59": {
+    "feature_id": "59",
+    "space_id": "15",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "60": {
+    "feature_id": "60",
+    "space_id": "15",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "61": {
+    "feature_id": "61",
+    "space_id": "15",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "62": {
+    "feature_id": "62",
+    "space_id": "16",
+    "feature_type": "databases",
+    "is_enabled": false
+  },
+  "63": {
+    "feature_id": "63",
+    "space_id": "16",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "64": {
+    "feature_id": "64",
+    "space_id": "16",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "65": {
+    "feature_id": "65",
+    "space_id": "17",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "66": {
+    "feature_id": "66",
+    "space_id": "17",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "67": {
+    "feature_id": "67",
+    "space_id": "17",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "68": {
+    "feature_id": "68",
+    "space_id": "17",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "69": {
+    "feature_id": "69",
+    "space_id": "17",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "70": {
+    "feature_id": "70",
+    "space_id": "17",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "71": {
+    "feature_id": "71",
+    "space_id": "18",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "72": {
+    "feature_id": "72",
+    "space_id": "18",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "73": {
+    "feature_id": "73",
+    "space_id": "18",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "74": {
+    "feature_id": "74",
+    "space_id": "18",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "75": {
+    "feature_id": "75",
+    "space_id": "18",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "76": {
+    "feature_id": "76",
+    "space_id": "19",
+    "feature_type": "smart_links",
+    "is_enabled": false
+  },
+  "77": {
+    "feature_id": "77",
+    "space_id": "19",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "78": {
+    "feature_id": "78",
+    "space_id": "19",
+    "feature_type": "calendars",
+    "is_enabled": true
+  },
+  "79": {
+    "feature_id": "79",
+    "space_id": "19",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "80": {
+    "feature_id": "80",
+    "space_id": "19",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "81": {
+    "feature_id": "81",
+    "space_id": "19",
+    "feature_type": "live_docs",
+    "is_enabled": true
+  },
+  "82": {
+    "feature_id": "82",
+    "space_id": "19",
+    "feature_type": "folders",
+    "is_enabled": true
+  },
+  "83": {
+    "feature_id": "83",
+    "space_id": "20",
+    "feature_type": "smart_links",
+    "is_enabled": true
+  },
+  "84": {
+    "feature_id": "84",
+    "space_id": "20",
+    "feature_type": "databases",
+    "is_enabled": true
+  },
+  "85": {
+    "feature_id": "85",
+    "space_id": "20",
+    "feature_type": "whiteboard",
+    "is_enabled": true
+  },
+  "86": {
+    "feature_id": "86",
+    "space_id": "20",
+    "feature_type": "blogs",
+    "is_enabled": true
+  },
+  "87": {
+    "feature_id": "87",
+    "space_id": "20",
+    "feature_type": "folders",
+    "is_enabled": true
+  }
+}
