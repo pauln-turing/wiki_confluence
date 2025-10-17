@@ -5,8 +5,8 @@ import os
 df = pd.read_csv("tools.csv")
 
 # Create the tools directory
-if not os.path.exists('tools/interface_1'):
-    os.makedirs('tools/interface_1')
+if not os.path.exists('tool'):
+    os.makedirs('tool')
 
 
 # Function to convert snake_case to PascalCase
@@ -17,7 +17,7 @@ def to_pascal_case(snake_case_string):
 for index, row in df.iterrows():
     tool_name = row['tool_name']
     class_name = to_pascal_case(tool_name)
-    file_name = f'tools/interface_1/{tool_name}.py'
+    file_name = f'tool/{tool_name}.py'
     
     # Escape quotes in arguments and description for the Python string
     arguments_str = row['arguments'].replace("'", "\\'").replace('"', '\\"')

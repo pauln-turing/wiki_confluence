@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-10-16T13:37:52.740372",
+  "timestamp": "2025-10-17T10:34:12.390352",
   "tables": {
     "approval_decisions": {
       "row_count": 60,
@@ -240,8 +240,8 @@
           "result": true
         },
         {
-          "check": "page_id matches key",
-          "result": false
+          "check": "page_label_id matches key",
+          "result": true
         },
         {
           "check": "Primary keys non-null",
@@ -366,8 +366,8 @@
           "result": true
         },
         {
-          "check": "user_id matches key",
-          "result": false
+          "check": "space_membership_id matches key",
+          "result": true
         },
         {
           "check": "Primary keys non-null",
@@ -429,8 +429,8 @@
           "result": true
         },
         {
-          "check": "user_id matches key",
-          "result": false
+          "check": "user_group_id matches key",
+          "result": true
         },
         {
           "check": "Primary keys non-null",
@@ -3430,15 +3430,15 @@
           "approval_decisions",
           "approval_requests",
           "approval_steps",
-          "attachments",
           "audit_logs",
           "comments",
           "export_jobs",
           "groups",
           "labels",
-          "notifications"
+          "notifications",
+          "page_labels"
         ],
-        "count": 20
+        "count": 18
       },
       "kind": "generic"
     },
@@ -3465,15 +3465,15 @@
           "approval_decisions",
           "approval_requests",
           "approval_steps",
-          "attachments",
           "audit_logs",
           "comments",
           "export_jobs",
           "groups",
           "labels",
-          "notifications"
+          "notifications",
+          "page_labels"
         ],
-        "count": 22
+        "count": 19
       },
       "kind": "generic"
     }
@@ -3502,15 +3502,15 @@
           "approval_decisions",
           "approval_requests",
           "approval_steps",
-          "attachments",
           "audit_logs",
           "comments",
           "export_jobs",
           "groups",
           "labels",
-          "notifications"
+          "notifications",
+          "page_labels"
         ],
-        "count": 20
+        "count": 18
       },
       "kind": "generic"
     },
@@ -3537,15 +3537,15 @@
           "approval_decisions",
           "approval_requests",
           "approval_steps",
-          "attachments",
           "audit_logs",
           "comments",
           "export_jobs",
           "groups",
           "labels",
-          "notifications"
+          "notifications",
+          "page_labels"
         ],
-        "count": 22
+        "count": 19
       },
       "kind": "generic"
     }

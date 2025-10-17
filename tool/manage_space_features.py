@@ -10,7 +10,11 @@ class ManageSpaceFeatures(Tool):
         action = kwargs.get("action")
         try:
             if action == "set":
-                feature = payload.get("feature", {})
+                # flat payload: space_id, feature_type, is_enabled
+                space_id = payload.get("space_id")
+                feature_type = payload.get("feature_type")
+                is_enabled = payload.get("is_enabled")
+                feature = {"space_id": space_id, "feature_type": feature_type, "is_enabled": is_enabled, "created_at": DataManager.get_timestamp()}
                 fid = DataManager.get_next_id("space_features")
                 DataManager.create_record("space_features", fid, feature)
                 return json.dumps({"feature_id": fid, **feature})
@@ -33,7 +37,7 @@ class ManageSpaceFeatures(Tool):
             "tool_name": "manage_space_features",
             "category": "Space Management",
             "description": "Manages which features are enabled for a space.",
-            "arguments": "table_name='space_features', action='manage', payload={space_id: str, feature_type: space_feature_type, is_enabled: bool}",
+            "arguments": "table_name=\'space_features\', action=\'manage\', payload={space_id: str, feature_type: space_feature_type, is_enabled: bool}",
             "flag": "Setter"
         }
 
