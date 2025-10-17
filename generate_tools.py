@@ -5,8 +5,8 @@ import os
 df = pd.read_csv("tools.csv")
 
 # Create the tools directory
-if not os.path.exists('tools/interface_1'):
-    os.makedirs('tools/interface_1')
+if not os.path.exists('tool'):
+    os.makedirs('tool')
 
 
 # Function to convert snake_case to PascalCase
@@ -17,7 +17,7 @@ def to_pascal_case(snake_case_string):
 for index, row in df.iterrows():
     tool_name = row['tool_name']
     class_name = to_pascal_case(tool_name)
-    file_name = f'tools/interface_1/{tool_name}.py'
+    file_name = f'tool/{tool_name}.py'
     
     # Escape quotes in arguments and description for the Python string
     arguments_str = row['arguments'].replace("'", "\\'").replace('"', '\\"')
@@ -26,11 +26,13 @@ for index, row in df.iterrows():
     # Generate the class code
     tool_code = f"""
 from base import Tool
-from typing import Any
+from typing import Any, Dict
+from data_manager import DataManager
+import json
 
 class {class_name}(Tool):
     @staticmethod
-    def invoke(*args, **kwargs) -> Any:
+    def invoke(payload: Dict[str, Any], **kwargs) -> Any:
         # TODO: Implement tool invocation logic here.
         # This is a placeholder and should be replaced with the actual implementation.
         raise NotImplementedError("This tool has not been implemented yet.")
