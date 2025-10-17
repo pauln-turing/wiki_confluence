@@ -51,7 +51,8 @@ IGNORED_FILES = {"__init__.py", "policy.md"}
 INTERFACE_DIR_NAMES = [f"interface_{i}" for i in range(1, 6)]
 YAML_FILENAME = "get_set_APIs.yaml"
 TOOLS_INFO_FILENAME = "tools_info.json"  # written next to base_dir
-SERVER_PORT = 8000
+SERVER_PORT = 8005
+
 
 TYPE_MAP = {
     "string": "str",

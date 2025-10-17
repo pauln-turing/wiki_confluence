@@ -1,6 +1,6 @@
 {
-  "base_folder": "/Users/fenetshewarega/Desktop/bruk-new/wiki_confluence/sanity/API_sanity_checks/wiki",
-  "timestamp": "2025-10-17T19:45:49.025099Z",
+  "base_folder": "/Users/fenetshewarega/Desktop/bruk-new/wiki_confluence/wiki",
+  "timestamp": "2025-10-17T18:31:30.510298Z",
   "interfaces": [
     "interface_1"
   ],
@@ -8,8 +8,8 @@
     "__init__.py",
     "policy.md"
   ],
-  "yaml_path": "/Users/fenetshewarega/Desktop/bruk-new/wiki_confluence/sanity/API_sanity_checks/wiki/get_set_APIs.yaml",
-  "tools_info_path": "/Users/fenetshewarega/Desktop/bruk-new/wiki_confluence/sanity/API_sanity_checks/tools_info.json",
+  "yaml_path": "/Users/fenetshewarega/Desktop/bruk-new/wiki_confluence/wiki/get_set_APIs.yaml",
+  "tools_info_path": "/Users/fenetshewarega/Desktop/bruk-new/wiki_confluence/tools_info.json",
   "summary": {
     "interfaces": {
       "interface_1": {
@@ -39,9 +39,12 @@
   "duplicates": [],
   "interface_file_yaml_comparison": {
     "interface_1": {
-      "files_count": 35,
+      "files_count": 37,
       "yaml_count": 35,
-      "missing_in_yaml": [],
+      "missing_in_yaml": [
+        "base",
+        "data_manager"
+      ],
       "extra_in_yaml": []
     }
   },
@@ -58,9 +61,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -77,9 +82,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -96,9 +103,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -115,9 +124,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -134,9 +145,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -153,9 +166,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -172,9 +187,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -191,9 +208,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -210,9 +229,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -229,9 +250,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -248,9 +271,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -267,9 +292,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -286,9 +313,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -305,9 +334,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -324,9 +355,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -343,9 +376,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -362,9 +397,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -381,9 +418,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -400,9 +439,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -419,9 +460,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -438,9 +481,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -457,9 +502,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -476,9 +523,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -495,9 +544,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -514,9 +565,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -533,9 +586,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -552,9 +607,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -571,9 +628,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -590,9 +649,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -609,9 +670,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -628,9 +691,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -647,9 +712,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -666,9 +733,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -685,9 +754,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },
@@ -704,9 +775,11 @@
           "optional": false
         }
       ],
-      "param_match": true,
+      "param_match": false,
       "param_mismatch": {
-        "missing_in_tools": [],
+        "missing_in_tools": [
+          "payload"
+        ],
         "extra_in_tools": [],
         "type_or_optional_diff": []
       },

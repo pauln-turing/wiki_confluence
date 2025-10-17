@@ -1,0 +1,38 @@
+interface_1:
+  set:
+    - manage_users
+    - manage_groups
+    - manage_group_memberships
+    - manage_spaces
+    - manage_space_memberships
+    - manage_space_features
+    - manage_pages
+    - move_page
+    - clone_page
+    - manage_page_versions
+    - manage_permissions
+    - manage_comments
+    - manage_labels
+    - manage_attachments
+    - manage_templates
+    - use_template
+    - manage_watchers
+    - manage_exports
+    - record_audit_log
+    - record_config_change
+    - create_approval_request
+    - decide_approval_step
+    - send_notification
+  get:
+    - get_user
+    - get_group
+    - get_space
+    - get_page
+    - get_page_versions
+    - get_comments
+    - get_labels
+    - get_attachments
+    - get_watchers
+    - get_audit_log
+    - get_config_history
+    - get_notifications

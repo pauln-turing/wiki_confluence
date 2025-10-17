@@ -1,3 +1,424 @@
 {
-  "params": []
+  "params": [
+    {
+      "interface": "interface_1",
+      "api_name": "clone_page",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_approval_request",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "decide_approval_step",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_attachments",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_audit_log",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_comments",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_config_history",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_group",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_labels",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_notifications",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_page",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_page_versions",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_space",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_user",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "get_watchers",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_attachments",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_comments",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_exports",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_group_memberships",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_groups",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_labels",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_page_versions",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_pages",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_permissions",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_space_features",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_space_memberships",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_spaces",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_templates",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_users",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_watchers",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "move_page",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "record_audit_log",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "record_config_change",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "send_notification",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "use_template",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    }
+  ]
 }
