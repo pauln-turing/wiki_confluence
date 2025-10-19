@@ -1,15 +1,19 @@
 {
-  "base_folder": "/Users/fenetshewarega/Desktop/bruk-new/wiki_confluence/sanity/API_sanity_checks/wiki",
-  "timestamp": "2025-10-17T19:52:58.174928Z",
+  "base_folder": "C:\\Users\\Admin\\Documents\\proposal\\Office-turing\\wiki_confluence\\sanity\\API_sanity_checks\\wiki",
+  "timestamp": "2025-10-19T00:58:09.486411Z",
   "interfaces": [
-    "interface_1"
+    "interface_1",
+    "interface_2",
+    "interface_3",
+    "interface_4",
+    "interface_5"
   ],
   "ignored_files": [
     "__init__.py",
     "policy.md"
   ],
-  "yaml_path": "/Users/fenetshewarega/Desktop/bruk-new/wiki_confluence/sanity/API_sanity_checks/wiki/get_set_APIs.yaml",
-  "tools_info_path": "/Users/fenetshewarega/Desktop/bruk-new/wiki_confluence/sanity/API_sanity_checks/tools_info.json",
+  "yaml_path": "C:\\Users\\Admin\\Documents\\proposal\\Office-turing\\wiki_confluence\\sanity\\API_sanity_checks\\wiki\\get_set_APIs.yaml",
+  "tools_info_path": "C:\\Users\\Admin\\Documents\\proposal\\Office-turing\\wiki_confluence\\sanity\\API_sanity_checks\\tools_info.json",
   "summary": {
     "interfaces": {
       "interface_1": {
@@ -22,16 +26,60 @@
           "count": 23,
           "percent": 65.71
         }
+      },
+      "interface_2": {
+        "total_apis": 35,
+        "get": {
+          "count": 12,
+          "percent": 34.29
+        },
+        "set": {
+          "count": 23,
+          "percent": 65.71
+        }
+      },
+      "interface_3": {
+        "total_apis": 35,
+        "get": {
+          "count": 12,
+          "percent": 34.29
+        },
+        "set": {
+          "count": 23,
+          "percent": 65.71
+        }
+      },
+      "interface_4": {
+        "total_apis": 35,
+        "get": {
+          "count": 12,
+          "percent": 34.29
+        },
+        "set": {
+          "count": 23,
+          "percent": 65.71
+        }
+      },
+      "interface_5": {
+        "total_apis": 35,
+        "get": {
+          "count": 12,
+          "percent": 34.29
+        },
+        "set": {
+          "count": 23,
+          "percent": 65.71
+        }
       }
     },
     "overall": {
-      "total_apis": 35,
+      "total_apis": 175,
       "get": {
-        "count": 12,
+        "count": 60,
         "percent": 34.29
       },
       "set": {
-        "count": 23,
+        "count": 115,
         "percent": 65.71
       }
     }
@@ -39,6 +87,30 @@
   "duplicates": [],
   "interface_file_yaml_comparison": {
     "interface_1": {
+      "files_count": 35,
+      "yaml_count": 35,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    },
+    "interface_2": {
+      "files_count": 35,
+      "yaml_count": 35,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    },
+    "interface_3": {
+      "files_count": 35,
+      "yaml_count": 35,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    },
+    "interface_4": {
+      "files_count": 35,
+      "yaml_count": 35,
+      "missing_in_yaml": [],
+      "extra_in_yaml": []
+    },
+    "interface_5": {
       "files_count": 35,
       "yaml_count": 35,
       "missing_in_yaml": [],
@@ -696,6 +768,2666 @@
     {
       "interface": "interface_1",
       "api_name": "send_notification",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_user",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_group",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_space",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_page",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_page_versions",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_comments",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_labels",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_attachments",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_watchers",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_audit_log",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_config_history",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "fetch_notifications",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_users",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_groups",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_group_memberships",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_spaces",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_space_memberships",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_space_features",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_pages",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "relocate_page",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "duplicate_page",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_page_versions",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_permissions",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_comments",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_labels",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_attachments",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_templates",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "apply_template",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_watchers",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "set_exports",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "log_audit_event",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "log_config_change",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "request_approval",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "resolve_approval_step",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "notify",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_user",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_group",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_space",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_page",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_page_versions",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_comments",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_labels",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_attachments",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_watchers",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_audit_log",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_config_history",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "read_notifications",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_users",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_groups",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_group_memberships",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_spaces",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_space_memberships",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_space_features",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_pages",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_page_move",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_page_clone",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_page_versions",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_permissions",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_comments",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_labels",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_attachments",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_templates",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_template_apply",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_watchers",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_exports",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_audit_log",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_config_change",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_approval_request",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_approval_decision",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_notification",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_user",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_group",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_space",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_page",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_page_versions",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_comments",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_labels",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_attachments",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_watchers",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_audit_log",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_config_history",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "lookup_notifications",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_users",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_groups",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_group_memberships",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_spaces",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_space_memberships",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_space_features",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_pages",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_page_move",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_page_clone",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_page_versions",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_permissions",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_comments",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_labels",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_attachments",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_templates",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_template_apply",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_watchers",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_exports",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_audit_log",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_config_change",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_approval_request",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_approval_decision",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "commit_notification",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_user",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_group",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_space",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_page",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_page_versions",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_comments",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_labels",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_attachments",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_watchers",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_audit_log",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_config_history",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "inspect_notifications",
+      "classification": "get",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_users",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_groups",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_group_memberships",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_spaces",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_space_memberships",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_space_features",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_pages",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_page_move",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_page_clone",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_page_versions",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_permissions",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_comments",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_labels",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_attachments",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_templates",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_template_apply",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_watchers",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_exports",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_audit_log",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_config_change",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_approval_request",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_approval_decision",
+      "classification": "set",
+      "params": [
+        {
+          "name": "payload",
+          "type": "dict",
+          "optional": false
+        }
+      ],
+      "param_match": true,
+      "param_mismatch": {
+        "missing_in_tools": [],
+        "extra_in_tools": [],
+        "type_or_optional_diff": []
+      },
+      "param_diff_summary": []
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "mutate_notification",
       "classification": "set",
       "params": [
         {

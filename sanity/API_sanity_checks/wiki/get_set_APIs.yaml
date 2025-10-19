@@ -36,3 +36,159 @@ interface_1:
     - get_audit_log
     - get_config_history
     - get_notifications
+    
+interface_2:
+  set:
+    - set_users
+    - set_groups
+    - set_group_memberships
+    - set_spaces
+    - set_space_memberships
+    - set_space_features
+    - set_pages
+    - relocate_page
+    - duplicate_page
+    - set_page_versions
+    - set_permissions
+    - set_comments
+    - set_labels
+    - set_attachments
+    - set_templates
+    - apply_template
+    - set_watchers
+    - set_exports
+    - log_audit_event
+    - log_config_change
+    - request_approval
+    - resolve_approval_step
+    - notify
+  get:
+    - fetch_user
+    - fetch_group
+    - fetch_space
+    - fetch_page
+    - fetch_page_versions
+    - fetch_comments
+    - fetch_labels
+    - fetch_attachments
+    - fetch_watchers
+    - fetch_audit_log
+    - fetch_config_history
+    - fetch_notifications
+
+interface_3:
+  set:
+    - update_users
+    - update_groups
+    - update_group_memberships
+    - update_spaces
+    - update_space_memberships
+    - update_space_features
+    - update_pages
+    - update_page_move
+    - update_page_clone
+    - update_page_versions
+    - update_permissions
+    - update_comments
+    - update_labels
+    - update_attachments
+    - update_templates
+    - update_template_apply
+    - update_watchers
+    - update_exports
+    - update_audit_log
+    - update_config_change
+    - update_approval_request
+    - update_approval_decision
+    - update_notification
+  get:
+    - read_user
+    - read_group
+    - read_space
+    - read_page
+    - read_page_versions
+    - read_comments
+    - read_labels
+    - read_attachments
+    - read_watchers
+    - read_audit_log
+    - read_config_history
+    - read_notifications
+
+interface_4:
+  set:
+    - commit_users
+    - commit_groups
+    - commit_group_memberships
+    - commit_spaces
+    - commit_space_memberships
+    - commit_space_features
+    - commit_pages
+    - commit_page_move
+    - commit_page_clone
+    - commit_page_versions
+    - commit_permissions
+    - commit_comments
+    - commit_labels
+    - commit_attachments
+    - commit_templates
+    - commit_template_apply
+    - commit_watchers
+    - commit_exports
+    - commit_audit_log
+    - commit_config_change
+    - commit_approval_request
+    - commit_approval_decision
+    - commit_notification
+  get:
+    - lookup_user
+    - lookup_group
+    - lookup_space
+    - lookup_page
+    - lookup_page_versions
+    - lookup_comments
+    - lookup_labels
+    - lookup_attachments
+    - lookup_watchers
+    - lookup_audit_log
+    - lookup_config_history
+    - lookup_notifications
+
+interface_5:
+  set:
+    - mutate_users
+    - mutate_groups
+    - mutate_group_memberships
+    - mutate_spaces
+    - mutate_space_memberships
+    - mutate_space_features
+    - mutate_pages
+    - mutate_page_move
+    - mutate_page_clone
+    - mutate_page_versions
+    - mutate_permissions
+    - mutate_comments
+    - mutate_labels
+    - mutate_attachments
+    - mutate_templates
+    - mutate_template_apply
+    - mutate_watchers
+    - mutate_exports
+    - mutate_audit_log
+    - mutate_config_change
+    - mutate_approval_request
+    - mutate_approval_decision
+    - mutate_notification
+  get:
+    - inspect_user
+    - inspect_group
+    - inspect_space
+    - inspect_page
+    - inspect_page_versions
+    - inspect_comments
+    - inspect_labels
+    - inspect_attachments
+    - inspect_watchers
+    - inspect_audit_log
+    - inspect_config_history
+    - inspect_notifications
