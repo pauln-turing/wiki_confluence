@@ -14,7 +14,7 @@ class GetSpace(Tool):
         try:
             data_manager = DataManager()
             
-            # Extract parameters from payload
+            # Extract common parameters
             user_id = payload.get("user_id")
             action = payload.get("action", "").lower()
             
@@ -227,17 +227,11 @@ class GetSpace(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "payload": {
-                            "type": "object",
-                            "description": "Parameters for the operation",
-                            "properties": {
-                                "user_id": {"type": "string", "description": "ID of the user performing the operation"},
-                                "action": {"type": "string", "description": "Operation to perform"}
-                            },
-                            "required": ["user_id"] if False else []
-                        }
+                        "user_id": {"type": "string", "description": "ID of the user performing the operation"},
+                        "action": {"type": "string", "description": "Operation to perform"},
+                        "payload": {"type": "object", "description": "Operation parameters"}
                     },
-                    "required": ["payload"]
+                    "required": ["user_id"] if False else []
                 }
             },
             "tool_name": "get_space",
