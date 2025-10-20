@@ -57,52 +57,17 @@ foreign_keys:
   - parent_table: users
     parent_column: user_id
     child_table: permissions
-    child_column: granted_by_user_id
+    child_column: revoked_by_user_id
     type: 1:N
   - parent_table: spaces
     parent_column: space_id
     child_table: space_features
     child_column: space_id
     type: 1:N
-  - parent_table: pages
-    parent_column: page_id
-    child_table: page_labels
-    child_column: page_id
-    type: 1:N
-  - parent_table: labels
-    parent_column: label_id
-    child_table: page_labels
-    child_column: label_id
-    type: 1:N
-  - parent_table: spaces
-    parent_column: space_id
-    child_table: labels
-    child_column: space_id
-    type: 1:N
-  - parent_table: pages
-    parent_column: page_id
-    child_table: comments
-    child_column: page_id
-    type: 1:N
-  - parent_table: users
-    parent_column: user_id
-    child_table: comments
-    child_column: author_user_id
-    type: 1:N
   - parent_table: users
     parent_column: user_id
     child_table: audit_logs
     child_column: actor_user_id
-    type: 1:N
-  - parent_table: spaces
-    parent_column: space_id
-    child_table: templates
-    child_column: space_id
-    type: 1:N
-  - parent_table: users
-    parent_column: user_id
-    child_table: templates
-    child_column: created_by_user_id
     type: 1:N
   - parent_table: spaces
     parent_column: space_id
@@ -114,15 +79,25 @@ foreign_keys:
     child_table: export_jobs
     child_column: requested_by_user_id
     type: 1:N
-  - parent_table: pages
-    parent_column: page_id
-    child_table: attachments
-    child_column: page_id
+  - parent_table: users
+    parent_column: user_id
+    child_table: space_memberships
+    child_column: user_id
+    type: 1:N
+  - parent_table: spaces
+    parent_column: space_id
+    child_table: space_memberships
+    child_column: space_id
     type: 1:N
   - parent_table: users
     parent_column: user_id
-    child_table: attachments
-    child_column: uploaded_by_user_id
+    child_table: user_groups
+    child_column: user_id
+    type: 1:N
+  - parent_table: groups
+    parent_column: group_id
+    child_table: user_groups
+    child_column: group_id
     type: 1:N
   - parent_table: users
     parent_column: user_id
@@ -148,11 +123,6 @@ foreign_keys:
     parent_column: space_id
     child_table: space_config_history
     child_column: space_id
-    type: 1:N
-  - parent_table: users
-    parent_column: user_id
-    child_table: space_config_history
-    child_column: changed_by_user_id
     type: 1:N
   - parent_table: users
     parent_column: user_id
@@ -169,51 +139,7 @@ foreign_keys:
     child_table: approval_requests
     child_column: requested_by_user_id
     type: 1:N
-  - parent_table: approval_requests
-    parent_column: request_id
-    child_table: approval_steps
-    child_column: request_id
-    type: 1:N
-  - parent_table: groups
-    parent_column: group_id
-    child_table: approval_steps
-    child_column: assigned_group_id
-    type: 1:N
-  - parent_table: users
-    parent_column: user_id
-    child_table: approval_steps
-    child_column: assigned_user_id
-    type: 1:N
-  - parent_table: approval_steps
-    parent_column: step_id
-    child_table: approval_decisions
-    child_column: step_id
-    type: 1:N
-  - parent_table: users
-    parent_column: user_id
-    child_table: approval_decisions
-    child_column: approver_user_id
-    type: 1:N
-  - parent_table: users
-    parent_column: user_id
-    child_table: user_groups
-    child_column: user_id
-    type: 1:N
-  - parent_table: groups
-    parent_column: group_id
-    child_table: user_groups
-    child_column: group_id
-    type: 1:N
-  - parent_table: users
-    parent_column: user_id
-    child_table: space_memberships
-    child_column: user_id
-    type: 1:N
-  - parent_table: spaces
-    parent_column: space_id
-    child_table: space_memberships
-    child_column: space_id
-    type: 1:N
+
 generic_foreign_keys:
   - child_table: notifications
     type_column: related_entity_type
@@ -237,115 +163,18 @@ generic_foreign_keys:
       permissions:
         parent_table: permissions
         parent_column: permission_id
-      space_features:
-        parent_table: space_features
-        parent_column: feature_id
-      labels:
-        parent_table: labels
-        parent_column: label_id
-      page_labels:
-        parent_table: page_labels
-        parent_column: page_id
-      comments:
-        parent_table: comments
-        parent_column: comment_id
-      audit_logs:
-        parent_table: audit_logs
-        parent_column: log_id
-      templates:
-        parent_table: templates
-        parent_column: template_id
       export_jobs:
         parent_table: export_jobs
         parent_column: job_id
-      attachments:
-        parent_table: attachments
-        parent_column: attachment_id
-      watchers:
-        parent_table: watchers
-        parent_column: watcher_id
-      space_config_history:
-        parent_table: space_config_history
-        parent_column: history_id
-      notifications:
-        parent_table: notifications
-        parent_column: notification_id
-      approval_requests:
-        parent_table: approval_requests
-        parent_column: request_id
-      approval_steps:
-        parent_table: approval_steps
-        parent_column: step_id
-      approval_decisions:
-        parent_table: approval_decisions
-        parent_column: decision_id
-  - child_table: audit_logs
-    type_column: target_entity_type
-    id_column: target_entity_id
-    mapping:
-      users:
-        parent_table: users
-        parent_column: user_id
-      groups:
-        parent_table: groups
-        parent_column: group_id
-      user_groups:
-        parent_table: user_groups
-        parent_column: user_id
-      spaces:
-        parent_table: spaces
-        parent_column: space_id
-      space_memberships:
-        parent_table: space_memberships
-        parent_column: user_id
-      pages:
-        parent_table: pages
-        parent_column: page_id
-      page_versions:
-        parent_table: page_versions
-        parent_column: version_id
-      permissions:
-        parent_table: permissions
-        parent_column: permission_id
-      space_features:
-        parent_table: space_features
-        parent_column: feature_id
-      labels:
-        parent_table: labels
-        parent_column: label_id
-      page_labels:
-        parent_table: page_labels
-        parent_column: page_id
-      comments:
-        parent_table: comments
-        parent_column: comment_id
       audit_logs:
         parent_table: audit_logs
         parent_column: log_id
-      templates:
-        parent_table: templates
-        parent_column: template_id
-      export_jobs:
-        parent_table: export_jobs
-        parent_column: job_id
-      attachments:
-        parent_table: attachments
-        parent_column: attachment_id
-      watchers:
-        parent_table: watchers
-        parent_column: watcher_id
       space_config_history:
         parent_table: space_config_history
         parent_column: history_id
-      notifications:
-        parent_table: notifications
-        parent_column: notification_id
       approval_requests:
         parent_table: approval_requests
         parent_column: request_id
-      approval_steps:
-        parent_table: approval_steps
-        parent_column: step_id
       approval_decisions:
         parent_table: approval_decisions
         parent_column: decision_id

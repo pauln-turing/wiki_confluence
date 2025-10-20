@@ -19,11 +19,6 @@ enums:
       - guest
       - project_team_admin
       - content_contributor
-  permissions:
-    permission_type:
-      - view
-      - edit
-      - admin
   space_features:
     feature_type:
       - live_docs
@@ -42,6 +37,11 @@ enums:
       - draft
       - published
       - archived
+  permissions:
+    permission_type:
+      - view
+      - edit
+      - admin
   export_jobs:
     status:
       - pending
@@ -80,23 +80,7 @@ enums:
       - remove_attachment
       - watch_content
       - unwatch_content
-  notifications:
-    channel:
-      - system
-      - email
-    delivery_status:
-      - pending
-      - sent
-      - failed
-      - read
   approval_requests:
-    status:
-      - pending
-      - in_review
-      - approved
-      - rejected
-      - cancelled
-  approval_steps:
     status:
       - pending
       - in_review
