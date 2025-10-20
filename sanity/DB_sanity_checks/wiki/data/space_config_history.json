@@ -2,19 +2,451 @@
     "1": {
         "history_id": "1",
         "space_id": "1",
-        "changed_by_user_id": "2",
-        "changed_at": "2023-03-07T10:00:00",
+        "changed_by_user_id": "69",
+        "changed_at": "2023-02-13T12:51:43",
         "config_version": 1,
-        "old_config": "{\"access\": \"public\"}",
-        "new_config": "{\"access\": \"public\"}"
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
     },
     "2": {
         "history_id": "2",
-        "space_id": "1",
-        "changed_by_user_id": "2",
-        "changed_at": "2023-03-12T10:00:00",
-        "config_version": 2,
-        "old_config": "{\"access\": \"public\"}",
-        "new_config": "{\"access\": \"private\"}"
+        "space_id": "2",
+        "changed_by_user_id": "204",
+        "changed_at": "2023-01-31T01:41:29",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "3": {
+        "history_id": "3",
+        "space_id": "3",
+        "changed_by_user_id": "243",
+        "changed_at": "2023-02-06T15:01:38",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "4": {
+        "history_id": "4",
+        "space_id": "4",
+        "changed_by_user_id": "110",
+        "changed_at": "2023-02-20T16:45:10",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "5": {
+        "history_id": "5",
+        "space_id": "5",
+        "changed_by_user_id": "265",
+        "changed_at": "2023-02-04T05:46:08",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "6": {
+        "history_id": "6",
+        "space_id": "6",
+        "changed_by_user_id": "65",
+        "changed_at": "2023-01-17T06:00:09",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "7": {
+        "history_id": "7",
+        "space_id": "7",
+        "changed_by_user_id": "95",
+        "changed_at": "2023-02-01T09:01:05",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "8": {
+        "history_id": "8",
+        "space_id": "8",
+        "changed_by_user_id": "9",
+        "changed_at": "2023-02-03T16:29:02",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "9": {
+        "history_id": "9",
+        "space_id": "9",
+        "changed_by_user_id": "193",
+        "changed_at": "2023-01-21T16:28:43",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "10": {
+        "history_id": "10",
+        "space_id": "10",
+        "changed_by_user_id": "286",
+        "changed_at": "2023-02-12T17:16:07",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "11": {
+        "history_id": "11",
+        "space_id": "11",
+        "changed_by_user_id": "66",
+        "changed_at": "2023-02-15T04:41:51",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "12": {
+        "history_id": "12",
+        "space_id": "12",
+        "changed_by_user_id": "99",
+        "changed_at": "2023-01-13T21:47:51",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "13": {
+        "history_id": "13",
+        "space_id": "13",
+        "changed_by_user_id": "284",
+        "changed_at": "2023-02-04T20:35:45",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "14": {
+        "history_id": "14",
+        "space_id": "14",
+        "changed_by_user_id": "149",
+        "changed_at": "2023-02-06T18:19:25",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "15": {
+        "history_id": "15",
+        "space_id": "15",
+        "changed_by_user_id": "192",
+        "changed_at": "2023-02-15T07:04:31",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "16": {
+        "history_id": "16",
+        "space_id": "16",
+        "changed_by_user_id": "83",
+        "changed_at": "2023-01-12T09:18:27",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "17": {
+        "history_id": "17",
+        "space_id": "17",
+        "changed_by_user_id": "97",
+        "changed_at": "2023-01-30T11:01:43",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "18": {
+        "history_id": "18",
+        "space_id": "18",
+        "changed_by_user_id": "264",
+        "changed_at": "2023-01-27T08:18:31",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "19": {
+        "history_id": "19",
+        "space_id": "19",
+        "changed_by_user_id": "54",
+        "changed_at": "2023-01-21T04:54:21",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "20": {
+        "history_id": "20",
+        "space_id": "20",
+        "changed_by_user_id": "134",
+        "changed_at": "2023-02-04T01:43:21",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "21": {
+        "history_id": "21",
+        "space_id": "21",
+        "changed_by_user_id": "91",
+        "changed_at": "2023-01-12T06:43:48",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "22": {
+        "history_id": "22",
+        "space_id": "22",
+        "changed_by_user_id": "266",
+        "changed_at": "2023-02-12T13:27:34",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "23": {
+        "history_id": "23",
+        "space_id": "23",
+        "changed_by_user_id": "268",
+        "changed_at": "2023-01-29T18:34:17",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "24": {
+        "history_id": "24",
+        "space_id": "24",
+        "changed_by_user_id": "233",
+        "changed_at": "2023-01-31T18:09:12",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "25": {
+        "history_id": "25",
+        "space_id": "25",
+        "changed_by_user_id": "106",
+        "changed_at": "2023-01-23T10:10:22",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "26": {
+        "history_id": "26",
+        "space_id": "26",
+        "changed_by_user_id": "123",
+        "changed_at": "2023-02-06T16:11:38",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "27": {
+        "history_id": "27",
+        "space_id": "27",
+        "changed_by_user_id": "218",
+        "changed_at": "2023-02-09T01:53:56",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "28": {
+        "history_id": "28",
+        "space_id": "28",
+        "changed_by_user_id": "189",
+        "changed_at": "2023-02-08T13:21:07",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "29": {
+        "history_id": "29",
+        "space_id": "29",
+        "changed_by_user_id": "215",
+        "changed_at": "2023-01-11T16:04:18",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "30": {
+        "history_id": "30",
+        "space_id": "30",
+        "changed_by_user_id": "153",
+        "changed_at": "2023-02-07T06:11:20",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "31": {
+        "history_id": "31",
+        "space_id": "31",
+        "changed_by_user_id": "11",
+        "changed_at": "2023-01-25T21:52:42",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "32": {
+        "history_id": "32",
+        "space_id": "32",
+        "changed_by_user_id": "102",
+        "changed_at": "2023-02-10T20:28:29",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "33": {
+        "history_id": "33",
+        "space_id": "33",
+        "changed_by_user_id": "245",
+        "changed_at": "2023-02-19T12:19:19",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "34": {
+        "history_id": "34",
+        "space_id": "34",
+        "changed_by_user_id": "286",
+        "changed_at": "2023-02-17T13:26:52",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "35": {
+        "history_id": "35",
+        "space_id": "35",
+        "changed_by_user_id": "19",
+        "changed_at": "2023-01-13T10:33:37",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "36": {
+        "history_id": "36",
+        "space_id": "36",
+        "changed_by_user_id": "141",
+        "changed_at": "2023-01-30T04:54:56",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "37": {
+        "history_id": "37",
+        "space_id": "37",
+        "changed_by_user_id": "89",
+        "changed_at": "2023-01-17T02:01:45",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "38": {
+        "history_id": "38",
+        "space_id": "38",
+        "changed_by_user_id": "23",
+        "changed_at": "2023-01-24T00:27:31",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "39": {
+        "history_id": "39",
+        "space_id": "39",
+        "changed_by_user_id": "7",
+        "changed_at": "2023-01-30T16:19:25",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "40": {
+        "history_id": "40",
+        "space_id": "40",
+        "changed_by_user_id": "243",
+        "changed_at": "2023-01-18T09:09:22",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "41": {
+        "history_id": "41",
+        "space_id": "41",
+        "changed_by_user_id": "284",
+        "changed_at": "2023-02-08T17:41:51",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "42": {
+        "history_id": "42",
+        "space_id": "42",
+        "changed_by_user_id": "155",
+        "changed_at": "2023-01-19T05:18:15",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "43": {
+        "history_id": "43",
+        "space_id": "43",
+        "changed_by_user_id": "112",
+        "changed_at": "2023-01-14T22:46:04",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "44": {
+        "history_id": "44",
+        "space_id": "44",
+        "changed_by_user_id": "240",
+        "changed_at": "2023-01-15T14:09:58",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "45": {
+        "history_id": "45",
+        "space_id": "45",
+        "changed_by_user_id": "258",
+        "changed_at": "2023-01-22T06:02:12",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "46": {
+        "history_id": "46",
+        "space_id": "46",
+        "changed_by_user_id": "219",
+        "changed_at": "2023-02-17T12:38:34",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "47": {
+        "history_id": "47",
+        "space_id": "47",
+        "changed_by_user_id": "277",
+        "changed_at": "2023-01-28T12:27:00",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "48": {
+        "history_id": "48",
+        "space_id": "48",
+        "changed_by_user_id": "114",
+        "changed_at": "2023-01-26T11:43:04",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "49": {
+        "history_id": "49",
+        "space_id": "49",
+        "changed_by_user_id": "57",
+        "changed_at": "2023-01-15T06:48:58",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
+    },
+    "50": {
+        "history_id": "50",
+        "space_id": "50",
+        "changed_by_user_id": "109",
+        "changed_at": "2023-01-26T03:56:59",
+        "config_version": 1,
+        "old_config": "{\"status\": \"draft\"}",
+        "new_config": "{\"status\": \"active\"}"
     }
 }

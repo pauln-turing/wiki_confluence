@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-10-20T13:51:24.042782",
+  "timestamp": "2025-10-20T19:05:10.972061",
   "tables": {
     "approval_decisions": {
-      "row_count": 1,
+      "row_count": 50,
       "checks": [
         {
           "check": "Keys are strings",
@@ -23,7 +23,7 @@
       ]
     },
     "approval_requests": {
-      "row_count": 1,
+      "row_count": 50,
       "checks": [
         {
           "check": "Keys are strings",
@@ -44,7 +44,7 @@
       ]
     },
     "audit_logs": {
-      "row_count": 2,
+      "row_count": 100,
       "checks": [
         {
           "check": "Keys are strings",
@@ -65,7 +65,7 @@
       ]
     },
     "export_jobs": {
-      "row_count": 2,
+      "row_count": 50,
       "checks": [
         {
           "check": "Keys are strings",
@@ -86,7 +86,7 @@
       ]
     },
     "groups": {
-      "row_count": 15,
+      "row_count": 50,
       "checks": [
         {
           "check": "Keys are strings",
@@ -107,7 +107,7 @@
       ]
     },
     "notifications": {
-      "row_count": 2,
+      "row_count": 100,
       "checks": [
         {
           "check": "Keys are strings",
@@ -149,7 +149,7 @@
       ]
     },
     "page_versions": {
-      "row_count": 600,
+      "row_count": 885,
       "checks": [
         {
           "check": "Keys are strings",
@@ -170,7 +170,7 @@
       ]
     },
     "permissions": {
-      "row_count": 3,
+      "row_count": 370,
       "checks": [
         {
           "check": "Keys are strings",
@@ -191,7 +191,7 @@
       ]
     },
     "spaces": {
-      "row_count": 30,
+      "row_count": 50,
       "checks": [
         {
           "check": "Keys are strings",
@@ -212,7 +212,7 @@
       ]
     },
     "space_config_history": {
-      "row_count": 2,
+      "row_count": 50,
       "checks": [
         {
           "check": "Keys are strings",
@@ -233,7 +233,7 @@
       ]
     },
     "space_features": {
-      "row_count": 3,
+      "row_count": 150,
       "checks": [
         {
           "check": "Keys are strings",
@@ -254,7 +254,7 @@
       ]
     },
     "space_memberships": {
-      "row_count": 3,
+      "row_count": 250,
       "checks": [
         {
           "check": "Keys are strings",
@@ -296,7 +296,7 @@
       ]
     },
     "user_groups": {
-      "row_count": 3,
+      "row_count": 600,
       "checks": [
         {
           "check": "Keys are strings",
@@ -317,7 +317,7 @@
       ]
     },
     "watchers": {
-      "row_count": 2,
+      "row_count": 320,
       "checks": [
         {
           "check": "Keys are strings",
@@ -479,7 +479,7 @@
       "details": {
         "column": "created_by_user_id",
         "null_count": 0,
-        "non_null_count": 30
+        "non_null_count": 50
       }
     },
     {
@@ -507,12 +507,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 15.0,
+        "avg": 1.04,
         "min": 1,
-        "max": 29,
+        "max": 2,
         "top5_parents_by_children": {
-          "2": 29,
-          "1": 1
+          "221": 2,
+          "194": 2,
+          "123": 1,
+          "148": 1,
+          "125": 1
         }
       }
     },
@@ -569,15 +572,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 10.0,
-        "min": 10,
-        "max": 10,
+        "avg": 6.0,
+        "min": 2,
+        "max": 11,
         "top5_parents_by_children": {
-          "1": 10,
-          "2": 10,
-          "3": 10,
-          "4": 10,
-          "5": 10
+          "37": 11,
+          "16": 10,
+          "31": 9,
+          "35": 9,
+          "27": 9
         }
       }
     },
@@ -605,8 +608,8 @@
       "result": true,
       "details": {
         "column": "parent_page_id",
-        "null_count": 30,
-        "non_null_count": 270
+        "null_count": 246,
+        "non_null_count": 54
       }
     },
     {
@@ -634,15 +637,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.17,
         "min": 1,
-        "max": 1,
+        "max": 4,
         "top5_parents_by_children": {
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-          "5": 1
+          "1": 4,
+          "28": 3,
+          "8": 2,
+          "10": 2,
+          "18": 2
         }
       }
     },
@@ -699,12 +702,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 150.0,
-        "min": 10,
-        "max": 290,
+        "avg": 1.47,
+        "min": 1,
+        "max": 5,
         "top5_parents_by_children": {
-          "3": 290,
-          "2": 10
+          "110": 5,
+          "142": 4,
+          "287": 3,
+          "254": 3,
+          "201": 3
         }
       }
     },
@@ -761,12 +767,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 150.0,
-        "min": 10,
-        "max": 290,
+        "avg": 1.57,
+        "min": 1,
+        "max": 5,
         "top5_parents_by_children": {
-          "3": 290,
-          "2": 10
+          "195": 5,
+          "203": 5,
+          "193": 4,
+          "94": 4,
+          "136": 4
         }
       }
     },
@@ -795,7 +804,7 @@
       "details": {
         "column": "page_id",
         "null_count": 0,
-        "non_null_count": 600
+        "non_null_count": 885
       }
     },
     {
@@ -823,15 +832,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 2.0,
-        "min": 2,
-        "max": 2,
+        "avg": 2.95,
+        "min": 1,
+        "max": 5,
         "top5_parents_by_children": {
-          "1": 2,
-          "2": 2,
-          "3": 2,
-          "4": 2,
-          "5": 2
+          "1": 5,
+          "294": 5,
+          "29": 5,
+          "278": 5,
+          "275": 5
         }
       }
     },
@@ -860,7 +869,7 @@
       "details": {
         "column": "editor_user_id",
         "null_count": 0,
-        "non_null_count": 600
+        "non_null_count": 885
       }
     },
     {
@@ -888,12 +897,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 300.0,
-        "min": 20,
-        "max": 580,
+        "avg": 3.44,
+        "min": 1,
+        "max": 14,
         "top5_parents_by_children": {
-          "3": 580,
-          "2": 20
+          "195": 14,
+          "203": 11,
+          "178": 11,
+          "34": 11,
+          "136": 11
         }
       }
     },
@@ -921,8 +933,8 @@
       "result": true,
       "details": {
         "column": "space_id",
-        "null_count": 1,
-        "non_null_count": 2
+        "null_count": 118,
+        "non_null_count": 252
       }
     },
     {
@@ -950,12 +962,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 5.04,
         "min": 1,
-        "max": 1,
+        "max": 12,
         "top5_parents_by_children": {
-          "1": 1,
-          "2": 1
+          "37": 12,
+          "20": 11,
+          "31": 10,
+          "41": 10,
+          "16": 9
         }
       }
     },
@@ -983,8 +998,8 @@
       "result": true,
       "details": {
         "column": "page_id",
-        "null_count": 2,
-        "non_null_count": 1
+        "null_count": 252,
+        "non_null_count": 118
       }
     },
     {
@@ -1012,11 +1027,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.2,
         "min": 1,
-        "max": 1,
+        "max": 3,
         "top5_parents_by_children": {
-          "1": 1
+          "15": 3,
+          "110": 2,
+          "176": 2,
+          "225": 2,
+          "125": 2
         }
       }
     },
@@ -1044,8 +1063,8 @@
       "result": true,
       "details": {
         "column": "user_id",
-        "null_count": 1,
-        "non_null_count": 2
+        "null_count": 128,
+        "non_null_count": 242
       }
     },
     {
@@ -1073,12 +1092,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.37,
         "min": 1,
-        "max": 1,
+        "max": 6,
         "top5_parents_by_children": {
-          "4": 1,
-          "5": 1
+          "27": 6,
+          "30": 4,
+          "146": 4,
+          "246": 3,
+          "129": 3
         }
       }
     },
@@ -1106,8 +1128,8 @@
       "result": true,
       "details": {
         "column": "group_id",
-        "null_count": 2,
-        "non_null_count": 1
+        "null_count": 242,
+        "non_null_count": 128
       }
     },
     {
@@ -1135,11 +1157,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 2.67,
         "min": 1,
-        "max": 1,
+        "max": 6,
         "top5_parents_by_children": {
-          "1": 1
+          "39": 6,
+          "30": 6,
+          "42": 5,
+          "21": 5,
+          "47": 5
         }
       }
     },
@@ -1167,8 +1193,8 @@
       "result": true,
       "details": {
         "column": "revoked_by_user_id",
-        "null_count": 3,
-        "non_null_count": 0
+        "null_count": 327,
+        "non_null_count": 43
       }
     },
     {
@@ -1196,10 +1222,12 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 0.0,
-        "min": 0,
-        "max": 0,
-        "top5_parents_by_children": {}
+        "avg": 43.0,
+        "min": 43,
+        "max": 43,
+        "top5_parents_by_children": {
+          "1": 43
+        }
       }
     },
     {
@@ -1227,7 +1255,7 @@
       "details": {
         "column": "space_id",
         "null_count": 0,
-        "non_null_count": 3
+        "non_null_count": 150
       }
     },
     {
@@ -1255,12 +1283,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.5,
-        "min": 1,
-        "max": 2,
+        "avg": 3.0,
+        "min": 3,
+        "max": 3,
         "top5_parents_by_children": {
-          "1": 2,
-          "2": 1
+          "1": 3,
+          "2": 3,
+          "3": 3,
+          "4": 3,
+          "5": 3
         }
       }
     },
@@ -1289,7 +1320,7 @@
       "details": {
         "column": "actor_user_id",
         "null_count": 0,
-        "non_null_count": 2
+        "non_null_count": 100
       }
     },
     {
@@ -1317,12 +1348,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.15,
         "min": 1,
-        "max": 1,
+        "max": 2,
         "top5_parents_by_children": {
-          "1": 1,
-          "2": 1
+          "115": 2,
+          "64": 2,
+          "209": 2,
+          "216": 2,
+          "50": 2
         }
       }
     },
@@ -1351,7 +1385,7 @@
       "details": {
         "column": "space_id",
         "null_count": 0,
-        "non_null_count": 2
+        "non_null_count": 50
       }
     },
     {
@@ -1379,12 +1413,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.67,
         "min": 1,
-        "max": 1,
+        "max": 4,
         "top5_parents_by_children": {
-          "1": 1,
-          "2": 1
+          "4": 4,
+          "24": 4,
+          "7": 3,
+          "29": 3,
+          "2": 3
         }
       }
     },
@@ -1413,7 +1450,7 @@
       "details": {
         "column": "requested_by_user_id",
         "null_count": 0,
-        "non_null_count": 2
+        "non_null_count": 50
       }
     },
     {
@@ -1441,12 +1478,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.06,
         "min": 1,
-        "max": 1,
+        "max": 2,
         "top5_parents_by_children": {
-          "1": 1,
-          "2": 1
+          "249": 2,
+          "2": 2,
+          "219": 2,
+          "54": 1,
+          "300": 1
         }
       }
     },
@@ -1475,7 +1515,7 @@
       "details": {
         "column": "user_id",
         "null_count": 0,
-        "non_null_count": 3
+        "non_null_count": 250
       }
     },
     {
@@ -1503,13 +1543,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.48,
         "min": 1,
-        "max": 1,
+        "max": 6,
         "top5_parents_by_children": {
-          "2": 1,
-          "3": 1,
-          "5": 1
+          "155": 6,
+          "285": 4,
+          "22": 4,
+          "17": 4,
+          "144": 4
         }
       }
     },
@@ -1538,7 +1580,7 @@
       "details": {
         "column": "space_id",
         "null_count": 0,
-        "non_null_count": 3
+        "non_null_count": 250
       }
     },
     {
@@ -1566,12 +1608,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.5,
+        "avg": 5.0,
         "min": 1,
-        "max": 2,
+        "max": 9,
         "top5_parents_by_children": {
-          "1": 2,
-          "2": 1
+          "35": 9,
+          "50": 9,
+          "45": 8,
+          "6": 8,
+          "8": 8
         }
       }
     },
@@ -1600,7 +1645,7 @@
       "details": {
         "column": "user_id",
         "null_count": 0,
-        "non_null_count": 3
+        "non_null_count": 600
       }
     },
     {
@@ -1628,13 +1673,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 2.32,
         "min": 1,
-        "max": 1,
+        "max": 9,
         "top5_parents_by_children": {
-          "3": 1,
-          "4": 1,
-          "5": 1
+          "132": 9,
+          "121": 7,
+          "240": 7,
+          "50": 6,
+          "218": 6
         }
       }
     },
@@ -1663,7 +1710,7 @@
       "details": {
         "column": "group_id",
         "null_count": 0,
-        "non_null_count": 3
+        "non_null_count": 600
       }
     },
     {
@@ -1691,12 +1738,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.5,
-        "min": 1,
-        "max": 2,
+        "avg": 12.0,
+        "min": 7,
+        "max": 22,
         "top5_parents_by_children": {
-          "1": 2,
-          "2": 1
+          "30": 22,
+          "49": 21,
+          "35": 21,
+          "29": 19,
+          "16": 17
         }
       }
     },
@@ -1724,8 +1774,8 @@
       "result": true,
       "details": {
         "column": "user_id",
-        "null_count": 1,
-        "non_null_count": 1
+        "null_count": 96,
+        "non_null_count": 224
       }
     },
     {
@@ -1753,11 +1803,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.38,
         "min": 1,
-        "max": 1,
+        "max": 4,
         "top5_parents_by_children": {
-          "3": 1
+          "125": 4,
+          "80": 3,
+          "126": 3,
+          "72": 3,
+          "255": 3
         }
       }
     },
@@ -1785,8 +1839,8 @@
       "result": true,
       "details": {
         "column": "group_id",
-        "null_count": 1,
-        "non_null_count": 1
+        "null_count": 224,
+        "non_null_count": 96
       }
     },
     {
@@ -1814,11 +1868,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 2.59,
         "min": 1,
-        "max": 1,
+        "max": 6,
         "top5_parents_by_children": {
-          "2": 1
+          "49": 6,
+          "29": 5,
+          "35": 5,
+          "38": 5,
+          "11": 4
         }
       }
     },
@@ -1846,8 +1904,8 @@
       "result": true,
       "details": {
         "column": "space_id",
-        "null_count": 1,
-        "non_null_count": 1
+        "null_count": 162,
+        "non_null_count": 158
       }
     },
     {
@@ -1875,11 +1933,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 3.29,
         "min": 1,
-        "max": 1,
+        "max": 7,
         "top5_parents_by_children": {
-          "1": 1
+          "40": 7,
+          "37": 6,
+          "28": 6,
+          "25": 6,
+          "32": 6
         }
       }
     },
@@ -1907,8 +1969,8 @@
       "result": true,
       "details": {
         "column": "page_id",
-        "null_count": 1,
-        "non_null_count": 1
+        "null_count": 171,
+        "non_null_count": 149
       }
     },
     {
@@ -1936,11 +1998,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.31,
         "min": 1,
-        "max": 1,
+        "max": 3,
         "top5_parents_by_children": {
-          "2": 1
+          "120": 3,
+          "142": 3,
+          "117": 3,
+          "143": 3,
+          "272": 3
         }
       }
     },
@@ -1969,7 +2035,7 @@
       "details": {
         "column": "space_id",
         "null_count": 0,
-        "non_null_count": 2
+        "non_null_count": 50
       }
     },
     {
@@ -1997,11 +2063,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 2.0,
-        "min": 2,
-        "max": 2,
+        "avg": 1.0,
+        "min": 1,
+        "max": 1,
         "top5_parents_by_children": {
-          "1": 2
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
         }
       }
     },
@@ -2030,7 +2100,7 @@
       "details": {
         "column": "recipient_user_id",
         "null_count": 0,
-        "non_null_count": 2
+        "non_null_count": 100
       }
     },
     {
@@ -2058,11 +2128,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 2.0,
-        "min": 2,
-        "max": 2,
+        "avg": 1.25,
+        "min": 1,
+        "max": 4,
         "top5_parents_by_children": {
-          "3": 2
+          "163": 4,
+          "7": 3,
+          "91": 3,
+          "190": 3,
+          "111": 3
         }
       }
     },
@@ -2091,7 +2165,7 @@
       "details": {
         "column": "sender_user_id",
         "null_count": 0,
-        "non_null_count": 2
+        "non_null_count": 100
       }
     },
     {
@@ -2119,11 +2193,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 2.0,
-        "min": 2,
-        "max": 2,
+        "avg": 1.15,
+        "min": 1,
+        "max": 3,
         "top5_parents_by_children": {
-          "5": 2
+          "283": 3,
+          "147": 2,
+          "138": 2,
+          "288": 2,
+          "117": 2
         }
       }
     },
@@ -2152,7 +2230,7 @@
       "details": {
         "column": "requested_by_user_id",
         "null_count": 0,
-        "non_null_count": 1
+        "non_null_count": 50
       }
     },
     {
@@ -2180,11 +2258,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
+        "avg": 1.09,
         "min": 1,
-        "max": 1,
+        "max": 3,
         "top5_parents_by_children": {
-          "3": 1
+          "135": 3,
+          "249": 2,
+          "119": 2,
+          "131": 1,
+          "137": 1
         }
       }
     },
@@ -2211,11 +2293,9 @@
           "groups",
           "page_versions",
           "permissions",
-          "space_config_history",
-          "spaces",
-          "users"
+          "space_config_history"
         ],
-        "count": 10
+        "count": 8
       },
       "kind": "generic"
     },
@@ -2234,10 +2314,10 @@
     {
       "relationship": "notifications.related_entity_id (type='pages') \u2192 pages.page_id",
       "check": "Average children per parent (info)",
-      "result": 2.0,
+      "result": 0.0,
       "details": {
         "type": "pages",
-        "max_children_for_single_parent": 2
+        "max_children_for_single_parent": 0
       },
       "kind": "generic"
     },
@@ -2247,6 +2327,70 @@
       "result": true,
       "details": {
         "type": "pages",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='spaces') \u2192 spaces.space_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "spaces",
+        "child_column": "related_entity_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='spaces') \u2192 spaces.space_id",
+      "check": "Average children per parent (info)",
+      "result": 0.0,
+      "details": {
+        "type": "spaces",
+        "max_children_for_single_parent": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='spaces') \u2192 spaces.space_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "spaces",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='users') \u2192 users.user_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "users",
+        "child_column": "related_entity_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='users') \u2192 users.user_id",
+      "check": "Average children per parent (info)",
+      "result": 0.0,
+      "details": {
+        "type": "users",
+        "max_children_for_single_parent": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='users') \u2192 users.user_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "users",
         "violations": 0
       },
       "kind": "generic"
@@ -2276,11 +2420,9 @@
           "groups",
           "page_versions",
           "permissions",
-          "space_config_history",
-          "spaces",
-          "users"
+          "space_config_history"
         ],
-        "count": 10
+        "count": 8
       },
       "kind": "generic"
     },
@@ -2299,10 +2441,10 @@
     {
       "relationship": "notifications.related_entity_id (type='pages') \u2192 pages.page_id",
       "check": "Average children per parent (info)",
-      "result": 2.0,
+      "result": 0.0,
       "details": {
         "type": "pages",
-        "max_children_for_single_parent": 2
+        "max_children_for_single_parent": 0
       },
       "kind": "generic"
     },
@@ -2315,12 +2457,76 @@
         "violations": 0
       },
       "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='spaces') \u2192 spaces.space_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "spaces",
+        "child_column": "related_entity_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='spaces') \u2192 spaces.space_id",
+      "check": "Average children per parent (info)",
+      "result": 0.0,
+      "details": {
+        "type": "spaces",
+        "max_children_for_single_parent": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='spaces') \u2192 spaces.space_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "spaces",
+        "violations": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='users') \u2192 users.user_id",
+      "check": "All children have parents (polymorphic)",
+      "result": true,
+      "details": {
+        "type": "users",
+        "child_column": "related_entity_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='users') \u2192 users.user_id",
+      "check": "Average children per parent (info)",
+      "result": 0.0,
+      "details": {
+        "type": "users",
+        "max_children_for_single_parent": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='users') \u2192 users.user_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "users",
+        "violations": 0
+      },
+      "kind": "generic"
     }
   ],
   "generic_fk_summary": {
-    "total_checks": 5,
-    "passes": 4,
+    "total_checks": 11,
+    "passes": 8,
     "fails": 0,
-    "info_metrics_count": 1
+    "info_metrics_count": 3
   }
 }

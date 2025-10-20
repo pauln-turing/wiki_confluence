@@ -3,7 +3,7 @@
         "feature_id": "1",
         "space_id": "1",
         "feature_type": "live_docs",
-        "is_enabled": true
+        "is_enabled": false
     },
     "2": {
         "feature_id": "2",
@@ -13,8 +13,890 @@
     },
     "3": {
         "feature_id": "3",
-        "space_id": "2",
+        "space_id": "1",
         "feature_type": "whiteboard",
         "is_enabled": true
+    },
+    "4": {
+        "feature_id": "4",
+        "space_id": "2",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "5": {
+        "feature_id": "5",
+        "space_id": "2",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "6": {
+        "feature_id": "6",
+        "space_id": "2",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "7": {
+        "feature_id": "7",
+        "space_id": "3",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "8": {
+        "feature_id": "8",
+        "space_id": "3",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "9": {
+        "feature_id": "9",
+        "space_id": "3",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "10": {
+        "feature_id": "10",
+        "space_id": "4",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "11": {
+        "feature_id": "11",
+        "space_id": "4",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "12": {
+        "feature_id": "12",
+        "space_id": "4",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "13": {
+        "feature_id": "13",
+        "space_id": "5",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "14": {
+        "feature_id": "14",
+        "space_id": "5",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "15": {
+        "feature_id": "15",
+        "space_id": "5",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "16": {
+        "feature_id": "16",
+        "space_id": "6",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "17": {
+        "feature_id": "17",
+        "space_id": "6",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "18": {
+        "feature_id": "18",
+        "space_id": "6",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "19": {
+        "feature_id": "19",
+        "space_id": "7",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "20": {
+        "feature_id": "20",
+        "space_id": "7",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "21": {
+        "feature_id": "21",
+        "space_id": "7",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "22": {
+        "feature_id": "22",
+        "space_id": "8",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "23": {
+        "feature_id": "23",
+        "space_id": "8",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "24": {
+        "feature_id": "24",
+        "space_id": "8",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "25": {
+        "feature_id": "25",
+        "space_id": "9",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "26": {
+        "feature_id": "26",
+        "space_id": "9",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "27": {
+        "feature_id": "27",
+        "space_id": "9",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "28": {
+        "feature_id": "28",
+        "space_id": "10",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "29": {
+        "feature_id": "29",
+        "space_id": "10",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "30": {
+        "feature_id": "30",
+        "space_id": "10",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "31": {
+        "feature_id": "31",
+        "space_id": "11",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "32": {
+        "feature_id": "32",
+        "space_id": "11",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "33": {
+        "feature_id": "33",
+        "space_id": "11",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "34": {
+        "feature_id": "34",
+        "space_id": "12",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "35": {
+        "feature_id": "35",
+        "space_id": "12",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "36": {
+        "feature_id": "36",
+        "space_id": "12",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "37": {
+        "feature_id": "37",
+        "space_id": "13",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "38": {
+        "feature_id": "38",
+        "space_id": "13",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "39": {
+        "feature_id": "39",
+        "space_id": "13",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "40": {
+        "feature_id": "40",
+        "space_id": "14",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "41": {
+        "feature_id": "41",
+        "space_id": "14",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "42": {
+        "feature_id": "42",
+        "space_id": "14",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "43": {
+        "feature_id": "43",
+        "space_id": "15",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "44": {
+        "feature_id": "44",
+        "space_id": "15",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "45": {
+        "feature_id": "45",
+        "space_id": "15",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "46": {
+        "feature_id": "46",
+        "space_id": "16",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "47": {
+        "feature_id": "47",
+        "space_id": "16",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "48": {
+        "feature_id": "48",
+        "space_id": "16",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "49": {
+        "feature_id": "49",
+        "space_id": "17",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "50": {
+        "feature_id": "50",
+        "space_id": "17",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "51": {
+        "feature_id": "51",
+        "space_id": "17",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "52": {
+        "feature_id": "52",
+        "space_id": "18",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "53": {
+        "feature_id": "53",
+        "space_id": "18",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "54": {
+        "feature_id": "54",
+        "space_id": "18",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "55": {
+        "feature_id": "55",
+        "space_id": "19",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "56": {
+        "feature_id": "56",
+        "space_id": "19",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "57": {
+        "feature_id": "57",
+        "space_id": "19",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "58": {
+        "feature_id": "58",
+        "space_id": "20",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "59": {
+        "feature_id": "59",
+        "space_id": "20",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "60": {
+        "feature_id": "60",
+        "space_id": "20",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "61": {
+        "feature_id": "61",
+        "space_id": "21",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "62": {
+        "feature_id": "62",
+        "space_id": "21",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "63": {
+        "feature_id": "63",
+        "space_id": "21",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "64": {
+        "feature_id": "64",
+        "space_id": "22",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "65": {
+        "feature_id": "65",
+        "space_id": "22",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "66": {
+        "feature_id": "66",
+        "space_id": "22",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "67": {
+        "feature_id": "67",
+        "space_id": "23",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "68": {
+        "feature_id": "68",
+        "space_id": "23",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "69": {
+        "feature_id": "69",
+        "space_id": "23",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "70": {
+        "feature_id": "70",
+        "space_id": "24",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "71": {
+        "feature_id": "71",
+        "space_id": "24",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "72": {
+        "feature_id": "72",
+        "space_id": "24",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "73": {
+        "feature_id": "73",
+        "space_id": "25",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "74": {
+        "feature_id": "74",
+        "space_id": "25",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "75": {
+        "feature_id": "75",
+        "space_id": "25",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "76": {
+        "feature_id": "76",
+        "space_id": "26",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "77": {
+        "feature_id": "77",
+        "space_id": "26",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "78": {
+        "feature_id": "78",
+        "space_id": "26",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "79": {
+        "feature_id": "79",
+        "space_id": "27",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "80": {
+        "feature_id": "80",
+        "space_id": "27",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "81": {
+        "feature_id": "81",
+        "space_id": "27",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "82": {
+        "feature_id": "82",
+        "space_id": "28",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "83": {
+        "feature_id": "83",
+        "space_id": "28",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "84": {
+        "feature_id": "84",
+        "space_id": "28",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "85": {
+        "feature_id": "85",
+        "space_id": "29",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "86": {
+        "feature_id": "86",
+        "space_id": "29",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "87": {
+        "feature_id": "87",
+        "space_id": "29",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "88": {
+        "feature_id": "88",
+        "space_id": "30",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "89": {
+        "feature_id": "89",
+        "space_id": "30",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "90": {
+        "feature_id": "90",
+        "space_id": "30",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "91": {
+        "feature_id": "91",
+        "space_id": "31",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "92": {
+        "feature_id": "92",
+        "space_id": "31",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "93": {
+        "feature_id": "93",
+        "space_id": "31",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "94": {
+        "feature_id": "94",
+        "space_id": "32",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "95": {
+        "feature_id": "95",
+        "space_id": "32",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "96": {
+        "feature_id": "96",
+        "space_id": "32",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "97": {
+        "feature_id": "97",
+        "space_id": "33",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "98": {
+        "feature_id": "98",
+        "space_id": "33",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "99": {
+        "feature_id": "99",
+        "space_id": "33",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "100": {
+        "feature_id": "100",
+        "space_id": "34",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "101": {
+        "feature_id": "101",
+        "space_id": "34",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "102": {
+        "feature_id": "102",
+        "space_id": "34",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "103": {
+        "feature_id": "103",
+        "space_id": "35",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "104": {
+        "feature_id": "104",
+        "space_id": "35",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "105": {
+        "feature_id": "105",
+        "space_id": "35",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "106": {
+        "feature_id": "106",
+        "space_id": "36",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "107": {
+        "feature_id": "107",
+        "space_id": "36",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "108": {
+        "feature_id": "108",
+        "space_id": "36",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "109": {
+        "feature_id": "109",
+        "space_id": "37",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "110": {
+        "feature_id": "110",
+        "space_id": "37",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "111": {
+        "feature_id": "111",
+        "space_id": "37",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "112": {
+        "feature_id": "112",
+        "space_id": "38",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "113": {
+        "feature_id": "113",
+        "space_id": "38",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "114": {
+        "feature_id": "114",
+        "space_id": "38",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "115": {
+        "feature_id": "115",
+        "space_id": "39",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "116": {
+        "feature_id": "116",
+        "space_id": "39",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "117": {
+        "feature_id": "117",
+        "space_id": "39",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "118": {
+        "feature_id": "118",
+        "space_id": "40",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "119": {
+        "feature_id": "119",
+        "space_id": "40",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "120": {
+        "feature_id": "120",
+        "space_id": "40",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "121": {
+        "feature_id": "121",
+        "space_id": "41",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "122": {
+        "feature_id": "122",
+        "space_id": "41",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "123": {
+        "feature_id": "123",
+        "space_id": "41",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "124": {
+        "feature_id": "124",
+        "space_id": "42",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "125": {
+        "feature_id": "125",
+        "space_id": "42",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "126": {
+        "feature_id": "126",
+        "space_id": "42",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "127": {
+        "feature_id": "127",
+        "space_id": "43",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "128": {
+        "feature_id": "128",
+        "space_id": "43",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "129": {
+        "feature_id": "129",
+        "space_id": "43",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "130": {
+        "feature_id": "130",
+        "space_id": "44",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "131": {
+        "feature_id": "131",
+        "space_id": "44",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "132": {
+        "feature_id": "132",
+        "space_id": "44",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "133": {
+        "feature_id": "133",
+        "space_id": "45",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "134": {
+        "feature_id": "134",
+        "space_id": "45",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "135": {
+        "feature_id": "135",
+        "space_id": "45",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "136": {
+        "feature_id": "136",
+        "space_id": "46",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "137": {
+        "feature_id": "137",
+        "space_id": "46",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "138": {
+        "feature_id": "138",
+        "space_id": "46",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "139": {
+        "feature_id": "139",
+        "space_id": "47",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "140": {
+        "feature_id": "140",
+        "space_id": "47",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "141": {
+        "feature_id": "141",
+        "space_id": "47",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "142": {
+        "feature_id": "142",
+        "space_id": "48",
+        "feature_type": "live_docs",
+        "is_enabled": false
+    },
+    "143": {
+        "feature_id": "143",
+        "space_id": "48",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "144": {
+        "feature_id": "144",
+        "space_id": "48",
+        "feature_type": "whiteboard",
+        "is_enabled": false
+    },
+    "145": {
+        "feature_id": "145",
+        "space_id": "49",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "146": {
+        "feature_id": "146",
+        "space_id": "49",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "147": {
+        "feature_id": "147",
+        "space_id": "49",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    },
+    "148": {
+        "feature_id": "148",
+        "space_id": "50",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "149": {
+        "feature_id": "149",
+        "space_id": "50",
+        "feature_type": "calendars",
+        "is_enabled": true
+    },
+    "150": {
+        "feature_id": "150",
+        "space_id": "50",
+        "feature_type": "whiteboard",
+        "is_enabled": false
     }
 }

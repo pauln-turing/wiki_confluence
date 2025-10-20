@@ -1,0 +1,302 @@
+{
+    "1": {
+        "space_id": "1",
+        "space_key": "PROJ1",
+        "space_name": "Project 1 Docs",
+        "space_purpose": "Central hub for Project 1.",
+        "created_by_user_id": "1",
+        "created_at": "2023-01-11T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "2": {
+        "space_id": "2",
+        "space_key": "PROJ2",
+        "space_name": "Project 2 Docs",
+        "space_purpose": "Central hub for Project 2.",
+        "created_by_user_id": "2",
+        "created_at": "2023-02-10T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "3": {
+        "space_id": "3",
+        "space_key": "PROJ3",
+        "space_name": "Project 3 Docs",
+        "space_purpose": "Central hub for Project 3.",
+        "created_by_user_id": "2",
+        "created_at": "2023-03-12T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "4": {
+        "space_id": "4",
+        "space_key": "PROJ4",
+        "space_name": "Project 4 Docs",
+        "space_purpose": "Central hub for Project 4.",
+        "created_by_user_id": "2",
+        "created_at": "2023-04-11T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "5": {
+        "space_id": "5",
+        "space_key": "PROJ5",
+        "space_name": "Project 5 Docs",
+        "space_purpose": "Central hub for Project 5.",
+        "created_by_user_id": "2",
+        "created_at": "2023-05-11T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "6": {
+        "space_id": "6",
+        "space_key": "PROJ6",
+        "space_name": "Project 6 Docs",
+        "space_purpose": "Central hub for Project 6.",
+        "created_by_user_id": "2",
+        "created_at": "2023-06-10T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "7": {
+        "space_id": "7",
+        "space_key": "PROJ7",
+        "space_name": "Project 7 Docs",
+        "space_purpose": "Central hub for Project 7.",
+        "created_by_user_id": "2",
+        "created_at": "2023-07-10T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "8": {
+        "space_id": "8",
+        "space_key": "PROJ8",
+        "space_name": "Project 8 Docs",
+        "space_purpose": "Central hub for Project 8.",
+        "created_by_user_id": "2",
+        "created_at": "2023-08-09T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "9": {
+        "space_id": "9",
+        "space_key": "PROJ9",
+        "space_name": "Project 9 Docs",
+        "space_purpose": "Central hub for Project 9.",
+        "created_by_user_id": "2",
+        "created_at": "2023-09-08T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "10": {
+        "space_id": "10",
+        "space_key": "PROJ10",
+        "space_name": "Project 10 Docs",
+        "space_purpose": "Central hub for Project 10.",
+        "created_by_user_id": "2",
+        "created_at": "2023-10-08T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "11": {
+        "space_id": "11",
+        "space_key": "PROJ11",
+        "space_name": "Project 11 Docs",
+        "space_purpose": "Central hub for Project 11.",
+        "created_by_user_id": "2",
+        "created_at": "2023-11-07T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "12": {
+        "space_id": "12",
+        "space_key": "PROJ12",
+        "space_name": "Project 12 Docs",
+        "space_purpose": "Central hub for Project 12.",
+        "created_by_user_id": "2",
+        "created_at": "2023-12-07T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "13": {
+        "space_id": "13",
+        "space_key": "PROJ13",
+        "space_name": "Project 13 Docs",
+        "space_purpose": "Central hub for Project 13.",
+        "created_by_user_id": "2",
+        "created_at": "2024-01-06T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "14": {
+        "space_id": "14",
+        "space_key": "PROJ14",
+        "space_name": "Project 14 Docs",
+        "space_purpose": "Central hub for Project 14.",
+        "created_by_user_id": "2",
+        "created_at": "2024-02-05T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "15": {
+        "space_id": "15",
+        "space_key": "PROJ15",
+        "space_name": "Project 15 Docs",
+        "space_purpose": "Central hub for Project 15.",
+        "created_by_user_id": "2",
+        "created_at": "2024-03-06T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "16": {
+        "space_id": "16",
+        "space_key": "PROJ16",
+        "space_name": "Project 16 Docs",
+        "space_purpose": "Central hub for Project 16.",
+        "created_by_user_id": "2",
+        "created_at": "2024-04-05T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "17": {
+        "space_id": "17",
+        "space_key": "PROJ17",
+        "space_name": "Project 17 Docs",
+        "space_purpose": "Central hub for Project 17.",
+        "created_by_user_id": "2",
+        "created_at": "2024-05-05T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "18": {
+        "space_id": "18",
+        "space_key": "PROJ18",
+        "space_name": "Project 18 Docs",
+        "space_purpose": "Central hub for Project 18.",
+        "created_by_user_id": "2",
+        "created_at": "2024-06-04T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "19": {
+        "space_id": "19",
+        "space_key": "PROJ19",
+        "space_name": "Project 19 Docs",
+        "space_purpose": "Central hub for Project 19.",
+        "created_by_user_id": "2",
+        "created_at": "2024-07-04T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "20": {
+        "space_id": "20",
+        "space_key": "PROJ20",
+        "space_name": "Project 20 Docs",
+        "space_purpose": "Central hub for Project 20.",
+        "created_by_user_id": "2",
+        "created_at": "2024-08-03T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "21": {
+        "space_id": "21",
+        "space_key": "PROJ21",
+        "space_name": "Project 21 Docs",
+        "space_purpose": "Central hub for Project 21.",
+        "created_by_user_id": "2",
+        "created_at": "2024-09-02T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "22": {
+        "space_id": "22",
+        "space_key": "PROJ22",
+        "space_name": "Project 22 Docs",
+        "space_purpose": "Central hub for Project 22.",
+        "created_by_user_id": "2",
+        "created_at": "2024-10-02T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "23": {
+        "space_id": "23",
+        "space_key": "PROJ23",
+        "space_name": "Project 23 Docs",
+        "space_purpose": "Central hub for Project 23.",
+        "created_by_user_id": "2",
+        "created_at": "2024-11-01T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "24": {
+        "space_id": "24",
+        "space_key": "PROJ24",
+        "space_name": "Project 24 Docs",
+        "space_purpose": "Central hub for Project 24.",
+        "created_by_user_id": "2",
+        "created_at": "2024-12-01T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "25": {
+        "space_id": "25",
+        "space_key": "PROJ25",
+        "space_name": "Project 25 Docs",
+        "space_purpose": "Central hub for Project 25.",
+        "created_by_user_id": "2",
+        "created_at": "2024-12-31T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "26": {
+        "space_id": "26",
+        "space_key": "PROJ26",
+        "space_name": "Project 26 Docs",
+        "space_purpose": "Central hub for Project 26.",
+        "created_by_user_id": "2",
+        "created_at": "2025-01-30T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "27": {
+        "space_id": "27",
+        "space_key": "PROJ27",
+        "space_name": "Project 27 Docs",
+        "space_purpose": "Central hub for Project 27.",
+        "created_by_user_id": "2",
+        "created_at": "2025-03-01T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "28": {
+        "space_id": "28",
+        "space_key": "PROJ28",
+        "space_name": "Project 28 Docs",
+        "space_purpose": "Central hub for Project 28.",
+        "created_by_user_id": "2",
+        "created_at": "2025-03-31T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "29": {
+        "space_id": "29",
+        "space_key": "PROJ29",
+        "space_name": "Project 29 Docs",
+        "space_purpose": "Central hub for Project 29.",
+        "created_by_user_id": "2",
+        "created_at": "2025-04-30T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    },
+    "30": {
+        "space_id": "30",
+        "space_key": "PROJ30",
+        "space_name": "Project 30 Docs",
+        "space_purpose": "Central hub for Project 30.",
+        "created_by_user_id": "2",
+        "created_at": "2025-05-30T10:00:00",
+        "is_deleted": false,
+        "deleted_at": null
+    }
+}

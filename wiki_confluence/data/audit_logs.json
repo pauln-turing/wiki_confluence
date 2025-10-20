@@ -1,0 +1,20 @@
+{
+    "1": {
+        "log_id": "1",
+        "actor_user_id": "1",
+        "action_type": "create_space",
+        "target_entity_type": "space",
+        "target_entity_id": "1",
+        "occurred_at": "2023-01-11T10:00:00",
+        "details": "{\"key\": \"PROJ1\"}"
+    },
+    "2": {
+        "log_id": "2",
+        "actor_user_id": "2",
+        "action_type": "update_page",
+        "target_entity_type": "page",
+        "target_entity_id": "1",
+        "occurred_at": "2023-01-19T10:00:00",
+        "details": "{\"title_change\": \"false\", \"version\": 2}"
+    }
+}

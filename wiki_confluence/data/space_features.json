@@ -1,0 +1,20 @@
+{
+    "1": {
+        "feature_id": "1",
+        "space_id": "1",
+        "feature_type": "live_docs",
+        "is_enabled": true
+    },
+    "2": {
+        "feature_id": "2",
+        "space_id": "1",
+        "feature_type": "calendars",
+        "is_enabled": false
+    },
+    "3": {
+        "feature_id": "3",
+        "space_id": "2",
+        "feature_type": "whiteboard",
+        "is_enabled": true
+    }
+}

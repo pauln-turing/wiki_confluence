@@ -1,0 +1,20 @@
+{
+    "1": {
+        "history_id": "1",
+        "space_id": "1",
+        "changed_by_user_id": "2",
+        "changed_at": "2023-03-07T10:00:00",
+        "config_version": 1,
+        "old_config": "{\"access\": \"public\"}",
+        "new_config": "{\"access\": \"public\"}"
+    },
+    "2": {
+        "history_id": "2",
+        "space_id": "1",
+        "changed_by_user_id": "2",
+        "changed_at": "2023-03-12T10:00:00",
+        "config_version": 2,
+        "old_config": "{\"access\": \"public\"}",
+        "new_config": "{\"access\": \"private\"}"
+    }
+}

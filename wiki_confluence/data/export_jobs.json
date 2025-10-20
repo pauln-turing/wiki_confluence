@@ -1,0 +1,24 @@
+{
+    "1": {
+        "job_id": "1",
+        "space_id": "1",
+        "requested_by_user_id": "1",
+        "requested_at": "2023-05-21T10:00:00",
+        "status": "pending",
+        "format": "PDF",
+        "destination": null,
+        "estimated_size_kb": 5000,
+        "priority": 0
+    },
+    "2": {
+        "job_id": "2",
+        "space_id": "2",
+        "requested_by_user_id": "2",
+        "requested_at": "2023-05-26T10:00:00",
+        "status": "completed",
+        "format": "HTML",
+        "destination": "/exports/2.html",
+        "estimated_size_kb": 6000,
+        "priority": 1
+    }
+}
