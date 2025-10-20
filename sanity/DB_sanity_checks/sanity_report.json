@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-10-17T10:34:12.390352",
+  "timestamp": "2025-10-20T13:51:24.042782",
   "tables": {
     "approval_decisions": {
-      "row_count": 60,
+      "row_count": 1,
       "checks": [
         {
           "check": "Keys are strings",
@@ -23,7 +23,7 @@
       ]
     },
     "approval_requests": {
-      "row_count": 51,
+      "row_count": 1,
       "checks": [
         {
           "check": "Keys are strings",
@@ -43,50 +43,8 @@
         }
       ]
     },
-    "approval_steps": {
-      "row_count": 109,
-      "checks": [
-        {
-          "check": "Keys are strings",
-          "result": true
-        },
-        {
-          "check": "step_id matches key",
-          "result": true
-        },
-        {
-          "check": "Primary keys non-null",
-          "result": true
-        },
-        {
-          "check": "Primary keys unique",
-          "result": true
-        }
-      ]
-    },
-    "attachments": {
-      "row_count": 272,
-      "checks": [
-        {
-          "check": "Keys are strings",
-          "result": true
-        },
-        {
-          "check": "attachment_id matches key",
-          "result": true
-        },
-        {
-          "check": "Primary keys non-null",
-          "result": true
-        },
-        {
-          "check": "Primary keys unique",
-          "result": true
-        }
-      ]
-    },
     "audit_logs": {
-      "row_count": 994,
+      "row_count": 2,
       "checks": [
         {
           "check": "Keys are strings",
@@ -106,29 +64,8 @@
         }
       ]
     },
-    "comments": {
-      "row_count": 324,
-      "checks": [
-        {
-          "check": "Keys are strings",
-          "result": true
-        },
-        {
-          "check": "comment_id matches key",
-          "result": true
-        },
-        {
-          "check": "Primary keys non-null",
-          "result": true
-        },
-        {
-          "check": "Primary keys unique",
-          "result": true
-        }
-      ]
-    },
     "export_jobs": {
-      "row_count": 13,
+      "row_count": 2,
       "checks": [
         {
           "check": "Keys are strings",
@@ -149,7 +86,7 @@
       ]
     },
     "groups": {
-      "row_count": 10,
+      "row_count": 15,
       "checks": [
         {
           "check": "Keys are strings",
@@ -169,29 +106,8 @@
         }
       ]
     },
-    "labels": {
-      "row_count": 47,
-      "checks": [
-        {
-          "check": "Keys are strings",
-          "result": true
-        },
-        {
-          "check": "label_id matches key",
-          "result": true
-        },
-        {
-          "check": "Primary keys non-null",
-          "result": true
-        },
-        {
-          "check": "Primary keys unique",
-          "result": true
-        }
-      ]
-    },
     "notifications": {
-      "row_count": 100,
+      "row_count": 2,
       "checks": [
         {
           "check": "Keys are strings",
@@ -212,7 +128,7 @@
       ]
     },
     "pages": {
-      "row_count": 205,
+      "row_count": 300,
       "checks": [
         {
           "check": "Keys are strings",
@@ -232,29 +148,8 @@
         }
       ]
     },
-    "page_labels": {
-      "row_count": 204,
-      "checks": [
-        {
-          "check": "Keys are strings",
-          "result": true
-        },
-        {
-          "check": "page_label_id matches key",
-          "result": true
-        },
-        {
-          "check": "Primary keys non-null",
-          "result": true
-        },
-        {
-          "check": "Primary keys unique",
-          "result": true
-        }
-      ]
-    },
     "page_versions": {
-      "row_count": 205,
+      "row_count": 600,
       "checks": [
         {
           "check": "Keys are strings",
@@ -275,7 +170,7 @@
       ]
     },
     "permissions": {
-      "row_count": 70,
+      "row_count": 3,
       "checks": [
         {
           "check": "Keys are strings",
@@ -296,7 +191,7 @@
       ]
     },
     "spaces": {
-      "row_count": 20,
+      "row_count": 30,
       "checks": [
         {
           "check": "Keys are strings",
@@ -317,7 +212,7 @@
       ]
     },
     "space_config_history": {
-      "row_count": 20,
+      "row_count": 2,
       "checks": [
         {
           "check": "Keys are strings",
@@ -338,7 +233,7 @@
       ]
     },
     "space_features": {
-      "row_count": 87,
+      "row_count": 3,
       "checks": [
         {
           "check": "Keys are strings",
@@ -359,35 +254,14 @@
       ]
     },
     "space_memberships": {
-      "row_count": 258,
+      "row_count": 3,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "space_membership_id matches key",
-          "result": true
-        },
-        {
-          "check": "Primary keys non-null",
-          "result": true
-        },
-        {
-          "check": "Primary keys unique",
-          "result": true
-        }
-      ]
-    },
-    "templates": {
-      "row_count": 15,
-      "checks": [
-        {
-          "check": "Keys are strings",
-          "result": true
-        },
-        {
-          "check": "template_id matches key",
+          "check": "_id matches key",
           "result": true
         },
         {
@@ -401,7 +275,7 @@
       ]
     },
     "users": {
-      "row_count": 50,
+      "row_count": 300,
       "checks": [
         {
           "check": "Keys are strings",
@@ -422,14 +296,14 @@
       ]
     },
     "user_groups": {
-      "row_count": 72,
+      "row_count": 3,
       "checks": [
         {
           "check": "Keys are strings",
           "result": true
         },
         {
-          "check": "user_group_id matches key",
+          "check": "_id matches key",
           "result": true
         },
         {
@@ -443,7 +317,7 @@
       ]
     },
     "watchers": {
-      "row_count": 100,
+      "row_count": 2,
       "checks": [
         {
           "check": "Keys are strings",
@@ -485,17 +359,6 @@
         }
       }
     ],
-    "approval_steps": [
-      {
-        "check": "status in enum",
-        "result": true,
-        "details": {
-          "invalid_values": [],
-          "sample_keys": []
-        }
-      }
-    ],
-    "attachments": [],
     "audit_logs": [
       {
         "check": "action_type in enum",
@@ -506,7 +369,6 @@
         }
       }
     ],
-    "comments": [],
     "export_jobs": [
       {
         "check": "status in enum",
@@ -526,25 +388,7 @@
       }
     ],
     "groups": [],
-    "labels": [],
-    "notifications": [
-      {
-        "check": "channel in enum",
-        "result": true,
-        "details": {
-          "invalid_values": [],
-          "sample_keys": []
-        }
-      },
-      {
-        "check": "delivery_status in enum",
-        "result": true,
-        "details": {
-          "invalid_values": [],
-          "sample_keys": []
-        }
-      }
-    ],
+    "notifications": [],
     "pages": [
       {
         "check": "content_format in enum",
@@ -563,7 +407,6 @@
         }
       }
     ],
-    "page_labels": [],
     "page_versions": [],
     "permissions": [
       {
@@ -597,7 +440,6 @@
         }
       }
     ],
-    "templates": [],
     "users": [
       {
         "check": "global_role in enum",
@@ -637,7 +479,7 @@
       "details": {
         "column": "created_by_user_id",
         "null_count": 0,
-        "non_null_count": 20
+        "non_null_count": 30
       }
     },
     {
@@ -665,15 +507,12 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.18,
+        "avg": 15.0,
         "min": 1,
-        "max": 2,
+        "max": 29,
         "top5_parents_by_children": {
-          "26": 2,
-          "10": 2,
-          "17": 2,
-          "24": 1,
-          "37": 1
+          "2": 29,
+          "1": 1
         }
       }
     },
@@ -702,7 +541,7 @@
       "details": {
         "column": "space_id",
         "null_count": 0,
-        "non_null_count": 205
+        "non_null_count": 300
       }
     },
     {
@@ -730,15 +569,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 10.25,
-        "min": 6,
-        "max": 15,
+        "avg": 10.0,
+        "min": 10,
+        "max": 10,
         "top5_parents_by_children": {
-          "16": 15,
-          "4": 14,
-          "5": 14,
-          "11": 13,
-          "17": 13
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10,
+          "5": 10
         }
       }
     },
@@ -766,8 +605,8 @@
       "result": true,
       "details": {
         "column": "parent_page_id",
-        "null_count": 116,
-        "non_null_count": 89
+        "null_count": 30,
+        "non_null_count": 270
       }
     },
     {
@@ -795,15 +634,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.37,
+        "avg": 1.0,
         "min": 1,
-        "max": 5,
+        "max": 1,
         "top5_parents_by_children": {
-          "149": 5,
-          "189": 4,
-          "96": 3,
-          "21": 3,
-          "38": 3
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
         }
       }
     },
@@ -832,7 +671,7 @@
       "details": {
         "column": "created_by_user_id",
         "null_count": 0,
-        "non_null_count": 205
+        "non_null_count": 300
       }
     },
     {
@@ -860,15 +699,12 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 4.27,
-        "min": 1,
-        "max": 11,
+        "avg": 150.0,
+        "min": 10,
+        "max": 290,
         "top5_parents_by_children": {
-          "31": 11,
-          "35": 10,
-          "6": 9,
-          "7": 8,
-          "25": 7
+          "3": 290,
+          "2": 10
         }
       }
     },
@@ -897,7 +733,7 @@
       "details": {
         "column": "updated_by_user_id",
         "null_count": 0,
-        "non_null_count": 205
+        "non_null_count": 300
       }
     },
     {
@@ -925,15 +761,12 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 4.18,
-        "min": 1,
-        "max": 14,
+        "avg": 150.0,
+        "min": 10,
+        "max": 290,
         "top5_parents_by_children": {
-          "36": 14,
-          "10": 11,
-          "27": 10,
-          "11": 8,
-          "24": 7
+          "3": 290,
+          "2": 10
         }
       }
     },
@@ -962,7 +795,7 @@
       "details": {
         "column": "page_id",
         "null_count": 0,
-        "non_null_count": 205
+        "non_null_count": 600
       }
     },
     {
@@ -990,15 +823,15 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
-        "min": 1,
-        "max": 1,
+        "avg": 2.0,
+        "min": 2,
+        "max": 2,
         "top5_parents_by_children": {
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-          "5": 1
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 2
         }
       }
     },
@@ -1027,7 +860,7 @@
       "details": {
         "column": "editor_user_id",
         "null_count": 0,
-        "non_null_count": 205
+        "non_null_count": 600
       }
     },
     {
@@ -1055,15 +888,12 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 4.27,
-        "min": 1,
-        "max": 11,
+        "avg": 300.0,
+        "min": 20,
+        "max": 580,
         "top5_parents_by_children": {
-          "31": 11,
-          "35": 10,
-          "6": 9,
-          "7": 8,
-          "25": 7
+          "3": 580,
+          "2": 20
         }
       }
     },
@@ -1091,8 +921,8 @@
       "result": true,
       "details": {
         "column": "space_id",
-        "null_count": 27,
-        "non_null_count": 43
+        "null_count": 1,
+        "non_null_count": 2
       }
     },
     {
@@ -1120,15 +950,12 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 2.39,
+        "avg": 1.0,
         "min": 1,
-        "max": 6,
+        "max": 1,
         "top5_parents_by_children": {
-          "14": 6,
-          "11": 4,
-          "2": 4,
-          "20": 4,
-          "16": 3
+          "1": 1,
+          "2": 1
         }
       }
     },
@@ -1156,8 +983,8 @@
       "result": true,
       "details": {
         "column": "page_id",
-        "null_count": 43,
-        "non_null_count": 27
+        "null_count": 2,
+        "non_null_count": 1
       }
     },
     {
@@ -1189,11 +1016,7 @@
         "min": 1,
         "max": 1,
         "top5_parents_by_children": {
-          "91": 1,
-          "110": 1,
-          "38": 1,
-          "146": 1,
-          "54": 1
+          "1": 1
         }
       }
     },
@@ -1221,8 +1044,8 @@
       "result": true,
       "details": {
         "column": "user_id",
-        "null_count": 37,
-        "non_null_count": 33
+        "null_count": 1,
+        "non_null_count": 2
       }
     },
     {
@@ -1250,15 +1073,12 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.43,
+        "avg": 1.0,
         "min": 1,
-        "max": 3,
+        "max": 1,
         "top5_parents_by_children": {
-          "28": 3,
-          "23": 3,
-          "41": 3,
-          "38": 2,
-          "1": 2
+          "4": 1,
+          "5": 1
         }
       }
     },
@@ -1286,8 +1106,8 @@
       "result": true,
       "details": {
         "column": "group_id",
-        "null_count": 33,
-        "non_null_count": 37
+        "null_count": 2,
+        "non_null_count": 1
       }
     },
     {
@@ -1315,20 +1135,16 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 3.7,
+        "avg": 1.0,
         "min": 1,
-        "max": 7,
+        "max": 1,
         "top5_parents_by_children": {
-          "10": 7,
-          "8": 7,
-          "9": 7,
-          "6": 6,
-          "7": 3
+          "1": 1
         }
       }
     },
     {
-      "relationship": "users.user_id \u2192 permissions.granted_by_user_id",
+      "relationship": "users.user_id \u2192 permissions.revoked_by_user_id",
       "check": "Parent column exists",
       "result": true,
       "details": {
@@ -1337,36 +1153,36 @@
       }
     },
     {
-      "relationship": "users.user_id \u2192 permissions.granted_by_user_id",
+      "relationship": "users.user_id \u2192 permissions.revoked_by_user_id",
       "check": "Child column exists",
       "result": true,
       "details": {
         "table": "permissions",
-        "column": "granted_by_user_id"
+        "column": "revoked_by_user_id"
       }
     },
     {
-      "relationship": "users.user_id \u2192 permissions.granted_by_user_id",
+      "relationship": "users.user_id \u2192 permissions.revoked_by_user_id",
       "check": "Child column nulls",
       "result": true,
       "details": {
-        "column": "granted_by_user_id",
-        "null_count": 0,
-        "non_null_count": 70
+        "column": "revoked_by_user_id",
+        "null_count": 3,
+        "non_null_count": 0
       }
     },
     {
-      "relationship": "users.user_id \u2192 permissions.granted_by_user_id",
+      "relationship": "users.user_id \u2192 permissions.revoked_by_user_id",
       "check": "All children have parents",
       "result": true,
       "details": {
-        "column": "granted_by_user_id",
+        "column": "revoked_by_user_id",
         "missing_ids_sample": [],
         "count": 0
       }
     },
     {
-      "relationship": "users.user_id \u2192 permissions.granted_by_user_id",
+      "relationship": "users.user_id \u2192 permissions.revoked_by_user_id",
       "check": "Parent column unique",
       "result": true,
       "details": {
@@ -1376,20 +1192,14 @@
       }
     },
     {
-      "relationship": "users.user_id \u2192 permissions.granted_by_user_id",
+      "relationship": "users.user_id \u2192 permissions.revoked_by_user_id",
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.67,
-        "min": 1,
-        "max": 5,
-        "top5_parents_by_children": {
-          "50": 5,
-          "3": 3,
-          "14": 3,
-          "6": 3,
-          "12": 3
-        }
+        "avg": 0.0,
+        "min": 0,
+        "max": 0,
+        "top5_parents_by_children": {}
       }
     },
     {
@@ -1417,7 +1227,7 @@
       "details": {
         "column": "space_id",
         "null_count": 0,
-        "non_null_count": 87
+        "non_null_count": 3
       }
     },
     {
@@ -1445,340 +1255,12 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 4.35,
-        "min": 2,
-        "max": 7,
-        "top5_parents_by_children": {
-          "3": 7,
-          "19": 7,
-          "5": 6,
-          "9": 6,
-          "17": 6
-        }
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 page_labels.page_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "pages",
-        "column": "page_id"
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 page_labels.page_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "page_labels",
-        "column": "page_id"
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 page_labels.page_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "page_id",
-        "null_count": 0,
-        "non_null_count": 204
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 page_labels.page_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "page_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 page_labels.page_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "page_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 page_labels.page_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 1.34,
+        "avg": 1.5,
         "min": 1,
-        "max": 3,
+        "max": 2,
         "top5_parents_by_children": {
-          "5": 3,
-          "6": 3,
-          "16": 3,
-          "200": 3,
-          "85": 3
-        }
-      }
-    },
-    {
-      "relationship": "labels.label_id \u2192 page_labels.label_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "labels",
-        "column": "label_id"
-      }
-    },
-    {
-      "relationship": "labels.label_id \u2192 page_labels.label_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "page_labels",
-        "column": "label_id"
-      }
-    },
-    {
-      "relationship": "labels.label_id \u2192 page_labels.label_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "label_id",
-        "null_count": 0,
-        "non_null_count": 204
-      }
-    },
-    {
-      "relationship": "labels.label_id \u2192 page_labels.label_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "label_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "labels.label_id \u2192 page_labels.label_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "label_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "labels.label_id \u2192 page_labels.label_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 4.53,
-        "min": 1,
-        "max": 10,
-        "top5_parents_by_children": {
-          "18": 10,
-          "35": 10,
-          "43": 8,
-          "9": 8,
-          "14": 7
-        }
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 labels.space_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "spaces",
-        "column": "space_id"
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 labels.space_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "labels",
-        "column": "space_id"
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 labels.space_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "space_id",
-        "null_count": 0,
-        "non_null_count": 47
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 labels.space_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "space_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 labels.space_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "space_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 labels.space_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 2.35,
-        "min": 1,
-        "max": 5,
-        "top5_parents_by_children": {
-          "13": 5,
-          "17": 5,
-          "3": 4,
-          "5": 4,
-          "20": 4
-        }
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 comments.page_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "pages",
-        "column": "page_id"
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 comments.page_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "comments",
-        "column": "page_id"
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 comments.page_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "page_id",
-        "null_count": 0,
-        "non_null_count": 324
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 comments.page_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "page_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 comments.page_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "page_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 comments.page_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 2.1,
-        "min": 1,
-        "max": 3,
-        "top5_parents_by_children": {
-          "10": 3,
-          "4": 3,
-          "9": 3,
-          "21": 3,
-          "20": 3
-        }
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 comments.author_user_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "users",
-        "column": "user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 comments.author_user_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "comments",
-        "column": "author_user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 comments.author_user_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "author_user_id",
-        "null_count": 0,
-        "non_null_count": 324
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 comments.author_user_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "author_user_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 comments.author_user_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 comments.author_user_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 6.61,
-        "min": 1,
-        "max": 13,
-        "top5_parents_by_children": {
-          "27": 13,
-          "19": 13,
-          "10": 12,
-          "36": 12,
-          "43": 11
+          "1": 2,
+          "2": 1
         }
       }
     },
@@ -1807,7 +1289,7 @@
       "details": {
         "column": "actor_user_id",
         "null_count": 0,
-        "non_null_count": 994
+        "non_null_count": 2
       }
     },
     {
@@ -1835,145 +1317,12 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 19.88,
-        "min": 9,
-        "max": 30,
-        "top5_parents_by_children": {
-          "22": 30,
-          "4": 28,
-          "25": 28,
-          "33": 28,
-          "19": 28
-        }
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 templates.space_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "spaces",
-        "column": "space_id"
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 templates.space_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "templates",
-        "column": "space_id"
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 templates.space_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "space_id",
-        "null_count": 8,
-        "non_null_count": 7
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 templates.space_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "space_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 templates.space_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "space_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 templates.space_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 1.4,
+        "avg": 1.0,
         "min": 1,
-        "max": 2,
+        "max": 1,
         "top5_parents_by_children": {
-          "4": 2,
-          "2": 2,
           "1": 1,
-          "13": 1,
-          "15": 1
-        }
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 templates.created_by_user_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "users",
-        "column": "user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 templates.created_by_user_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "templates",
-        "column": "created_by_user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 templates.created_by_user_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "created_by_user_id",
-        "null_count": 0,
-        "non_null_count": 15
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 templates.created_by_user_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "created_by_user_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 templates.created_by_user_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 templates.created_by_user_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 1.25,
-        "min": 1,
-        "max": 2,
-        "top5_parents_by_children": {
-          "13": 2,
-          "44": 2,
-          "28": 2,
-          "9": 1,
-          "20": 1
+          "2": 1
         }
       }
     },
@@ -2002,7 +1351,7 @@
       "details": {
         "column": "space_id",
         "null_count": 0,
-        "non_null_count": 13
+        "non_null_count": 2
       }
     },
     {
@@ -2034,11 +1383,8 @@
         "min": 1,
         "max": 1,
         "top5_parents_by_children": {
-          "2": 1,
-          "3": 1,
-          "4": 1,
-          "7": 1,
-          "8": 1
+          "1": 1,
+          "2": 1
         }
       }
     },
@@ -2067,7 +1413,7 @@
       "details": {
         "column": "requested_by_user_id",
         "null_count": 0,
-        "non_null_count": 13
+        "non_null_count": 2
       }
     },
     {
@@ -2095,85 +1441,17 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.08,
+        "avg": 1.0,
         "min": 1,
-        "max": 2,
+        "max": 1,
         "top5_parents_by_children": {
-          "36": 2,
-          "26": 1,
           "1": 1,
-          "20": 1,
-          "30": 1
+          "2": 1
         }
       }
     },
     {
-      "relationship": "pages.page_id \u2192 attachments.page_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "pages",
-        "column": "page_id"
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 attachments.page_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "attachments",
-        "column": "page_id"
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 attachments.page_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "page_id",
-        "null_count": 0,
-        "non_null_count": 272
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 attachments.page_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "page_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 attachments.page_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "page_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "pages.page_id \u2192 attachments.page_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 1.89,
-        "min": 1,
-        "max": 3,
-        "top5_parents_by_children": {
-          "10": 3,
-          "9": 3,
-          "16": 3,
-          "15": 3,
-          "18": 3
-        }
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 attachments.uploaded_by_user_id",
+      "relationship": "users.user_id \u2192 space_memberships.user_id",
       "check": "Parent column exists",
       "result": true,
       "details": {
@@ -2182,36 +1460,36 @@
       }
     },
     {
-      "relationship": "users.user_id \u2192 attachments.uploaded_by_user_id",
+      "relationship": "users.user_id \u2192 space_memberships.user_id",
       "check": "Child column exists",
       "result": true,
       "details": {
-        "table": "attachments",
-        "column": "uploaded_by_user_id"
+        "table": "space_memberships",
+        "column": "user_id"
       }
     },
     {
-      "relationship": "users.user_id \u2192 attachments.uploaded_by_user_id",
+      "relationship": "users.user_id \u2192 space_memberships.user_id",
       "check": "Child column nulls",
       "result": true,
       "details": {
-        "column": "uploaded_by_user_id",
+        "column": "user_id",
         "null_count": 0,
-        "non_null_count": 272
+        "non_null_count": 3
       }
     },
     {
-      "relationship": "users.user_id \u2192 attachments.uploaded_by_user_id",
+      "relationship": "users.user_id \u2192 space_memberships.user_id",
       "check": "All children have parents",
       "result": true,
       "details": {
-        "column": "uploaded_by_user_id",
+        "column": "user_id",
         "missing_ids_sample": [],
         "count": 0
       }
     },
     {
-      "relationship": "users.user_id \u2192 attachments.uploaded_by_user_id",
+      "relationship": "users.user_id \u2192 space_memberships.user_id",
       "check": "Parent column unique",
       "result": true,
       "details": {
@@ -2221,19 +1499,204 @@
       }
     },
     {
-      "relationship": "users.user_id \u2192 attachments.uploaded_by_user_id",
+      "relationship": "users.user_id \u2192 space_memberships.user_id",
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 5.55,
+        "avg": 1.0,
         "min": 1,
-        "max": 13,
+        "max": 1,
         "top5_parents_by_children": {
-          "23": 13,
-          "17": 13,
-          "7": 12,
-          "26": 11,
-          "13": 9
+          "2": 1,
+          "3": 1,
+          "5": 1
+        }
+      }
+    },
+    {
+      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "spaces",
+        "column": "space_id"
+      }
+    },
+    {
+      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "space_memberships",
+        "column": "space_id"
+      }
+    },
+    {
+      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "space_id",
+        "null_count": 0,
+        "non_null_count": 3
+      }
+    },
+    {
+      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "space_id",
+        "missing_ids_sample": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "space_id",
+        "duplicate_parent_ids_sample": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 1.5,
+        "min": 1,
+        "max": 2,
+        "top5_parents_by_children": {
+          "1": 2,
+          "2": 1
+        }
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 user_groups.user_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "users",
+        "column": "user_id"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 user_groups.user_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "user_groups",
+        "column": "user_id"
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 user_groups.user_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "null_count": 0,
+        "non_null_count": 3
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 user_groups.user_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "missing_ids_sample": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 user_groups.user_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "user_id",
+        "duplicate_parent_ids_sample": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "users.user_id \u2192 user_groups.user_id",
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 1.0,
+        "min": 1,
+        "max": 1,
+        "top5_parents_by_children": {
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      }
+    },
+    {
+      "relationship": "groups.group_id \u2192 user_groups.group_id",
+      "check": "Parent column exists",
+      "result": true,
+      "details": {
+        "table": "groups",
+        "column": "group_id"
+      }
+    },
+    {
+      "relationship": "groups.group_id \u2192 user_groups.group_id",
+      "check": "Child column exists",
+      "result": true,
+      "details": {
+        "table": "user_groups",
+        "column": "group_id"
+      }
+    },
+    {
+      "relationship": "groups.group_id \u2192 user_groups.group_id",
+      "check": "Child column nulls",
+      "result": true,
+      "details": {
+        "column": "group_id",
+        "null_count": 0,
+        "non_null_count": 3
+      }
+    },
+    {
+      "relationship": "groups.group_id \u2192 user_groups.group_id",
+      "check": "All children have parents",
+      "result": true,
+      "details": {
+        "column": "group_id",
+        "missing_ids_sample": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "groups.group_id \u2192 user_groups.group_id",
+      "check": "Parent column unique",
+      "result": true,
+      "details": {
+        "column": "group_id",
+        "duplicate_parent_ids_sample": [],
+        "count": 0
+      }
+    },
+    {
+      "relationship": "groups.group_id \u2192 user_groups.group_id",
+      "check": "Children per parent (distribution)",
+      "result": true,
+      "details": {
+        "avg": 1.5,
+        "min": 1,
+        "max": 2,
+        "top5_parents_by_children": {
+          "1": 2,
+          "2": 1
         }
       }
     },
@@ -2261,8 +1724,8 @@
       "result": true,
       "details": {
         "column": "user_id",
-        "null_count": 47,
-        "non_null_count": 53
+        "null_count": 1,
+        "non_null_count": 1
       }
     },
     {
@@ -2290,15 +1753,11 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.71,
+        "avg": 1.0,
         "min": 1,
-        "max": 4,
+        "max": 1,
         "top5_parents_by_children": {
-          "8": 4,
-          "46": 4,
-          "6": 3,
-          "20": 3,
-          "4": 3
+          "3": 1
         }
       }
     },
@@ -2326,8 +1785,8 @@
       "result": true,
       "details": {
         "column": "group_id",
-        "null_count": 53,
-        "non_null_count": 47
+        "null_count": 1,
+        "non_null_count": 1
       }
     },
     {
@@ -2355,15 +1814,11 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 4.7,
-        "min": 2,
-        "max": 8,
+        "avg": 1.0,
+        "min": 1,
+        "max": 1,
         "top5_parents_by_children": {
-          "6": 8,
-          "8": 7,
-          "2": 6,
-          "4": 6,
-          "10": 5
+          "2": 1
         }
       }
     },
@@ -2391,8 +1846,8 @@
       "result": true,
       "details": {
         "column": "space_id",
-        "null_count": 47,
-        "non_null_count": 53
+        "null_count": 1,
+        "non_null_count": 1
       }
     },
     {
@@ -2420,15 +1875,11 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 2.94,
+        "avg": 1.0,
         "min": 1,
-        "max": 6,
+        "max": 1,
         "top5_parents_by_children": {
-          "13": 6,
-          "20": 5,
-          "15": 5,
-          "7": 5,
-          "9": 4
+          "1": 1
         }
       }
     },
@@ -2456,8 +1907,8 @@
       "result": true,
       "details": {
         "column": "page_id",
-        "null_count": 53,
-        "non_null_count": 47
+        "null_count": 1,
+        "non_null_count": 1
       }
     },
     {
@@ -2485,15 +1936,11 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.15,
+        "avg": 1.0,
         "min": 1,
-        "max": 2,
+        "max": 1,
         "top5_parents_by_children": {
-          "183": 2,
-          "60": 2,
-          "2": 2,
-          "145": 2,
-          "75": 2
+          "2": 1
         }
       }
     },
@@ -2522,7 +1969,7 @@
       "details": {
         "column": "space_id",
         "null_count": 0,
-        "non_null_count": 20
+        "non_null_count": 2
       }
     },
     {
@@ -2550,80 +1997,11 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.0,
-        "min": 1,
-        "max": 1,
-        "top5_parents_by_children": {
-          "1": 1,
-          "2": 1,
-          "3": 1,
-          "4": 1,
-          "5": 1
-        }
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_config_history.changed_by_user_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "users",
-        "column": "user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_config_history.changed_by_user_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "space_config_history",
-        "column": "changed_by_user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_config_history.changed_by_user_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "changed_by_user_id",
-        "null_count": 0,
-        "non_null_count": 20
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_config_history.changed_by_user_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "changed_by_user_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_config_history.changed_by_user_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_config_history.changed_by_user_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 1.18,
-        "min": 1,
+        "avg": 2.0,
+        "min": 2,
         "max": 2,
         "top5_parents_by_children": {
-          "10": 2,
-          "19": 2,
-          "27": 2,
-          "45": 1,
-          "41": 1
+          "1": 2
         }
       }
     },
@@ -2652,7 +2030,7 @@
       "details": {
         "column": "recipient_user_id",
         "null_count": 0,
-        "non_null_count": 100
+        "non_null_count": 2
       }
     },
     {
@@ -2680,15 +2058,11 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 2.27,
-        "min": 1,
-        "max": 6,
+        "avg": 2.0,
+        "min": 2,
+        "max": 2,
         "top5_parents_by_children": {
-          "30": 6,
-          "20": 5,
-          "19": 4,
-          "10": 4,
-          "26": 4
+          "3": 2
         }
       }
     },
@@ -2716,8 +2090,8 @@
       "result": true,
       "details": {
         "column": "sender_user_id",
-        "null_count": 1,
-        "non_null_count": 99
+        "null_count": 0,
+        "non_null_count": 2
       }
     },
     {
@@ -2745,15 +2119,11 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 2.15,
-        "min": 1,
-        "max": 7,
+        "avg": 2.0,
+        "min": 2,
+        "max": 2,
         "top5_parents_by_children": {
-          "12": 7,
-          "15": 6,
-          "16": 4,
-          "32": 4,
-          "35": 4
+          "5": 2
         }
       }
     },
@@ -2782,7 +2152,7 @@
       "details": {
         "column": "requested_by_user_id",
         "null_count": 0,
-        "non_null_count": 51
+        "non_null_count": 1
       }
     },
     {
@@ -2810,614 +2180,21 @@
       "check": "Children per parent (distribution)",
       "result": true,
       "details": {
-        "avg": 1.76,
-        "min": 1,
-        "max": 6,
-        "top5_parents_by_children": {
-          "17": 6,
-          "2": 5,
-          "31": 4,
-          "48": 4,
-          "35": 3
-        }
-      }
-    },
-    {
-      "relationship": "approval_requests.request_id \u2192 approval_steps.request_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "approval_requests",
-        "column": "request_id"
-      }
-    },
-    {
-      "relationship": "approval_requests.request_id \u2192 approval_steps.request_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "approval_steps",
-        "column": "request_id"
-      }
-    },
-    {
-      "relationship": "approval_requests.request_id \u2192 approval_steps.request_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "request_id",
-        "null_count": 0,
-        "non_null_count": 109
-      }
-    },
-    {
-      "relationship": "approval_requests.request_id \u2192 approval_steps.request_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "request_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "approval_requests.request_id \u2192 approval_steps.request_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "request_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "approval_requests.request_id \u2192 approval_steps.request_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 2.14,
-        "min": 1,
-        "max": 3,
-        "top5_parents_by_children": {
-          "1": 3,
-          "3": 3,
-          "5": 3,
-          "14": 3,
-          "7": 3
-        }
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 approval_steps.assigned_group_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "groups",
-        "column": "group_id"
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 approval_steps.assigned_group_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "approval_steps",
-        "column": "assigned_group_id"
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 approval_steps.assigned_group_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "assigned_group_id",
-        "null_count": 48,
-        "non_null_count": 61
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 approval_steps.assigned_group_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "assigned_group_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 approval_steps.assigned_group_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "group_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 approval_steps.assigned_group_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 6.1,
-        "min": 4,
-        "max": 9,
-        "top5_parents_by_children": {
-          "8": 9,
-          "6": 8,
-          "1": 8,
-          "4": 7,
-          "2": 6
-        }
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_steps.assigned_user_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "users",
-        "column": "user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_steps.assigned_user_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "approval_steps",
-        "column": "assigned_user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_steps.assigned_user_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "assigned_user_id",
-        "null_count": 61,
-        "non_null_count": 48
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_steps.assigned_user_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "assigned_user_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_steps.assigned_user_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_steps.assigned_user_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 1.71,
-        "min": 1,
-        "max": 5,
-        "top5_parents_by_children": {
-          "21": 5,
-          "28": 4,
-          "5": 3,
-          "24": 3,
-          "48": 3
-        }
-      }
-    },
-    {
-      "relationship": "approval_steps.step_id \u2192 approval_decisions.step_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "approval_steps",
-        "column": "step_id"
-      }
-    },
-    {
-      "relationship": "approval_steps.step_id \u2192 approval_decisions.step_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "approval_decisions",
-        "column": "step_id"
-      }
-    },
-    {
-      "relationship": "approval_steps.step_id \u2192 approval_decisions.step_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "step_id",
-        "null_count": 0,
-        "non_null_count": 60
-      }
-    },
-    {
-      "relationship": "approval_steps.step_id \u2192 approval_decisions.step_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "step_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "approval_steps.step_id \u2192 approval_decisions.step_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "step_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "approval_steps.step_id \u2192 approval_decisions.step_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
         "avg": 1.0,
         "min": 1,
         "max": 1,
         "top5_parents_by_children": {
-          "6": 1,
-          "7": 1,
-          "8": 1,
-          "9": 1,
-          "10": 1
-        }
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_decisions.approver_user_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "users",
-        "column": "user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_decisions.approver_user_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "approval_decisions",
-        "column": "approver_user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_decisions.approver_user_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "approver_user_id",
-        "null_count": 0,
-        "non_null_count": 60
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_decisions.approver_user_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "approver_user_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_decisions.approver_user_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 approval_decisions.approver_user_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 1.67,
-        "min": 1,
-        "max": 4,
-        "top5_parents_by_children": {
-          "21": 4,
-          "15": 3,
-          "48": 3,
-          "24": 3,
-          "28": 3
-        }
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 user_groups.user_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "users",
-        "column": "user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 user_groups.user_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "user_groups",
-        "column": "user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 user_groups.user_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "null_count": 0,
-        "non_null_count": 72
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 user_groups.user_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 user_groups.user_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 user_groups.user_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 1.95,
-        "min": 1,
-        "max": 3,
-        "top5_parents_by_children": {
-          "1": 3,
-          "3": 3,
-          "6": 3,
-          "17": 3,
-          "11": 3
-        }
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 user_groups.group_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "groups",
-        "column": "group_id"
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 user_groups.group_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "user_groups",
-        "column": "group_id"
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 user_groups.group_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "group_id",
-        "null_count": 0,
-        "non_null_count": 72
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 user_groups.group_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "group_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 user_groups.group_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "group_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "groups.group_id \u2192 user_groups.group_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 7.2,
-        "min": 3,
-        "max": 12,
-        "top5_parents_by_children": {
-          "4": 12,
-          "1": 11,
-          "6": 9,
-          "9": 9,
-          "3": 7
-        }
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_memberships.user_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "users",
-        "column": "user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_memberships.user_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "space_memberships",
-        "column": "user_id"
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_memberships.user_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "null_count": 0,
-        "non_null_count": 258
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_memberships.user_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_memberships.user_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "user_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "users.user_id \u2192 space_memberships.user_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 5.16,
-        "min": 1,
-        "max": 8,
-        "top5_parents_by_children": {
-          "16": 8,
-          "36": 8,
-          "26": 8,
-          "27": 8,
-          "35": 7
-        }
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
-      "check": "Parent column exists",
-      "result": true,
-      "details": {
-        "table": "spaces",
-        "column": "space_id"
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
-      "check": "Child column exists",
-      "result": true,
-      "details": {
-        "table": "space_memberships",
-        "column": "space_id"
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
-      "check": "Child column nulls",
-      "result": true,
-      "details": {
-        "column": "space_id",
-        "null_count": 0,
-        "non_null_count": 258
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
-      "check": "All children have parents",
-      "result": true,
-      "details": {
-        "column": "space_id",
-        "missing_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
-      "check": "Parent column unique",
-      "result": true,
-      "details": {
-        "column": "space_id",
-        "duplicate_parent_ids_sample": [],
-        "count": 0
-      }
-    },
-    {
-      "relationship": "spaces.space_id \u2192 space_memberships.space_id",
-      "check": "Children per parent (distribution)",
-      "result": true,
-      "details": {
-        "avg": 12.9,
-        "min": 2,
-        "max": 22,
-        "top5_parents_by_children": {
-          "14": 22,
-          "11": 22,
-          "10": 21,
-          "16": 20,
-          "20": 20
+          "3": 1
         }
       }
     },
     {
       "relationship": "notifications.related_entity_id (type via related_entity_type)",
       "check": "All type values are mapped",
-      "result": false,
+      "result": true,
       "details": {
-        "unmapped_types": [
-          "attachment",
-          "page",
-          "space"
-        ],
-        "count": 3
+        "unmapped_types": [],
+        "count": 0
       },
       "kind": "generic"
     },
@@ -3429,51 +2206,48 @@
         "stale_types": [
           "approval_decisions",
           "approval_requests",
-          "approval_steps",
           "audit_logs",
-          "comments",
           "export_jobs",
           "groups",
-          "labels",
-          "notifications",
-          "page_labels"
+          "page_versions",
+          "permissions",
+          "space_config_history",
+          "spaces",
+          "users"
         ],
-        "count": 18
+        "count": 10
       },
       "kind": "generic"
     },
     {
-      "relationship": "audit_logs.target_entity_id (type via target_entity_type)",
-      "check": "All type values are mapped",
-      "result": false,
-      "details": {
-        "unmapped_types": [
-          "attachment",
-          "page",
-          "space"
-        ],
-        "count": 3
-      },
-      "kind": "generic"
-    },
-    {
-      "relationship": "audit_logs.target_entity_id (type via target_entity_type)",
-      "check": "Stale mapping entries (info)",
+      "relationship": "notifications.related_entity_id (type='pages') \u2192 pages.page_id",
+      "check": "All children have parents (polymorphic)",
       "result": true,
       "details": {
-        "stale_types": [
-          "approval_decisions",
-          "approval_requests",
-          "approval_steps",
-          "audit_logs",
-          "comments",
-          "export_jobs",
-          "groups",
-          "labels",
-          "notifications",
-          "page_labels"
-        ],
-        "count": 19
+        "type": "pages",
+        "child_column": "related_entity_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='pages') \u2192 pages.page_id",
+      "check": "Average children per parent (info)",
+      "result": 2.0,
+      "details": {
+        "type": "pages",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='pages') \u2192 pages.page_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "pages",
+        "violations": 0
       },
       "kind": "generic"
     }
@@ -3482,14 +2256,10 @@
     {
       "relationship": "notifications.related_entity_id (type via related_entity_type)",
       "check": "All type values are mapped",
-      "result": false,
+      "result": true,
       "details": {
-        "unmapped_types": [
-          "attachment",
-          "page",
-          "space"
-        ],
-        "count": 3
+        "unmapped_types": [],
+        "count": 0
       },
       "kind": "generic"
     },
@@ -3501,59 +2271,56 @@
         "stale_types": [
           "approval_decisions",
           "approval_requests",
-          "approval_steps",
           "audit_logs",
-          "comments",
           "export_jobs",
           "groups",
-          "labels",
-          "notifications",
-          "page_labels"
+          "page_versions",
+          "permissions",
+          "space_config_history",
+          "spaces",
+          "users"
         ],
-        "count": 18
+        "count": 10
       },
       "kind": "generic"
     },
     {
-      "relationship": "audit_logs.target_entity_id (type via target_entity_type)",
-      "check": "All type values are mapped",
-      "result": false,
-      "details": {
-        "unmapped_types": [
-          "attachment",
-          "page",
-          "space"
-        ],
-        "count": 3
-      },
-      "kind": "generic"
-    },
-    {
-      "relationship": "audit_logs.target_entity_id (type via target_entity_type)",
-      "check": "Stale mapping entries (info)",
+      "relationship": "notifications.related_entity_id (type='pages') \u2192 pages.page_id",
+      "check": "All children have parents (polymorphic)",
       "result": true,
       "details": {
-        "stale_types": [
-          "approval_decisions",
-          "approval_requests",
-          "approval_steps",
-          "audit_logs",
-          "comments",
-          "export_jobs",
-          "groups",
-          "labels",
-          "notifications",
-          "page_labels"
-        ],
-        "count": 19
+        "type": "pages",
+        "child_column": "related_entity_id",
+        "missing_ids": [],
+        "count": 0
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='pages') \u2192 pages.page_id",
+      "check": "Average children per parent (info)",
+      "result": 2.0,
+      "details": {
+        "type": "pages",
+        "max_children_for_single_parent": 2
+      },
+      "kind": "generic"
+    },
+    {
+      "relationship": "notifications.related_entity_id (type='pages') \u2192 pages.page_id",
+      "check": "created_at sequence valid (child \u2265 parent)",
+      "result": true,
+      "details": {
+        "type": "pages",
+        "violations": 0
       },
       "kind": "generic"
     }
   ],
   "generic_fk_summary": {
-    "total_checks": 4,
-    "passes": 2,
-    "fails": 2,
-    "info_metrics_count": 0
+    "total_checks": 5,
+    "passes": 4,
+    "fails": 0,
+    "info_metrics_count": 1
   }
 }
