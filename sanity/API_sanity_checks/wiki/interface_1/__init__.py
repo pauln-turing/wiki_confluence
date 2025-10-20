@@ -4,7 +4,6 @@ from .get_config_history import GetConfigHistory
 from .get_group import GetGroup
 from .get_notifications import GetNotifications
 from .get_page import GetPage
-from .get_page_versions import GetPageVersions
 from .get_space import GetSpace
 from .get_user import GetUser
 from .get_watchers import GetWatchers
@@ -15,14 +14,13 @@ from .manage_page_versions import ManagePageVersions
 from .manage_pages import ManagePages
 from .manage_permissions import ManagePermissions
 from .manage_space_features import ManageSpaceFeatures
-from .manage_space_memberships import ManageSpaceMemberships
 from .manage_spaces import ManageSpaces
 from .manage_users import ManageUsers
 from .manage_watchers import ManageWatchers
-from .move_page import MovePage
 from .record_audit_log import RecordAuditLog
 from .record_config_change import RecordConfigChange
 from .send_notification import SendNotification
+
 
 ALL_TOOLS_INTERFACE_1 = [
     CreateApprovalRequest,
@@ -31,7 +29,6 @@ ALL_TOOLS_INTERFACE_1 = [
     GetGroup,
     GetNotifications,
     GetPage,
-    GetPageVersions,
     GetSpace,
     GetUser,
     GetWatchers,
@@ -42,11 +39,9 @@ ALL_TOOLS_INTERFACE_1 = [
     ManagePages,
     ManagePermissions,
     ManageSpaceFeatures,
-    ManageSpaceMemberships,
     ManageSpaces,
     ManageUsers,
     ManageWatchers,
-    MovePage,
     RecordAuditLog,
     RecordConfigChange,
     SendNotification
