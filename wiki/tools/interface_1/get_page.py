@@ -227,11 +227,17 @@ class GetPage(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "user_id": {"type": "string", "description": "ID of the user performing the operation"},
-                        "action": {"type": "string", "description": "Operation to perform"},
-                        "payload": {"type": "object", "description": "Operation parameters"}
+                        "payload": {
+                            "type": "object",
+                            "description": "Parameters for the operation",
+                            "properties": {
+                                "user_id": {"type": "string", "description": "ID of the user performing the operation"},
+                                "action": {"type": "string", "description": "Operation to perform"}
+                            },
+                            "required": ["user_id"] if False else []
+                        }
                     },
-                    "required": ["user_id"] if False else []
+                    "required": ["payload"]
                 }
             },
             "tool_name": "get_page",

@@ -5,19 +5,9 @@
       "api_name": "create_approval_request",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -27,19 +17,9 @@
       "api_name": "decide_approval_step",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -49,19 +29,9 @@
       "api_name": "get_config_history",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": true
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -71,19 +41,9 @@
       "api_name": "get_group",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": true
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -93,19 +53,9 @@
       "api_name": "get_notifications",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": true
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -115,19 +65,9 @@
       "api_name": "get_page",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": true
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -137,19 +77,9 @@
       "api_name": "get_space",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": true
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -159,19 +89,9 @@
       "api_name": "get_user",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": true
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -181,19 +101,9 @@
       "api_name": "get_watchers",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": true
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -203,19 +113,9 @@
       "api_name": "manage_exports",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -225,19 +125,9 @@
       "api_name": "manage_group_memberships",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -247,19 +137,9 @@
       "api_name": "manage_groups",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -269,19 +149,9 @@
       "api_name": "manage_page_versions",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -291,19 +161,9 @@
       "api_name": "manage_pages",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -313,19 +173,9 @@
       "api_name": "manage_permissions",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -335,19 +185,9 @@
       "api_name": "manage_space_features",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -357,19 +197,9 @@
       "api_name": "manage_spaces",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -379,19 +209,9 @@
       "api_name": "manage_users",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -401,19 +221,9 @@
       "api_name": "manage_watchers",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -423,19 +233,9 @@
       "api_name": "record_audit_log",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -445,19 +245,9 @@
       "api_name": "record_config_change",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
@@ -467,19 +257,9 @@
       "api_name": "send_notification",
       "params": [
         {
-          "name": "user_id",
-          "type": "str",
-          "optional": false
-        },
-        {
-          "name": "action",
-          "type": "str",
-          "optional": true
-        },
-        {
           "name": "payload",
           "type": "dict",
-          "optional": true
+          "optional": false
         }
       ],
       "name_mismatch": false
