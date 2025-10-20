@@ -8,13 +8,13 @@ class ManagePageVersions(Tool):
     @staticmethod
     def invoke(payload: Dict[str, Any], **kwargs) -> Any:
         """
-        Restores a page to a previous version with proper validation
+        Creates, updates, or deletes a page with proper governance
         Implements proper governance, validation, and audit logging.
         """
         try:
             data_manager = DataManager()
             
-            # Extract common parameters
+            # Extract parameters from payload
             user_id = payload.get("user_id")
             action = payload.get("action", "").lower()
             
@@ -223,15 +223,21 @@ class ManagePageVersions(Tool):
         return {
             "function": {
                 "name": "manage_page_versions",
-                "description": "Restores a page to a previous version with proper validation",
+                "description": "Creates, updates, or deletes a page with proper governance",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "user_id": {"type": "string", "description": "ID of the user performing the operation"},
-                        "action": {"type": "string", "description": "Operation to perform"},
-                        "payload": {"type": "object", "description": "Operation parameters"}
+                        "payload": {
+                            "type": "object",
+                            "description": "Parameters for the operation",
+                            "properties": {
+                                "user_id": {"type": "string", "description": "ID of the user performing the operation"},
+                                "action": {"type": "string", "description": "Operation to perform"}
+                            },
+                            "required": ["user_id"] if True else []
+                        }
                     },
-                    "required": ["user_id"] if True else []
+                    "required": ["payload"]
                 }
             },
             "tool_name": "manage_page_versions",

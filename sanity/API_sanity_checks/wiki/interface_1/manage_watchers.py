@@ -14,32 +14,32 @@ class ManageWatchers(Tool):
         try:
             data_manager = DataManager()
             
-            # Extract common parameters
+            # Extract parameters from payload
             user_id = payload.get("user_id")
             action = payload.get("action", "").lower()
             
             # Basic validation
-            if not user_id and "manage_watchers" not in ["get_user", "get_group", "get_space", "get_page", "get_comments", "get_labels", "get_attachments", "get_watchers", "get_audit_log", "get_config_history", "get_notifications", "get_page_versions"]:
+            if not user_id and "mange_watchers" not in ["get_user", "get_group", "get_space", "get_page", "get_comments", "get_labels", "get_attachments", "get_watchers", "get_audit_log", "get_config_history", "get_notifications", "get_page_versions"]:
                 return json.dumps({"error": "user_id is required"})
             
             # Route to appropriate operation
-            if "manage_watchers".startswith("manage_"):
+            if "mange_watchers".startswith("manage_"):
                 return ManageWatchers._manage_operation(data_manager, payload)
-            elif "manage_watchers".startswith("get_"):
+            elif "mange_watchers".startswith("get_"):
                 return ManageWatchers._get_operation(data_manager, payload)
-            elif "manage_watchers".startswith("create_"):
+            elif "mange_watchers".startswith("create_"):
                 return ManageWatchers._create_operation(data_manager, payload)
-            elif "manage_watchers".startswith("record_"):
+            elif "mange_watchers".startswith("record_"):
                 return ManageWatchers._record_operation(data_manager, payload)
-            elif "manage_watchers".startswith("send_"):
+            elif "mange_watchers".startswith("send_"):
                 return ManageWatchers._send_operation(data_manager, payload)
-            elif "manage_watchers".startswith("use_"):
+            elif "mange_watchers".startswith("use_"):
                 return ManageWatchers._use_operation(data_manager, payload)
-            elif "manage_watchers".startswith("move_"):
+            elif "mange_watchers".startswith("move_"):
                 return ManageWatchers._move_operation(data_manager, payload)
-            elif "manage_watchers".startswith("clone_"):
+            elif "mange_watchers".startswith("clone_"):
                 return ManageWatchers._clone_operation(data_manager, payload)
-            elif "manage_watchers".startswith("decide_"):
+            elif "mange_watchers".startswith("decide_"):
                 return ManageWatchers._decide_operation(data_manager, payload)
             else:
                 return json.dumps({"error": "Unknown operation type"})
@@ -55,7 +55,7 @@ class ManageWatchers(Tool):
         if not action:
             return json.dumps({"error": "Action is required. Use: create, update, or delete"})
         
-        table_name = "manage_watchers".replace("manage_", "")
+        table_name = "mange_watchers".replace("manage_", "")
         
         if action == "create":
             return ManageWatchers._create_record(data_manager, payload, table_name)
@@ -69,7 +69,7 @@ class ManageWatchers(Tool):
     @staticmethod
     def _get_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
         """Handle get operations"""
-        table_name = "manage_watchers".replace("get_", "")
+        table_name = "mange_watchers".replace("get_", "")
         
         # Try to find specific record first
         if "user_id" in payload:
@@ -185,56 +185,62 @@ class ManageWatchers(Tool):
     # Placeholder methods for specific operations
     @staticmethod
     def _create_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_watchers".replace("create_", "")
+        table_name = "mange_watchers".replace("create_", "")
         return ManageWatchers._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _record_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_watchers".replace("record_", "")
+        table_name = "mange_watchers".replace("record_", "")
         return ManageWatchers._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _send_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_watchers".replace("send_", "")
+        table_name = "mange_watchers".replace("send_", "")
         return ManageWatchers._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _use_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_watchers".replace("use_", "")
+        table_name = "mange_watchers".replace("use_", "")
         return ManageWatchers._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _move_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_watchers".replace("move_", "")
+        table_name = "mange_watchers".replace("move_", "")
         return ManageWatchers._update_record(data_manager, payload, table_name)
     
     @staticmethod
     def _clone_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_watchers".replace("clone_", "")
+        table_name = "mange_watchers".replace("clone_", "")
         return ManageWatchers._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _decide_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_watchers".replace("decide_", "")
+        table_name = "mange_watchers".replace("decide_", "")
         return ManageWatchers._update_record(data_manager, payload, table_name)
     
     @staticmethod
     def get_info() -> dict[str, Any]:
         return {
             "function": {
-                "name": "manage_watchers",
+                "name": "mange_watchers",
                 "description": "Adds or removes users/groups as watchers for a page or space",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "user_id": {"type": "string", "description": "ID of the user performing the operation"},
-                        "action": {"type": "string", "description": "Operation to perform"},
-                        "payload": {"type": "object", "description": "Operation parameters"}
+                        "payload": {
+                            "type": "object",
+                            "description": "Parameters for the operation",
+                            "properties": {
+                                "user_id": {"type": "string", "description": "ID of the user performing the operation"},
+                                "action": {"type": "string", "description": "Operation to perform"}
+                            },
+                            "required": ["user_id"] if True else []
+                        }
                     },
-                    "required": ["user_id"] if True else []
+                    "required": ["payload"]
                 }
             },
-            "tool_name": "manage_watchers",
+            "tool_name": "mange_watchers",
             "category": "Watcher Management",
             "flag": "Setter"
         }

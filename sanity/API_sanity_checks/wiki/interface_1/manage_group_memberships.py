@@ -14,32 +14,32 @@ class ManageGroupMemberships(Tool):
         try:
             data_manager = DataManager()
             
-            # Extract common parameters
+            # Extract parameters from payload
             user_id = payload.get("user_id")
             action = payload.get("action", "").lower()
             
             # Basic validation
-            if not user_id and "manage_group_memberships" not in ["get_user", "get_group", "get_space", "get_page", "get_comments", "get_labels", "get_attachments", "get_watchers", "get_audit_log", "get_config_history", "get_notifications", "get_page_versions"]:
+            if not user_id and "set_group_memberships" not in ["get_user", "get_group", "get_space", "get_page", "get_comments", "get_labels", "get_attachments", "get_watchers", "get_audit_log", "get_config_history", "get_notifications", "get_page_versions"]:
                 return json.dumps({"error": "user_id is required"})
             
             # Route to appropriate operation
-            if "manage_group_memberships".startswith("manage_"):
+            if "set_group_memberships".startswith("manage_"):
                 return ManageGroupMemberships._manage_operation(data_manager, payload)
-            elif "manage_group_memberships".startswith("get_"):
+            elif "set_group_memberships".startswith("get_"):
                 return ManageGroupMemberships._get_operation(data_manager, payload)
-            elif "manage_group_memberships".startswith("create_"):
+            elif "set_group_memberships".startswith("create_"):
                 return ManageGroupMemberships._create_operation(data_manager, payload)
-            elif "manage_group_memberships".startswith("record_"):
+            elif "set_group_memberships".startswith("record_"):
                 return ManageGroupMemberships._record_operation(data_manager, payload)
-            elif "manage_group_memberships".startswith("send_"):
+            elif "set_group_memberships".startswith("send_"):
                 return ManageGroupMemberships._send_operation(data_manager, payload)
-            elif "manage_group_memberships".startswith("use_"):
+            elif "set_group_memberships".startswith("use_"):
                 return ManageGroupMemberships._use_operation(data_manager, payload)
-            elif "manage_group_memberships".startswith("move_"):
+            elif "set_group_memberships".startswith("move_"):
                 return ManageGroupMemberships._move_operation(data_manager, payload)
-            elif "manage_group_memberships".startswith("clone_"):
+            elif "set_group_memberships".startswith("clone_"):
                 return ManageGroupMemberships._clone_operation(data_manager, payload)
-            elif "manage_group_memberships".startswith("decide_"):
+            elif "set_group_memberships".startswith("decide_"):
                 return ManageGroupMemberships._decide_operation(data_manager, payload)
             else:
                 return json.dumps({"error": "Unknown operation type"})
@@ -55,7 +55,7 @@ class ManageGroupMemberships(Tool):
         if not action:
             return json.dumps({"error": "Action is required. Use: create, update, or delete"})
         
-        table_name = "manage_group_memberships".replace("manage_", "")
+        table_name = "set_group_memberships".replace("manage_", "")
         
         if action == "create":
             return ManageGroupMemberships._create_record(data_manager, payload, table_name)
@@ -69,7 +69,7 @@ class ManageGroupMemberships(Tool):
     @staticmethod
     def _get_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
         """Handle get operations"""
-        table_name = "manage_group_memberships".replace("get_", "")
+        table_name = "set_group_memberships".replace("get_", "")
         
         # Try to find specific record first
         if "user_id" in payload:
@@ -185,56 +185,62 @@ class ManageGroupMemberships(Tool):
     # Placeholder methods for specific operations
     @staticmethod
     def _create_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_group_memberships".replace("create_", "")
+        table_name = "set_group_memberships".replace("create_", "")
         return ManageGroupMemberships._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _record_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_group_memberships".replace("record_", "")
+        table_name = "set_group_memberships".replace("record_", "")
         return ManageGroupMemberships._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _send_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_group_memberships".replace("send_", "")
+        table_name = "set_group_memberships".replace("send_", "")
         return ManageGroupMemberships._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _use_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_group_memberships".replace("use_", "")
+        table_name = "set_group_memberships".replace("use_", "")
         return ManageGroupMemberships._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _move_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_group_memberships".replace("move_", "")
+        table_name = "set_group_memberships".replace("move_", "")
         return ManageGroupMemberships._update_record(data_manager, payload, table_name)
     
     @staticmethod
     def _clone_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_group_memberships".replace("clone_", "")
+        table_name = "set_group_memberships".replace("clone_", "")
         return ManageGroupMemberships._create_record(data_manager, payload, table_name)
     
     @staticmethod
     def _decide_operation(data_manager: DataManager, payload: Dict[str, Any]) -> str:
-        table_name = "manage_group_memberships".replace("decide_", "")
+        table_name = "set_group_memberships".replace("decide_", "")
         return ManageGroupMemberships._update_record(data_manager, payload, table_name)
     
     @staticmethod
     def get_info() -> dict[str, Any]:
         return {
             "function": {
-                "name": "manage_group_memberships",
+                "name": "set_group_memberships",
                 "description": "Adds or removes users from a group with proper validation",
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "user_id": {"type": "string", "description": "ID of the user performing the operation"},
-                        "action": {"type": "string", "description": "Operation to perform"},
-                        "payload": {"type": "object", "description": "Operation parameters"}
+                        "payload": {
+                            "type": "object",
+                            "description": "Parameters for the operation",
+                            "properties": {
+                                "user_id": {"type": "string", "description": "ID of the user performing the operation"},
+                                "action": {"type": "string", "description": "Operation to perform"}
+                            },
+                            "required": ["user_id"] if True else []
+                        }
                     },
-                    "required": ["user_id"] if True else []
+                    "required": ["payload"]
                 }
             },
-            "tool_name": "manage_group_memberships",
+            "tool_name": "set_group_memberships",
             "category": "Group Management",
             "flag": "Setter"
         }

@@ -14,7 +14,7 @@ class GetUser(Tool):
         try:
             data_manager = DataManager()
             
-            # Extract common parameters
+            # Extract parameters from payload
             user_id = payload.get("user_id")
             action = payload.get("action", "").lower()
             
@@ -227,11 +227,17 @@ class GetUser(Tool):
                 "parameters": {
                     "type": "object",
                     "properties": {
-                        "user_id": {"type": "string", "description": "ID of the user performing the operation"},
-                        "action": {"type": "string", "description": "Operation to perform"},
-                        "payload": {"type": "object", "description": "Operation parameters"}
+                        "payload": {
+                            "type": "object",
+                            "description": "Parameters for the operation",
+                            "properties": {
+                                "user_id": {"type": "string", "description": "ID of the user performing the operation"},
+                                "action": {"type": "string", "description": "Operation to perform"}
+                            },
+                            "required": ["user_id"] if False else []
+                        }
                     },
-                    "required": ["user_id"] if False else []
+                    "required": ["payload"]
                 }
             },
             "tool_name": "get_user",
